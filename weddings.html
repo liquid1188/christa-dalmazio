@@ -179,6 +179,25 @@ nav.links a.active{color:var(--parchment)}
 .offer .o{border:1px solid var(--rule-l);padding:26px;border-radius:2px}
 .offer .o h4{font-family:'Cormorant Garamond';font-size:1.4rem;color:var(--paper-ink);margin:0 0 8px;font-weight:500}
 .offer .o p{color:var(--paper-muted);font-size:.92rem;margin:0}
+/* RECORDINGS */
+.recordings .rec-intro{max-width:62ch;color:var(--muted);font-size:1.02rem;line-height:1.7;margin:0 0 34px}
+.recordings .rec-intro a{color:var(--gilt-soft);border-bottom:1px solid var(--rule-d);transition:color .25s}
+.recordings .rec-intro a:hover{color:var(--gilt)}
+.rel-list{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.rel-card{display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid var(--rule-d);border-radius:3px;padding:20px;transition:border-color .3s}
+.rel-card:hover{border-color:var(--gilt-deep)}
+.rel-cover{width:128px;height:128px;object-fit:cover;border-radius:2px;flex-shrink:0;border:1px solid var(--rule-d)}
+.rel-body{flex:1;min-width:0}
+.rel-tag{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px}
+.rel-title{font-family:'Cormorant Garamond';font-size:1.75rem;color:var(--parchment);line-height:1;margin:0 0 8px}
+.rel-credit{color:var(--muted);font-size:.9rem;line-height:1.4}
+.rel-role{color:var(--parchment);font-size:.9rem;margin-top:2px;opacity:.85}
+.rel-note{color:var(--muted-2);font-size:.82rem;margin-top:9px;font-style:italic;line-height:1.5}
+.rel-links{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}
+.rel-btn{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--parchment);border:1px solid var(--rule-d);padding:7px 14px;border-radius:2px;transition:border-color .25s,color .25s,background .25s}
+.rel-btn:hover{border-color:var(--gilt);color:var(--gilt);background:rgba(200,168,102,.06)}
+@media (max-width:820px){.rel-list{grid-template-columns:1fr}}
+@media (max-width:480px){.rel-card{flex-direction:column}.rel-cover{width:100%;height:210px}}
 /* GALLERY (masonry, no cropping) */
 .gallery{padding:60px 0 96px}
 .gal{column-count:3;column-gap:18px}

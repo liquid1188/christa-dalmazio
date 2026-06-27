@@ -179,6 +179,25 @@ nav.links a.active{color:var(--parchment)}
 .offer .o{border:1px solid var(--rule-l);padding:26px;border-radius:2px}
 .offer .o h4{font-family:'Cormorant Garamond';font-size:1.4rem;color:var(--paper-ink);margin:0 0 8px;font-weight:500}
 .offer .o p{color:var(--paper-muted);font-size:.92rem;margin:0}
+/* RECORDINGS */
+.recordings .rec-intro{max-width:62ch;color:var(--muted);font-size:1.02rem;line-height:1.7;margin:0 0 34px}
+.recordings .rec-intro a{color:var(--gilt-soft);border-bottom:1px solid var(--rule-d);transition:color .25s}
+.recordings .rec-intro a:hover{color:var(--gilt)}
+.rel-list{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.rel-card{display:flex;gap:20px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid var(--rule-d);border-radius:3px;padding:20px;transition:border-color .3s}
+.rel-card:hover{border-color:var(--gilt-deep)}
+.rel-cover{width:128px;height:128px;object-fit:cover;border-radius:2px;flex-shrink:0;border:1px solid var(--rule-d)}
+.rel-body{flex:1;min-width:0}
+.rel-tag{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px}
+.rel-title{font-family:'Cormorant Garamond';font-size:1.75rem;color:var(--parchment);line-height:1;margin:0 0 8px}
+.rel-credit{color:var(--muted);font-size:.9rem;line-height:1.4}
+.rel-role{color:var(--parchment);font-size:.9rem;margin-top:2px;opacity:.85}
+.rel-note{color:var(--muted-2);font-size:.82rem;margin-top:9px;font-style:italic;line-height:1.5}
+.rel-links{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}
+.rel-btn{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--parchment);border:1px solid var(--rule-d);padding:7px 14px;border-radius:2px;transition:border-color .25s,color .25s,background .25s}
+.rel-btn:hover{border-color:var(--gilt);color:var(--gilt);background:rgba(200,168,102,.06)}
+@media (max-width:820px){.rel-list{grid-template-columns:1fr}}
+@media (max-width:480px){.rel-card{flex-direction:column}.rel-cover{width:100%;height:210px}}
 /* GALLERY (masonry, no cropping) */
 .gallery{padding:60px 0 96px}
 .gal{column-count:3;column-gap:18px}
@@ -259,9 +278,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
       <div class="cs-entry"><div class="t">Missa Sancti Leopoldi &mdash; M. Haydn</div><div class="d">Soloist</div></div>
       <div class="cs-entry"><div class="t">Baroque Aria Ensemble</div><div class="d">Member, three seasons &middot; Manhattan School of Music</div></div>
     </div>
-    <div><h3>Recordings &amp; appearances</h3>
-      <div class="cs-entry"><span class="tag">Single &middot; Harp</span><div class="t">Magnificat &mdash; The Catholic Cantor</div><div class="d">Carly York, soprano; Christa Dalmazio, harp. On Spotify, Apple Music &amp; YouTube.</div></div>
-      <div class="cs-entry"><span class="tag">Single &middot; Harp &amp; Organ</span><div class="t">Glorious Mystery &mdash; The Catholic Cantor</div><div class="d">Carly York, soprano; Christa Dalmazio, harp &amp; organ. On Spotify, Apple Music &amp; YouTube.</div></div>
+    <div><h3>Appearances &amp; recitals</h3>
       <div class="cs-entry"><span class="tag">2025 &middot; Soloist</span><div class="t">Italian National Anthem</div><div class="d">Italian American Baseball Foundation fundraising gala &middot; December 2025</div></div>
       <div class="cs-entry"><span class="tag">Recital</span><div class="t">Hildegard von Bingen &middot; Ave generosa</div><div class="d">Soprano with cello &middot; D.M.A. chamber recital</div></div>
     </div>
@@ -274,9 +291,44 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
       <div class="pl-item"><div class="pl-t">The Good Newsroom</div><div class="pl-d">&ldquo;Created to Create&rdquo; &middot; short film, 2025</div></div>
       <div class="pl-item"><div class="pl-t">Godsplaining</div><div class="pl-d">Podcast &middot; with the Dominican friars</div></div>
       <div class="pl-item"><div class="pl-t">Fairest Love Family Project</div><div class="pl-d">Podcast &middot; evangelizing through beauty, 2026</div></div>
-      <div class="pl-item"><div class="pl-t">Fox &amp; Friends</div><div class="pl-d">Fox News &middot; television appearance with Lumen</div></div>
+      <div class="pl-item"><div class="pl-t">Fox &amp; Friends</div><div class="pl-d">Live television segment on Fox News, with Lumen</div></div>
       <div class="pl-item"><div class="pl-t">Catholic Faith Network</div><div class="pl-d">Television interview</div></div>
     </div>
+  </div>
+</div></section>
+<section class="recordings sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">
+  <div class="movement reveal"><span class="lbl">Recordings</span><span class="rule"></span></div>
+  <p class="rec-intro reveal">Christa appears as harpist and organist on these sacred-music releases with soprano Dr. Carly York &mdash; <a href="https://www.thecatholiccantor.com" target="_blank" rel="noopener">The Catholic Cantor</a>. Both are available to stream and download.</p>
+  <div class="rel-list">
+    <article class="rel-card reveal">
+      <img class="rel-cover" src="assets/img/release-magnificat.jpg" alt="Magnificat &mdash; cover art" loading="lazy" />
+      <div class="rel-body">
+        <div class="rel-tag">Single</div>
+        <h3 class="rel-title">Magnificat</h3>
+        <div class="rel-credit">The Catholic Cantor &middot; Dr. Carly York, soprano</div>
+        <div class="rel-role">Christa Dalmazio &mdash; harp</div>
+        <div class="rel-links">
+          <a class="rel-btn" href="https://open.spotify.com/artist/3jheZsiQBSKlXBlgq78Gu1" target="_blank" rel="noopener">Spotify</a>
+          <a class="rel-btn" href="https://music.apple.com/us/search?term=The%20Catholic%20Cantor" target="_blank" rel="noopener">Apple Music</a>
+          <a class="rel-btn" href="https://www.youtube.com/results?search_query=Catholic+Cantor+Magnificat+Carly+York" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </article>
+    <article class="rel-card reveal">
+      <img class="rel-cover" src="assets/img/release-glorious.jpg" alt="Glorious Mystery &mdash; cover art" loading="lazy" />
+      <div class="rel-body">
+        <div class="rel-tag">Single &middot; August 2025</div>
+        <h3 class="rel-title">Glorious Mystery</h3>
+        <div class="rel-credit">The Catholic Cantor &middot; Dr. Carly York, soprano</div>
+        <div class="rel-role">Christa Dalmazio &mdash; harp &amp; organ</div>
+        <div class="rel-note">Six Marian chants recorded live at Holy Cross Church, Rumson, NJ.</div>
+        <div class="rel-links">
+          <a class="rel-btn" href="https://open.spotify.com/artist/3jheZsiQBSKlXBlgq78Gu1" target="_blank" rel="noopener">Spotify</a>
+          <a class="rel-btn" href="https://music.apple.com/us/search?term=The%20Catholic%20Cantor" target="_blank" rel="noopener">Apple Music</a>
+          <a class="rel-btn" href="https://www.youtube.com/results?search_query=Catholic+Cantor+Glorious+Mystery+Carly+York" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </article>
   </div>
 </div></section>
 <section id="watch" class="sec"><div class="wrap">
