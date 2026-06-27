@@ -81,11 +81,14 @@
   /* MARQUEE */
   .marquee-wrap{border-top:1px solid var(--rule-d);border-bottom:1px solid var(--rule-d);background:var(--ink-2);padding:24px 0;overflow:hidden}
   .marquee-label{text-align:center;font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
-  .marquee{display:flex;width:max-content;animation:scroll 46s linear infinite}
+  .marquee{display:flex;align-items:center;width:max-content;animation:scroll 52s linear infinite}
   .marquee:hover{animation-play-state:paused}
-  .marquee .item{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--muted);padding:0 36px;white-space:nowrap;position:relative;transition:color .3s}
-  .marquee .item:hover{color:var(--gilt-soft)}
+  .marquee .item{display:flex;align-items:center;padding:0 42px;white-space:nowrap;position:relative}
   .marquee .item::after{content:"✦";position:absolute;right:-5px;top:50%;transform:translateY(-50%);font-size:.45rem;color:var(--gilt-deep)}
+  .marquee img.plogo{height:30px;width:auto;opacity:.68;transition:opacity .35s}
+  .marquee .item:hover img.plogo{opacity:1}
+  .marquee .wm{font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:var(--muted);letter-spacing:.01em;transition:color .3s}
+  .marquee .item:hover .wm{color:var(--gilt-soft)}
   @keyframes scroll{to{transform:translateX(-50%)}}
 
   /* PAPER SECTION */
@@ -95,15 +98,15 @@
 
   /* ABOUT */
   .about{padding:118px 0}
-  .about-lead{font-family:'Cormorant Garamond';font-weight:300;font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.16;max-width:18ch;color:var(--paper-ink)}
+  .about-lead{font-family:'Cormorant Garamond';font-weight:300;font-size:clamp(2rem,4.2vw,3.1rem);line-height:1.16;color:var(--paper-ink);margin:0}
   .about-lead em{font-style:italic;color:var(--gilt-deep)}
-  .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:start;margin-top:54px}
+  .about-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:start;margin-top:10px}
   .about-body p{color:var(--paper-muted);margin:0 0 18px;font-size:1.06rem}
   .about-body strong{color:var(--paper-ink);font-weight:600}
   .about-portrait{position:relative}
   .about-portrait img{width:100%;border:1px solid var(--rule-l)}
   .about-portrait .cap{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-muted);margin-top:12px;text-align:right}
-  .marks{display:flex;gap:30px;margin-top:30px;padding-top:26px;border-top:1px solid var(--rule-l)}
+  .marks{display:flex;gap:30px;margin-top:54px;padding-top:30px;border-top:1px solid var(--rule-l)}
   .marks div{flex:1}
   .marks .w{font-family:'Cormorant Garamond';font-style:italic;font-size:1.5rem;color:var(--gilt-deep)}
   .marks .s{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-muted);margin-top:4px}
@@ -287,8 +290,20 @@
 <div class="marquee-wrap reveal">
   <div class="marquee-label">Featured in</div>
   <div class="marquee">
-    <span class="item">National Catholic Register</span><span class="item">First Things</span><span class="item">The Good Newsroom</span><span class="item">Godsplaining</span><span class="item">Fairest Love Family Project</span><span class="item">Catholic Faith Network</span><span class="item">EWTN</span>
-    <span class="item">National Catholic Register</span><span class="item">First Things</span><span class="item">The Good Newsroom</span><span class="item">Godsplaining</span><span class="item">Fairest Love Family Project</span><span class="item">Catholic Faith Network</span><span class="item">EWTN</span>
+    <span class="item"><span class="wm">National Catholic Register</span></span>
+    <span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span>
+    <span class="item"><span class="wm">Fairest Love Family Project</span></span>
+    <span class="item"><span class="wm">National Catholic Register</span></span>
+    <span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span>
+    <span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span>
+    <span class="item"><span class="wm">Fairest Love Family Project</span></span>
   </div>
 </div>
 
@@ -296,22 +311,17 @@
 <section id="about" class="paper about">
   <div class="wrap">
     <div class="movement reveal"><span class="num">I</span><span class="lbl">Vocation</span><span class="rule"></span></div>
-    <h2 class="about-lead reveal">Christa is convinced that the shortest path to God runs through what is <em>beautiful.</em></h2>
     <div class="about-grid">
+      <h2 class="about-lead reveal">Christa is convinced that the shortest path to God runs through what is <em>beautiful.</em></h2>
       <div class="about-body reveal">
         <p>A soprano and multi-instrumentalist from Colts Neck, New Jersey, she trained at the <strong>Manhattan School of Music</strong> — a bachelor's, a master's, and, this spring, a <strong>Doctor of Musical Arts</strong> — studying voice with the celebrated soprano Catherine Malfitano. Three times the Metropolitan Opera's Laffont Competition named her an Encouragement Award winner, and she has sung as a soloist at Carnegie Hall, Avery Fisher Hall, and in churches from Manhattan to Québec.</p>
         <p>But her work has found its center in the sanctuary. As <strong>music director of the Higher Word Orchestra</strong> and director of music for parishes and schools across New Jersey, she has made the Church's <em>via pulchritudinis</em> — the way of beauty — the organizing idea of a life in music.</p>
-        <p class="anecdote">After a Latin Mass she directed on the feast of Saint Hildegard, a parishioner told her he had never, until that evening, been able to quiet his mind enough to truly pray.<span>As told to the National Catholic Register, 2025</span></p>
-        <div class="marks">
-          <div><div class="w">Integrity.</div><div class="s">wholeness</div></div>
-          <div><div class="w">Proportion.</div><div class="s">harmony</div></div>
-          <div><div class="w">Radiance.</div><div class="s">claritas</div></div>
-        </div>
       </div>
-      <figure class="about-portrait reveal" style="margin:0">
-        <img src="assets/img/about.jpg" alt="Christa Dalmazio" />
-        <figcaption class="cap">New York · 2025</figcaption>
-      </figure>
+    </div>
+    <div class="marks reveal">
+      <div><div class="w">Integrity.</div><div class="s">wholeness</div></div>
+      <div><div class="w">Proportion.</div><div class="s">harmony</div></div>
+      <div><div class="w">Radiance.</div><div class="s">claritas</div></div>
     </div>
   </div>
 </section>
