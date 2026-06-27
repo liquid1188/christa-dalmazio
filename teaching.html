@@ -176,6 +176,24 @@ nav.links a.active{color:var(--parchment)}
 .offer .o{border:1px solid var(--rule-l);padding:26px;border-radius:2px}
 .offer .o h4{font-family:'Cormorant Garamond';font-size:1.4rem;color:var(--paper-ink);margin:0 0 8px;font-weight:500}
 .offer .o p{color:var(--paper-muted);font-size:.92rem;margin:0}
+/* PRESS LIST */
+.press-list{margin-top:48px;padding-top:42px;border-top:1px solid var(--rule-l)}
+.pl-head{font-size:1.4rem;color:var(--paper-ink);margin-bottom:20px;font-weight:500}
+.pl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pl-item{padding:18px 0;border-top:1px solid var(--rule-l)}
+.pl-t{font-family:'Cormorant Garamond';font-size:1.18rem;color:var(--paper-ink)}
+.pl-d{color:var(--paper-muted);font-size:.86rem;margin-top:3px}
+/* MAILING */
+.mailing{padding:64px 0;background:var(--ink);border-top:1px solid var(--rule-d)}
+.ml-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.ml-text h3{font-size:1.9rem;color:var(--parchment)}
+.ml-text p{color:var(--muted);font-size:.98rem;margin:6px 0 0}
+.ml-form{display:flex;gap:12px;flex:1;min-width:300px;max-width:520px}
+.ml-form input{flex:1;background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:14px 18px;font-family:'Mulish';font-size:.95rem;border-radius:1px;outline:none;transition:border-color .25s}
+.ml-form input:focus{border-color:var(--gilt)}
+.ml-form input::placeholder{color:var(--muted-2)}
+.ml-form .btn{white-space:nowrap}
+.ml-done{display:none;color:var(--gilt-soft);font-family:'Cormorant Garamond';font-style:italic;font-size:1.2rem}
 /* CONTACT */
 .contact{padding:116px 0;background:var(--ink-2);border-top:1px solid var(--rule-d)}
 .contact .inner{text-align:center;max-width:680px;margin:0 auto}
@@ -240,14 +258,20 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
     <a class="btn btn-ghost" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener">Message on Instagram</a>
   </div>
 </div></div></section>
+<section class="mailing"><div class="wrap"><div class="ml-inner reveal">
+  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates &amp; news &mdash; a few times a year, never more.</p></div>
+  <form class="ml-form" id="mlForm">
+    <input type="email" id="mlEmail" required placeholder="Your email address" aria-label="Email address" />
+    <button type="submit" class="btn btn-gilt">Subscribe</button>
+  </form>
+  <div class="ml-done" id="mlDone">Thank you &mdash; opening your email to confirm.</div>
+</div></div></section>
 <footer><div class="wrap"><div class="top">
   <div class="f-brand">Christa Dalmazio</div>
   <div class="f-social">
     <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener">YouTube</a>
     <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener">Facebook</a>
-    <a class="todo" href="#" rel="noopener">SoundCloud</a>
-    <a class="todo" href="#" rel="noopener">Twitter / X</a>
     <a href="mailto:christadalmazio@gmail.com">Email</a>
   </div></div>
   <div class="f-meta">&copy; 2026 Christa Dalmazio &middot; Soprano, Conductor &amp; Music Director</div>
@@ -260,5 +284,12 @@ t.addEventListener('click',()=>l.classList.toggle('open'));
 l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')));
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const mf=document.getElementById('mlForm');
+if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
+  var em=document.getElementById('mlEmail').value;
+  mf.style.display='none';
+  var d=document.getElementById('mlDone'); if(d) d.style.display='block';
+  window.location.href='mailto:christadalmazio@gmail.com?subject='+encodeURIComponent('Mailing list signup')+'&body='+encodeURIComponent('Please add me to your mailing list: '+em);
+});}
 </script>
 </body></html>
