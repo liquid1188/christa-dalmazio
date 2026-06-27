@@ -176,6 +176,16 @@ nav.links a.active{color:var(--parchment)}
 .offer .o{border:1px solid var(--rule-l);padding:26px;border-radius:2px}
 .offer .o h4{font-family:'Cormorant Garamond';font-size:1.4rem;color:var(--paper-ink);margin:0 0 8px;font-weight:500}
 .offer .o p{color:var(--paper-muted);font-size:.92rem;margin:0}
+/* GALLERY (masonry, no cropping) */
+.gallery{padding:60px 0 96px}
+.gal{column-count:3;column-gap:18px}
+.gal figure{margin:0 0 18px;break-inside:avoid;position:relative;overflow:hidden;border:1px solid var(--rule-d);border-radius:2px}
+.gal img{width:100%;height:auto;display:block;transition:transform .8s ease}
+.gal figure:hover img{transform:scale(1.035)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;font-size:.72rem;letter-spacing:.04em;color:#f3ede1;background:linear-gradient(180deg,transparent,rgba(8,18,16,.82));opacity:0;transition:opacity .35s}
+.gal figure:hover figcaption{opacity:1}
+@media (max-width:900px){.gal{column-count:2}}
+@media (max-width:560px){.gal{column-count:1}}
 /* PRESS LIST */
 .press-list{margin-top:48px;padding-top:42px;border-top:1px solid var(--rule-l)}
 .pl-head{font-size:1.4rem;color:var(--paper-ink);margin-bottom:20px;font-weight:500}
@@ -225,7 +235,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
 <header class="nav" id="nav">
   <a class="brand" href="index.html"><b>Christa</b> Dalmazio</a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html" class="active">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="#contact">Contact</a></nav>
+  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html" class="active">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="#contact">Contact</a></nav>
 </header>
 <section class="pagehead"><div class="wrap reveal">
   <div class="kick">Performing</div><h1>On the stage.</h1>
@@ -247,7 +257,8 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
       <div class="cs-entry"><div class="t">Baroque Aria Ensemble</div><div class="d">Member, three seasons &middot; Manhattan School of Music</div></div>
     </div>
     <div><h3>Recordings &amp; appearances</h3>
-      <div class="cs-entry"><span class="tag">2025 &middot; Harp</span><div class="t">Glorious Mystery &mdash; The Catholic Cantor</div><div class="d">Six Marian chants recorded live at Holy Cross Church, Rumson. On Spotify &amp; Apple Music.</div></div>
+      <div class="cs-entry"><span class="tag">Single &middot; Harp</span><div class="t">Magnificat &mdash; The Catholic Cantor</div><div class="d">Carly York, soprano; Christa Dalmazio, harp. On Spotify, Apple Music &amp; YouTube.</div></div>
+      <div class="cs-entry"><span class="tag">Single &middot; Harp &amp; Organ</span><div class="t">Glorious Mystery &mdash; The Catholic Cantor</div><div class="d">Carly York, soprano; Christa Dalmazio, harp &amp; organ. On Spotify, Apple Music &amp; YouTube.</div></div>
       <div class="cs-entry"><span class="tag">2025 &middot; Soloist</span><div class="t">Italian National Anthem</div><div class="d">Italian American Baseball Foundation fundraising gala &middot; December 2025</div></div>
       <div class="cs-entry"><span class="tag">Recital</span><div class="t">Hildegard von Bingen &middot; Ave generosa</div><div class="d">Soprano with cello &middot; D.M.A. chamber recital</div></div>
     </div>
@@ -260,6 +271,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
       <div class="pl-item"><div class="pl-t">The Good Newsroom</div><div class="pl-d">&ldquo;Created to Create&rdquo; &middot; short film, 2025</div></div>
       <div class="pl-item"><div class="pl-t">Godsplaining</div><div class="pl-d">Podcast &middot; with the Dominican friars</div></div>
       <div class="pl-item"><div class="pl-t">Fairest Love Family Project</div><div class="pl-d">Podcast &middot; evangelizing through beauty, 2026</div></div>
+      <div class="pl-item"><div class="pl-t">Fox &amp; Friends</div><div class="pl-d">Fox News &middot; television appearance with Lumen</div></div>
       <div class="pl-item"><div class="pl-t">Catholic Faith Network</div><div class="pl-d">Television interview</div></div>
     </div>
   </div>
