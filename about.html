@@ -10,10 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --ink:#0c1c1a;--ink-2:#112623;--ink-3:#193430;
-  --paper:#f1e9d8;--paper-2:#e7dcc4;--paper-ink:#1d2c28;--paper-muted:#5c6e68;
+  --ink:#190d10;--ink-2:#23141a;--ink-3:#321a22;
+  --paper:#f1e9d8;--paper-2:#e7dcc4;--paper-ink:#2a141a;--paper-muted:#7c5560;
   --gilt:#c8a866;--gilt-soft:#dcc398;--gilt-deep:#9a7836;
-  --parchment:#f3ede1;--muted:#a4b6b1;--muted-2:#728a85;
+  --parchment:#f3ede1;--muted:#c4a8af;--muted-2:#9c7782;
   --rule-d:rgba(200,168,102,.16);--rule-l:#d7caaf;--maxw:1180px;
 }
 *{box-sizing:border-box}
@@ -32,7 +32,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .paper .movement .lbl{color:var(--gilt-deep)}.paper .movement .rule{background:linear-gradient(90deg,var(--gilt-deep),transparent)}
 /* NAV */
 header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 34px;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
-header.nav.scrolled{background:rgba(10,22,20,.92);backdrop-filter:blur(12px);padding:13px 34px;border-bottom:1px solid var(--rule-d)}
+header.nav.scrolled{background:rgba(25,13,16,.92);backdrop-filter:blur(12px);padding:13px 34px;border-bottom:1px solid var(--rule-d)}
 .brand{display:inline-flex;align-items:center;gap:11px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}.brand-rose{width:33px;height:33px;flex:0 0 auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}header.nav.scrolled .brand-rose{width:29px;height:29px}
 .brand b{font-weight:600}
 nav.links{display:flex;gap:24px}
@@ -59,7 +59,7 @@ nav.links a.active{color:var(--parchment)}
 .hero-portrait{position:relative;justify-self:center;display:flex;justify-content:center}
 .arch{width:min(420px,80vw);aspect-ratio:1000/1294;border-radius:999px 999px 5px 5px;overflow:hidden;position:relative;z-index:1;border:1px solid rgba(200,168,102,.55);box-shadow:0 30px 70px -30px rgba(0,0,0,.85),0 0 0 9px rgba(200,168,102,.05)}
 .arch img{width:100%;height:100%;object-fit:cover;object-position:center 16%}
-.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,28,26,0) 62%,rgba(12,28,26,.32) 100%)}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,0) 62%,rgba(25,13,16,.32) 100%)}
 .arch-frame{position:absolute;inset:-15px;border:1px solid rgba(200,168,102,.22);border-radius:999px 999px 9px 9px;pointer-events:none;z-index:2}
 /* MARQUEE */
 .marquee-wrap{border-top:1px solid var(--rule-d);border-bottom:1px solid var(--rule-d);background:var(--ink-2);padding:24px 0;overflow:hidden}
@@ -105,7 +105,7 @@ nav.links a.active{color:var(--parchment)}
 /* BAND */
 .band{position:relative;height:60vh;min-height:420px;max-height:600px;overflow:hidden;display:flex;align-items:flex-end}
 .band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,28,26,.12) 0%,rgba(12,28,26,.08) 45%,rgba(12,28,26,.8) 100%)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,.12) 0%,rgba(25,13,16,.08) 45%,rgba(25,13,16,.8) 100%)}
 .band .cap{position:relative;z-index:2;padding:0 0 40px}
 .band .q{font-family:'Cormorant Garamond';font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);color:var(--parchment);max-width:22ch;line-height:1.26}
 .band .src{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-soft);margin-top:14px}
@@ -242,28 +242,21 @@ nav.links a.active{color:var(--parchment)}
 .ml-form .btn{white-space:nowrap}
 .ml-done{display:none;color:var(--gilt-soft);font-family:'Cormorant Garamond';font-style:italic;font-size:1.2rem}
 /* CONTACT */
-.contact{padding:116px 0;background:var(--ink-2);border-top:1px solid var(--rule-d)}
+.contact{padding:70px 0;background:var(--ink-2);border-top:1px solid var(--rule-d)}
 .contact .inner{text-align:center;max-width:680px;margin:0 auto}
 .contact h2{font-size:clamp(2.3rem,5.2vw,3.7rem);font-weight:300;margin-bottom:16px}
 .contact h2 em{font-style:italic;color:var(--gilt-soft)}
 .contact p{color:var(--muted);font-size:1.07rem;margin-bottom:30px}
 .contact .cta-row{justify-content:center}
 /* FOOTER */
-footer{padding:44px 0;border-top:1px solid var(--rule-d)}
-footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}
-.f-brand{display:inline-flex;align-items:center;gap:10px;font-family:'Cormorant Garamond';font-size:1.4rem}.f-brand img{width:30px;height:30px;flex:0 0 auto}
-.f-social{display:flex;gap:22px;flex-wrap:wrap}
-.f-social a{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .25s}
-.f-social a:hover{color:var(--gilt)}
-.f-social a.todo{color:var(--muted-2);border-bottom:1px dashed var(--muted-2)}
-.f-meta{font-size:.69rem;letter-spacing:.05em;color:var(--muted-2);padding-top:20px;margin-top:22px;border-top:1px solid var(--rule-d)}
+footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}.f-lockup{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:30px}.f-lockup img{width:48px;height:48px}.f-name{font-family:'Cormorant Garamond',serif;font-size:1.65rem;color:var(--parchment);letter-spacing:.02em;line-height:1}.f-tag{font-size:.63rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gilt)}.f-menu{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 26px;margin-bottom:22px}.f-menu a{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);transition:color .25s}.f-menu a:hover{color:var(--gilt)}.f-social{display:flex;justify-content:center;gap:22px;flex-wrap:wrap}.f-social a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);transition:color .25s}.f-social a:hover{color:var(--gilt)}.f-meta{font-size:.68rem;letter-spacing:.05em;color:var(--muted-2);padding-top:22px;margin-top:26px;border-top:1px solid var(--rule-d)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
 .reveal.in{opacity:1;transform:none}
 @media (max-width:900px){
   .hero-grid,.two,.feature-film,.vgrid,.hl-grid,.en-grid,.listcols,.offer{grid-template-columns:1fr}
   .hero{min-height:auto;padding-top:156px}.hero-portrait{order:-1;margin-bottom:14px}
   .hero-rose{top:60px;width:84px;height:84px}
-  nav.links{position:fixed;inset:0 0 0 auto;width:76%;max-width:320px;flex-direction:column;justify-content:center;gap:26px;background:rgba(10,22,20,.97);backdrop-filter:blur(14px);padding:40px;transform:translateX(100%);transition:transform .4s;border-left:1px solid var(--rule-d)}
+  nav.links{position:fixed;inset:0 0 0 auto;width:76%;max-width:320px;flex-direction:column;justify-content:center;gap:26px;background:rgba(25,13,16,.97);backdrop-filter:blur(14px);padding:40px;transform:translateX(100%);transition:transform .4s;border-left:1px solid var(--rule-d)}
   nav.links.open{transform:none}nav.links a{font-size:1rem}
   .nav-toggle{display:block;z-index:60}
 }
@@ -319,15 +312,20 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
   </form>
   <div class="ml-done" id="mlDone">Thank you &mdash; opening your email to confirm.</div>
 </div></div></section>
-<footer><div class="wrap"><div class="top">
-  <div class="f-brand"><img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />Christa Dalmazio</div>
+<footer><div class="wrap">
+  <div class="f-lockup">
+    <img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
+    <div class="f-name">Christa Dalmazio</div>
+    <div class="f-tag">Classical &amp; Sacred Musician</div>
+  </div>
+  <nav class="f-menu"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="index.html#contact">Contact</a></nav>
   <div class="f-social">
     <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener">YouTube</a>
     <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener">Facebook</a>
     <a href="mailto:christadalmazio@gmail.com">Email</a>
-  </div></div>
-  <div class="f-meta">&copy; 2026 Christa Dalmazio &middot; Classical &amp; Sacred Musician</div>
+  </div>
+  <div class="f-meta">&copy; 2026 Christa Dalmazio</div>
 </div></footer>
 <script>
 const nav=document.getElementById('nav');
