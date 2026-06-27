@@ -66,6 +66,7 @@ nav.links a.active{color:var(--parchment)}
 .marquee .item{display:flex;align-items:center;padding:0 42px;white-space:nowrap;position:relative}
 .marquee .item::after{content:"\2726";position:absolute;right:-5px;top:50%;transform:translateY(-50%);font-size:.45rem;color:var(--gilt-deep)}
 .marquee img.plogo{height:30px;width:auto;opacity:.66;transition:opacity .35s}
+.marquee img.plogo-tall{height:42px}
 .marquee .item:hover img.plogo{opacity:1}
 @keyframes scroll{to{transform:translateX(-50%)}}
 /* PAGE HEADER (subpages) */
@@ -154,10 +155,12 @@ nav.links a.active{color:var(--parchment)}
 .vcard .vc{color:var(--muted-2);font-size:.8rem;margin-top:3px}
 /* COLLAB */
 .logowall{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 56px;margin-top:6px}
-.logowall .lg{height:46px;display:flex;align-items:center;opacity:.62;transition:opacity .3s,transform .3s}
+.logowall .lg{height:56px;display:flex;align-items:center;opacity:.66;transition:opacity .3s,transform .3s}
 .logowall .lg:hover{opacity:1;transform:translateY(-2px)}
 .logowall img{height:100%;width:auto;filter:saturate(0)}
 .logowall .word{font-family:'Cormorant Garamond';font-size:1.7rem;letter-spacing:.02em;line-height:1;text-align:center;color:var(--parchment)}
+.logowall .word-lg{font-size:2.25rem}
+.logowall .lg-feature{height:auto;opacity:.92}
 .logowall .word small{display:block;font-family:'Mulish';font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-2);margin-top:6px}
 .collab-note{text-align:center;color:var(--muted);max-width:62ch;margin:34px auto 0;font-size:.96rem}
 .collab-note em{color:var(--gilt-soft);font-style:normal}
@@ -253,7 +256,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
     <div class="arch"><div class="arch-frame"></div><img src="assets/img/hero.jpg" alt="Soprano Christa Dalmazio" /></div>
   </div>
 </div></div></section><div class="marquee-wrap reveal"><div class="marquee-label">Featured in</div>
-<div class="marquee"><span class="item"><img class="plogo" src="assets/img/l-ncr.png" alt="National Catholic Register" /></span><span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span><span class="item"><img class="plogo" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span><span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span><span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span><span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span><span class="item"><img class="plogo" src="assets/img/l-fairestlove.png" alt="Fairest Love Family Project" /></span><span class="item"><img class="plogo" src="assets/img/l-ncr.png" alt="National Catholic Register" /></span><span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span><span class="item"><img class="plogo" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span><span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span><span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span><span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span><span class="item"><img class="plogo" src="assets/img/l-fairestlove.png" alt="Fairest Love Family Project" /></span></div></div><section class="highlights"><div class="wrap">
+<div class="marquee"><span class="item"><img class="plogo" src="assets/img/l-ncr.png" alt="National Catholic Register" /></span><span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span><span class="item"><img class="plogo plogo-tall" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span><span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span><span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span><span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span><span class="item"><img class="plogo" src="assets/img/l-fairestlove.png" alt="Fairest Love Family Project" /></span><span class="item"><img class="plogo" src="assets/img/l-ncr.png" alt="National Catholic Register" /></span><span class="item"><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /></span><span class="item"><img class="plogo plogo-tall" src="assets/img/l-godsplaining.png" alt="Godsplaining" /></span><span class="item"><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /></span><span class="item"><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /></span><span class="item"><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /></span><span class="item"><img class="plogo" src="assets/img/l-fairestlove.png" alt="Fairest Love Family Project" /></span></div></div><section class="highlights"><div class="wrap">
   <div class="movement reveal"><span class="lbl">What Christa Does</span><span class="rule"></span></div>
   <div class="hl-grid">
     <a class="hl-card" href="performing.html"><img src="assets/img/g-papagena.jpg" alt="Performing" />

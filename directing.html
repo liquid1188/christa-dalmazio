@@ -66,6 +66,7 @@ nav.links a.active{color:var(--parchment)}
 .marquee .item{display:flex;align-items:center;padding:0 42px;white-space:nowrap;position:relative}
 .marquee .item::after{content:"\2726";position:absolute;right:-5px;top:50%;transform:translateY(-50%);font-size:.45rem;color:var(--gilt-deep)}
 .marquee img.plogo{height:30px;width:auto;opacity:.66;transition:opacity .35s}
+.marquee img.plogo-tall{height:42px}
 .marquee .item:hover img.plogo{opacity:1}
 @keyframes scroll{to{transform:translateX(-50%)}}
 /* PAGE HEADER (subpages) */
@@ -154,10 +155,12 @@ nav.links a.active{color:var(--parchment)}
 .vcard .vc{color:var(--muted-2);font-size:.8rem;margin-top:3px}
 /* COLLAB */
 .logowall{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 56px;margin-top:6px}
-.logowall .lg{height:46px;display:flex;align-items:center;opacity:.62;transition:opacity .3s,transform .3s}
+.logowall .lg{height:56px;display:flex;align-items:center;opacity:.66;transition:opacity .3s,transform .3s}
 .logowall .lg:hover{opacity:1;transform:translateY(-2px)}
 .logowall img{height:100%;width:auto;filter:saturate(0)}
 .logowall .word{font-family:'Cormorant Garamond';font-size:1.7rem;letter-spacing:.02em;line-height:1;text-align:center;color:var(--parchment)}
+.logowall .word-lg{font-size:2.25rem}
+.logowall .lg-feature{height:auto;opacity:.92}
 .logowall .word small{display:block;font-family:'Mulish';font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-2);margin-top:6px}
 .collab-note{text-align:center;color:var(--muted);max-width:62ch;margin:34px auto 0;font-size:.96rem}
 .collab-note em{color:var(--gilt-soft);font-style:normal}
@@ -260,10 +263,10 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
   <div class="movement center reveal"><span class="lbl">Collaborations &amp; Affiliations</span></div>
   <div class="logowall reveal">
     <a class="lg" href="https://higherword.org" target="_blank" rel="noopener"><img src="assets/img/logo-hw.png" alt="Higher Word Orchestra" /></a>
-    <a class="lg" href="https://www.arthouse2b.org" target="_blank" rel="noopener"><img src="assets/img/logo-a2b.png" alt="Arthouse2B" /></a>
-    <span class="lg"><span class="word">Manhattan School<br>of Music<small>Alma Mater &middot; D.M.A.</small></span></span>
-    <span class="lg"><span class="word">Pivot Theater<small>Music Director</small></span></span>
     <span class="lg"><span class="word">dell'Arte Opera<small>Past engagements</small></span></span>
+    <span class="lg lg-feature"><span class="word word-lg">Manhattan School<br>of Music<small>Alma Mater &middot; D.M.A.</small></span></span>
+    <span class="lg"><span class="word">Pivot Theater<small>Music Director</small></span></span>
+    <a class="lg" href="https://www.arthouse2b.org" target="_blank" rel="noopener"><img src="assets/img/logo-a2b.png" alt="Arthouse2B" /></a>
   </div>
   <p class="collab-note reveal">With the Catholic artist collective <em>Arthouse2B</em>, Christa has performed as music director and harpist &mdash; including the immersive <em>Ruah: Breath of Life</em>, staged at St. Joseph of Greenwich Village and Harlem's Church of the Annunciation, where she played Hildegard von Bingen on the harp.</p>
 </div></section>
