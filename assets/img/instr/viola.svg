@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#9a7836" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
-<path d="M32 24.8
-      C23.5 24.8 23.5 36.2 27.2 38.1
-      C20.6 40.0 20.6 55.2 32 55.2
-      C43.4 55.2 43.4 40.0 36.8 38.1
-      C40.5 36.2 40.5 24.8 32 24.8 Z" stroke="#9a7836"/><line x1="32" y1="24.8" x2="32" y2="15.3" stroke="#9a7836"/><circle cx="32" cy="14.4" r="2.1" stroke="#9a7836" stroke-width="1.6"/><path d="M29.0 38.1 q-1 4 0 7" stroke="#7c5560" stroke-width="1.2"/><path d="M35.0 38.1 q1 4 0 7" stroke="#7c5560" stroke-width="1.2"/><line x1="44.4" y1="22.9" x2="49.1" y2="53.3" stroke="#c8a866" stroke-width="1.6"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#9a7836" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M32 25.0 C23.5 25.0 23.5 36.0 27.4 38.0 C20.5 40.0 20.5 55.0 32 55.0 C43.5 55.0 43.5 40.0 36.6 38.0 C40.5 36.0 40.5 25.0 32 25.0 Z" stroke="#9a7836"/><line x1="32" y1="25.0" x2="32" y2="15.0" stroke="#9a7836"/><path d="M32 15.0 q-3 -1 -2 -4 q1 -2 3 -1" stroke="#9a7836" stroke-width="1.6"/><path d="M29.0 39.0 q-1 4 0 7" stroke="#7c5560" stroke-width="1.1"/><path d="M35.0 39.0 q1 4 0 7" stroke="#7c5560" stroke-width="1.1"/><line x1="44.0" y1="22.0" x2="49.0" y2="53.0" stroke="#c8a866" stroke-width="1.6"/></svg>
