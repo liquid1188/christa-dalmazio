@@ -33,7 +33,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;bac
 /* NAV */
 header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 34px;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
 header.nav.scrolled{background:rgba(25,13,16,.92);backdrop-filter:blur(12px);padding:13px 34px;border-bottom:1px solid var(--rule-d)}
-.brand{display:inline-flex;align-items:center;gap:11px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}.brand-rose{width:33px;height:33px;flex:0 0 auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}header.nav.scrolled .brand-rose{width:29px;height:29px}
+.brand{display:inline-flex;align-items:center;gap:11px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}.brand-rose{width:33px;height:33px;flex:0 0 auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}header.nav.scrolled .brand-rose{width:29px;height:29px}.brand-txt{display:flex;flex-direction:column;line-height:1.02}.brand-tag{font-family:'Mulish',sans-serif;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gilt);font-weight:600;margin-top:5px}
 .brand b{font-weight:600}
 nav.links{display:flex;gap:24px}
 nav.links a{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--muted);position:relative;padding:4px 0;transition:color .25s}
@@ -263,7 +263,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 </style></head><body>
 <header class="nav" id="nav">
-  <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span><b>Christa</b> Dalmazio</span></a>
+  <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><span class="brand-name"><b>Christa</b> Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html" class="active">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="#contact">Contact</a></nav>
 </header>
@@ -277,7 +277,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 <section class="paper sec"><div class="wrap">
   <div class="two">
     <div class="bodytext reveal">
-      <p>A multi-instrumentalist herself, Christa teaches across the disciplines she performs &mdash; voice, piano, harp, organ, viola, violin, and cello &mdash; in classical and sacred technique. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work.</p>
+      <p>A multi-instrumentalist herself, Christa teaches in classical and sacred technique across the disciplines she performs: voice, piano, harp, organ, viola, violin, and cello. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work.</p>
       <p>Lessons are built around the student in front of her: solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it.</p>
     </div>
     <div class="studio reveal">
@@ -299,12 +299,12 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   </div>
 </div></div></section>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">
-  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates &amp; news &mdash; a few times a year, never more.</p></div>
+  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates and news, a few times a year and never more.</p></div>
   <form class="ml-form" id="mlForm">
     <input type="email" id="mlEmail" required placeholder="Your email address" aria-label="Email address" />
     <button type="submit" class="btn btn-gilt">Subscribe</button>
   </form>
-  <div class="ml-done" id="mlDone">Thank you &mdash; opening your email to confirm.</div>
+  <div class="ml-done" id="mlDone">Thank you. Opening your email to confirm.</div>
 </div></div></section>
 <footer><div class="wrap">
   <div class="f-lockup">
