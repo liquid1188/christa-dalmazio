@@ -33,7 +33,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;bac
 /* NAV */
 header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 34px;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
 header.nav.scrolled{background:rgba(10,22,20,.92);backdrop-filter:blur(12px);padding:13px 34px;border-bottom:1px solid var(--rule-d)}
-.brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}
+.brand{display:inline-flex;align-items:center;gap:11px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}.brand-rose{width:33px;height:33px;flex:0 0 auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}header.nav.scrolled .brand-rose{width:29px;height:29px}
 .brand b{font-weight:600}
 nav.links{display:flex;gap:24px}
 nav.links a{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--muted);position:relative;padding:4px 0;transition:color .25s}
@@ -250,7 +250,7 @@ nav.links a.active{color:var(--parchment)}
 /* FOOTER */
 footer{padding:44px 0;border-top:1px solid var(--rule-d)}
 footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}
-.f-brand{font-family:'Cormorant Garamond';font-size:1.4rem}
+.f-brand{display:inline-flex;align-items:center;gap:10px;font-family:'Cormorant Garamond';font-size:1.4rem}.f-brand img{width:30px;height:30px;flex:0 0 auto}
 .f-social{display:flex;gap:22px;flex-wrap:wrap}
 .f-social a{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .25s}
 .f-social a:hover{color:var(--gilt)}
@@ -270,7 +270,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 </style></head><body>
 <header class="nav" id="nav">
-  <a class="brand" href="index.html"><b>Christa</b> Dalmazio</a>
+  <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span><b>Christa</b> Dalmazio</span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html" class="active">Gallery</a><a href="#contact">Contact</a></nav>
 </header>
@@ -318,7 +318,7 @@ footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-item
   <div class="ml-done" id="mlDone">Thank you &mdash; opening your email to confirm.</div>
 </div></div></section>
 <footer><div class="wrap"><div class="top">
-  <div class="f-brand">Christa Dalmazio</div>
+  <div class="f-brand"><img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />Christa Dalmazio</div>
   <div class="f-social">
     <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener">YouTube</a>
