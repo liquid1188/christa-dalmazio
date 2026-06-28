@@ -235,7 +235,7 @@ nav.links a.active{color:var(--parchment)}
 .ml-text h3{font-size:1.9rem;color:var(--parchment)}
 .ml-text p{color:var(--muted);font-size:.98rem;margin:6px 0 0}
 .ml-form{display:flex;gap:12px;flex:1;min-width:300px;max-width:520px}
-.ml-form input{flex:1;background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:14px 18px;font-family:'Mulish';font-size:.95rem;border-radius:0;outline:none;transition:border-color .25s}
+.ml-form input{flex:1;min-width:0;background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:14px 18px;font-family:'Mulish';font-size:.95rem;border-radius:0;outline:none;transition:border-color .25s}
 .ml-form input:focus{border-color:var(--gilt)}
 .ml-form input::placeholder{color:var(--muted-2)}
 .ml-form .btn{white-space:nowrap}
@@ -259,7 +259,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   nav.links.open{transform:none}nav.links a{font-size:1rem}
   .nav-toggle{display:block;z-index:60}
 }
-@media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}}
+@media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 </style></head><body>
 <header class="nav" id="nav">
