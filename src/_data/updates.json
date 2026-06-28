@@ -1,28 +1,20 @@
 {
   "items": [
     {
-      "type": "event",
-      "title": "Higher Word Orchestra Autumn Concert",
-      "date": "2026-10-18",
-      "location": "Basilica of St. Patrick's Old Cathedral, New York City",
-      "body": "An evening of sacred and classical repertoire with the Higher Word Orchestra, interspersed with reflections on the composers' lives.",
-      "link": "https://higherword.org/"
-    },
-    {
-      "type": "announcement",
-      "title": "Glorious Mystery now streaming",
-      "date": "2025-08-15",
-      "location": "",
-      "body": "Six Marian chants recorded live at Holy Cross Church in Rumson, NJ, with Christa on harp, alongside soprano Dr. Carly York.",
-      "link": "https://www.thecatholiccantor.com"
-    },
-    {
       "type": "announcement",
       "title": "Featured by The Good Newsroom",
       "date": "2025-10-15",
       "location": "",
       "body": "The Archdiocese of New York's Good Newsroom visited Holy Innocents Parish to talk with Christa about living out her faith through sacred music.",
       "link": "https://thegoodnewsroom.org/created-to-create-christa-dalmazio/"
+    },
+    {
+      "type": "announcement",
+      "title": "Glorious Mystery now streaming",
+      "date": "2025-08-15",
+      "location": "",
+      "body": "Six Marian chants recorded live at Holy Cross Church in Rumson, New Jersey, with Christa on harp, alongside soprano Dr. Carly York. Available on all major platforms.",
+      "link": "https://www.thecatholiccantor.com"
     }
   ]
 }

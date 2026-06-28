@@ -279,6 +279,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 .up-link{display:inline-block;margin-top:13px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt)}
 .up-link:hover{color:var(--gilt-soft)}
 @media (max-width:680px){.up-item{grid-template-columns:1fr;gap:9px}}
+.up-empty{text-align:center;color:var(--muted-2);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;padding:40px 0}
 </style>
 </head><body>
 <header class="nav" id="nav">
@@ -292,6 +293,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 </div></section>
 <section class="updates"><div class="wrap">
   <div class="up-list reveal">
+  {%- if updates.items | length %}
   {%- for u in updates.items | sort(true, false, "date") %}
     <article class="up-item">
       <div class="up-when"><span class="up-tag up-{{ u.type }}">{{ "Event" if u.type == "event" else "Announcement" }}</span><time>{{ u.date | prettyDate }}</time></div>
@@ -303,6 +305,9 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
       </div>
     </article>
   {%- endfor %}
+  {%- else %}
+    <p class="up-empty">New performances and announcements will appear here soon.</p>
+  {%- endif %}
   </div>
 </div></section>
 <footer><div class="wrap">
