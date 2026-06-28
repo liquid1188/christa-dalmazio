@@ -12,11 +12,11 @@ public_folder: "/assets/img"
 # More sections (bio, endorsements, gallery) are added as pages are migrated.
 collections:
   - name: "updates"
-    label: "Events & Announcements"
+    label: "Upcoming & Announcements"
     icon: "calendar_month"
     files:
       - name: "feed"
-        label: "Events & Announcements"
+        label: "Upcoming & Announcements"
         file: "src/_data/updates.json"
         description: >-
           Add upcoming concerts and announcements. The newest item shows first
