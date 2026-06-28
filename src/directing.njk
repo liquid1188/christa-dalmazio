@@ -1,7 +1,11 @@
-<!DOCTYPE html><html lang="en"><head>
+---
+permalink: directing.html
+active: directing
+---
+{% raw %}<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Teaching | Christa Dalmazio</title><meta name="description" content="Private voice and instrumental lessons with Christa Dalmazio in Colts Neck, New Jersey." />
-<meta property="og:title" content="Teaching | Christa Dalmazio" /><meta property="og:description" content="Private voice and instrumental lessons with Christa Dalmazio in Colts Neck, New Jersey." />
+<title>Directing | Christa Dalmazio</title><meta name="description" content="Christa Dalmazio directs sacred music for the Higher Word Orchestra and parishes across New Jersey." />
+<meta property="og:title" content="Directing | Christa Dalmazio" /><meta property="og:description" content="Christa Dalmazio directs sacred music for the Higher Word Orchestra and parishes across New Jersey." />
 <meta property="og:type" content="website" /><meta property="og:image" content="assets/img/hero.jpg" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
@@ -103,7 +107,7 @@ nav.links a.active{color:var(--parchment)}
 .en-role{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-top:5px}
 .en-tag{display:inline-block;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gilt-deep);margin-bottom:14px}
 /* BAND */
-.band{position:relative;height:60vh;min-height:420px;max-height:600px;overflow:hidden;display:flex;align-items:flex-end}.band.band-tall{height:76vh;min-height:560px;max-height:780px}
+.band{position:relative;height:60vh;min-height:420px;max-height:600px;overflow:hidden;display:flex;align-items:flex-end}
 .band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,.12) 0%,rgba(25,13,16,.08) 45%,rgba(25,13,16,.8) 100%)}
 .band .cap{position:relative;z-index:2;padding:0 0 40px}
@@ -175,7 +179,7 @@ nav.links a.active{color:var(--parchment)}
 .logowall .word-lg{font-size:2.25rem}
 .logowall .lg-feature{height:auto;opacity:.92}
 .logowall .word small{display:block;font-family:'Mulish';font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-2);margin-top:6px}
-@media (max-width:760px){.logowall{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 40px}.lw-side{gap:28px 40px;flex-wrap:wrap;justify-content:center}}
+@media (max-width:760px){.logowall{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 40px}.lw-side{gap:28px 40px;flex-wrap:wrap;justify-content:center}.band img{object-position:73% 30%}.band{min-height:380px}}
 .collab-note{text-align:center;color:var(--muted);max-width:62ch;margin:34px auto 0;font-size:.96rem}
 .collab-note em{color:var(--gilt-soft);font-style:normal}
 /* POSTS */
@@ -186,7 +190,7 @@ nav.links a.active{color:var(--parchment)}
 .post .p-loc{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-muted);white-space:nowrap;text-align:right;padding-top:6px}
 .studio{background:var(--paper-2);border:1px solid var(--rule-l);padding:38px;border-radius:0}
 .studio h3{font-size:1.7rem;margin-bottom:12px;color:var(--paper-ink)}
-.studio p{color:var(--paper-muted);font-size:.96rem}.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}.instr-card img{width:34px;height:34px;flex:0 0 auto}.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
+.studio p{color:var(--paper-muted);font-size:.96rem}
 .instruments{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 26px}
 .pill{font-size:.71rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gilt-deep);border:1px solid rgba(154,120,54,.4);padding:8px 14px;border-radius:0}
 .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}
@@ -262,32 +266,42 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 </style></head><body>
-<header class="nav" id="nav">
-  <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><span class="brand-name"><b>Christa</b> Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html" class="active">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
-</header>
+{% endraw %}
+{% include "nav.njk" %}
+{% raw %}
 <section class="pagehead"><div class="wrap reveal">
-  <div class="kick">Teaching</div><h1>The private studio.</h1>
-  <p>Christa keeps a private studio in Colts Neck, teaching voice and five instruments to students from their first lesson to conservatory auditions.</p>
+  <div class="kick">Directing</div><h1>Before the choir.</h1>
+  <p>Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools.</p>
 </div></section>
-<div class="band band-tall reveal"><img src="assets/img/organ.jpg" alt="Christa Dalmazio at the organ" style="object-position:center top" />
-  <div class="wrap"><div class="cap"><div class="q">One teacher, many instruments.</div><div class="src">At the organ &middot; Holy Innocents Church</div></div></div>
+<div class="band reveal"><img src="assets/img/conducting.jpg" alt="Christa Dalmazio conducting the Higher Word Choir" />
+  <div class="wrap"><div class="cap"><div class="q">&ldquo;Music is a revelation of God's beauty on earth.&rdquo;</div><div class="src">Conducting the Higher Word Choir &middot; New York City</div></div></div>
 </div>
 <section class="paper sec"><div class="wrap">
   <div class="two">
     <div class="bodytext reveal">
-      <p>A multi-instrumentalist herself, Christa teaches in classical and sacred technique across the disciplines she performs, including voice, piano, harp, organ, viola, violin, and cello. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work.</p>
-      <p>Lessons are built around the student in front of her, with solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it.</p>
+      <p>As <strong>music director and chorus conductor of the Higher Word Orchestra</strong>, Manhattan's roughly sixty-voice Catholic ensemble, Christa helps shape concerts that pair masterworks with the stories of the composers who wrote them, performed in some of the city's most beautiful churches, including the Basilica of St. Patrick's Old Cathedral, St. Agnes, and St. Anthony of Padua.</p>
+      <p>Closer to home, she directs music week to week for parishes and schools across New Jersey, training choirs of every age, from grade-school singers to adult cantors, and building programs that draw on chant, polyphony, and the wider Catholic tradition. In December 2025 her Academy of Our Lady Sacred Music Choir, forty children in grades two through seven, sang as a prelude to the <strong>Christmas Spectacular at Radio City Music Hall</strong>.</p>
     </div>
-    <div class="studio reveal">
-      <div class="movement" style="margin-bottom:14px"><span class="lbl">Private Studio &middot; Colts Neck</span></div>
-      <h3>Lessons offered</h3>
-      <p>In person in Colts Neck, New Jersey, for students of every age and level.</p>
-      <div class="instr-grid"><div class="instr-card"><img src="assets/img/instr/voice.svg" alt="Voice" /><span>Voice</span></div><div class="instr-card"><img src="assets/img/instr/piano.svg" alt="Piano" /><span>Piano</span></div><div class="instr-card"><img src="assets/img/instr/harp.svg" alt="Harp" /><span>Harp</span></div><div class="instr-card"><img src="assets/img/instr/organ.svg" alt="Organ" /><span>Organ</span></div><div class="instr-card"><img src="assets/img/instr/viola.svg" alt="Viola" /><span>Viola</span></div><div class="instr-card"><img src="assets/img/instr/violin.svg" alt="Violin" /><span>Violin</span></div><div class="instr-card"><img src="assets/img/instr/cello.svg" alt="Cello" /><span>Cello</span></div></div>
-      <a class="btn btn-gilt" href="contact.html">Inquire about lessons</a>
+    <div class="reveal"><div class="post"><div><div class="p-role">Director of Music</div><div class="p-place">Holy Innocents Church</div></div><div class="p-loc">Neptune, NJ</div></div><div class="post"><div><div class="p-role">Director, Sacred Music Choir</div><div class="p-place">Academy of Our Lady</div></div><div class="p-loc">Glen Rock, NJ</div></div><div class="post"><div><div class="p-role">Music Director</div><div class="p-place">Pivot Theater Company</div></div><div class="p-loc">Holmdel, NJ</div></div><div class="post"><div><div class="p-role">Music Faculty, MS &amp; HS</div><div class="p-place">Our Lady of Mt. Carmel School &amp; Lumen Gentium Academy</div></div><div class="p-loc">Boonton, NJ</div></div><div class="post"><div><div class="p-role">Music Director &amp; Chorus Conductor</div><div class="p-place">Higher Word Orchestra</div></div><div class="p-loc">Manhattan, NY</div></div></div>
+  </div>
+</div></section>
+<div class="band reveal"><img src="assets/img/radio-city.jpg" alt="Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall" />
+  <div class="wrap"><div class="cap"><div class="q">Forty young voices at Radio City.</div><div class="src">Academy of Our Lady Sacred Music Choir &middot; Christmas Spectacular prelude &middot; December 2025</div></div></div>
+</div>
+<section class="sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">
+  <div class="movement center reveal"><span class="lbl">Collaborations &amp; Affiliations</span></div>
+  <div class="logowall reveal">
+    <div class="lw-side lw-left">
+      <a class="lg" href="https://higherword.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/logo-hw.png" alt="Higher Word Orchestra" /></a>
+      <a class="lg lg-a2b" href="https://www.arthouse2b.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/logo-a2b.png" alt="Arthouse2B" /></a>
+    </div>
+    <span class="lg lg-feature lw-center"><span class="word word-lg">Manhattan School<br>of Music<small>Alma Mater &middot; D.M.A.</small></span></span>
+    <div class="lw-side lw-right">
+      <span class="lg"><span class="word">Pivot Theater<small>Music Director</small></span></span>
+      <span class="lg"><span class="word">dell'Arte Opera<small>Past engagements</small></span></span>
     </div>
   </div>
+  <p class="collab-note reveal">With the Catholic artist collective <em>Arthouse2B</em>, Christa has performed as music director and harpist, including the immersive <em>Ruah: Breath of Life</em>, staged at St. Joseph of Greenwich Village and Harlem's Church of the Annunciation, where she played Hildegard von Bingen on the harp.</p>
 </div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
@@ -306,21 +320,9 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   </form>
   <div class="ml-done" id="mlDone">Thank you. Opening your email to confirm.</div>
 </div></div></section>
-<footer><div class="wrap">
-  <div class="f-lockup">
-    <img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
-    <div class="f-name">Christa Dalmazio</div>
-    <div class="f-tag">Classical &amp; Sacred Musician</div>
-  </div>
-  <nav class="f-menu"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
-  <div class="f-social">
-    <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener noreferrer">YouTube</a>
-    <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener noreferrer">Facebook</a>
-    <a href="mailto:christadalmazio@gmail.com">Email</a><a href="assets/christa-dalmazio-cv.pdf" download>Curriculum Vitae</a>
-  </div>
-  <div class="f-meta">&copy; 2026 Christa Dalmazio</div>
-</div></footer>
+{% endraw %}
+{% include "foot.njk" %}
+{% raw %}
 <script>
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
@@ -337,4 +339,4 @@ if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
   window.location.href='mailto:christadalmazio@gmail.com?subject='+encodeURIComponent('Mailing list signup')+'&body='+encodeURIComponent('Please add me to your mailing list: '+em);
 });}
 </script>
-</body></html>
+</body></html>{% endraw %}

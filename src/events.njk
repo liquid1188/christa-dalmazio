@@ -1,5 +1,6 @@
 ---
 permalink: events.html
+active: events
 ---
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -282,11 +283,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 .up-empty{text-align:center;color:var(--muted-2);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;padding:40px 0}
 </style>
 </head><body>
-<header class="nav" id="nav">
-  <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><span class="brand-name"><b>Christa</b> Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="events.html" class="active">Events</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
-</header>
+{% include "nav.njk" %}
 <section class="pagehead"><div class="wrap reveal">
   <div class="kick">Events &amp; Announcements</div><h1>What&rsquo;s next.</h1>
   <p>Upcoming performances, new recordings, and recent news.</p>
@@ -310,21 +307,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   {%- endif %}
   </div>
 </div></section>
-<footer><div class="wrap">
-  <div class="f-lockup">
-    <img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
-    <div class="f-name">Christa Dalmazio</div>
-    <div class="f-tag">Classical &amp; Sacred Musician</div>
-  </div>
-  <nav class="f-menu"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
-  <div class="f-social">
-    <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener noreferrer">YouTube</a>
-    <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener noreferrer">Facebook</a>
-    <a href="mailto:christadalmazio@gmail.com">Email</a><a href="assets/christa-dalmazio-cv.pdf" download>Curriculum Vitae</a>
-  </div>
-  <div class="f-meta">&copy; 2026 Christa Dalmazio</div>
-</div></footer>
+{% include "foot.njk" %}
 <script>
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));

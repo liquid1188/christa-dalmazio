@@ -3,8 +3,6 @@ module.exports = function (eleventyConfig) {
   // until each page is migrated to a template. This keeps the live
   // design pixel-identical while we add new data-driven pages.
   eleventyConfig.addPassthroughCopy("assets");
-  ["about","contact","directing","gallery","index","performing","teaching","weddings"]
-    .forEach(p => eleventyConfig.addPassthroughCopy(`${p}.html`));
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
 
