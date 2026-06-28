@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Christa Dalmazio | Soprano &amp; Sacred Music Director</title><meta name="description" content="Christa Dalmazio is a classical and sacred musician and a Doctor of Musical Arts of the Manhattan School of Music. A soprano and conductor, her work centers on sacred music and the music of the Mass." />
-<meta property="og:title" content="Christa Dalmazio | Soprano &amp; Sacred Music Director" /><meta property="og:description" content="Christa Dalmazio is a classical and sacred musician and a Doctor of Musical Arts of the Manhattan School of Music. A soprano and conductor, her work centers on sacred music and the music of the Mass." />
+<title>Contact &mdash; Christa Dalmazio</title><meta name="description" content="Inquiries and booking for Christa Dalmazio: performances, sacred-music direction, lessons, masterclasses, and wedding music." />
+<meta property="og:title" content="Contact &mdash; Christa Dalmazio" /><meta property="og:description" content="Inquiries and booking for Christa Dalmazio: performances, sacred-music direction, lessons, masterclasses, and wedding music." />
 <meta property="og:type" content="website" /><meta property="og:image" content="assets/img/hero.jpg" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
@@ -50,7 +50,6 @@ nav.links a.active{color:var(--parchment)}
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:128px 0 60px;position:relative}
 .hero-rose{position:absolute;top:18%;left:50%;transform:translateX(-50%);width:118px;height:118px;z-index:5;filter:drop-shadow(0 8px 22px rgba(0,0,0,.6))}
-.hero-rose.reveal{transform:translate(-50%,24px)}.hero-rose.reveal.in{transform:translateX(-50%)}
 .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:60px;align-items:center;width:100%}
 .hero-kicker{font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.73rem;color:var(--gilt);margin-bottom:24px}
 .hero h1{font-size:clamp(3.4rem,8vw,6.6rem);font-weight:300;letter-spacing:-.012em}
@@ -63,17 +62,21 @@ nav.links a.active{color:var(--parchment)}
 .arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,0) 62%,rgba(25,13,16,.32) 100%)}
 .arch-frame{position:absolute;inset:-15px;border:1px solid rgba(200,168,102,.22);border-radius:999px 999px 9px 9px;pointer-events:none;z-index:2}
 /* MARQUEE */
-.press-wrap{border-top:1px solid var(--rule-d);border-bottom:1px solid var(--rule-d);background:var(--ink-2);padding:26px 24px}
-.press-label{text-align:center;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted-2);margin-bottom:18px}
-.press-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px 38px;max-width:1140px;margin:0 auto}
-.press-row img.plogo{height:22px;width:auto;filter:grayscale(1);opacity:.46;transition:opacity .3s}
-.press-row img.plogo-tall{height:30px}
-.press-row img.plogo:hover{opacity:.82}
+.marquee-wrap{border-top:1px solid var(--rule-d);border-bottom:1px solid var(--rule-d);background:var(--ink-2);padding:24px 0;overflow:hidden}
+.marquee-label{text-align:center;font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
+.marquee{display:flex;align-items:center;width:max-content;animation:scroll 54s linear infinite}
+.marquee:hover{animation-play-state:paused}
+.marquee .item{display:flex;align-items:center;padding:0 42px;white-space:nowrap;position:relative}
+.marquee .item::after{content:"\2726";position:absolute;right:-5px;top:50%;transform:translateY(-50%);font-size:.45rem;color:var(--gilt-deep)}
+.marquee img.plogo{height:30px;width:auto;opacity:.66;transition:opacity .35s}
+.marquee img.plogo-tall{height:42px}
+.marquee .item:hover img.plogo{opacity:1}
+@keyframes scroll{to{transform:translateX(-50%)}}
 /* PAGE HEADER (subpages) */
 .pagehead{padding:170px 0 70px;border-bottom:1px solid var(--rule-d);background:linear-gradient(180deg,var(--ink-2),var(--ink))}
 .pagehead .kick{font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;color:var(--gilt);margin-bottom:18px}
 .pagehead h1{font-size:clamp(2.8rem,6vw,4.6rem);font-weight:300}
-.pagehead p{color:var(--muted);max-width:54ch;margin-top:20px;font-size:1.08rem}
+.pagehead p{color:var(--muted);max-width:54ch;margin-top:20px;font-size:1.08rem}.offers{background:var(--ink);padding:84px 0}.offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:18px;max-width:1080px;margin:38px auto 0}.offer-card{background:var(--ink-2);border:1px solid var(--rule-d);padding:30px 28px;display:flex;flex-direction:column;text-align:left;transition:border-color .25s,transform .25s}.offer-card:hover{border-color:var(--gilt-deep);transform:translateY(-3px)}.offer-card h3{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:500;color:var(--parchment);margin-bottom:10px}.offer-card p{color:var(--muted);font-size:.95rem;line-height:1.55;flex:1}.offer-link{margin-top:20px;font-family:'Mulish',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-soft);transition:color .2s}.offer-link:hover{color:var(--gilt)}
 /* PAPER */
 .paper{background:var(--paper);color:var(--paper-ink);background-image:radial-gradient(900px 500px at 12% 0%,rgba(255,255,255,.5),transparent 60%),radial-gradient(800px 600px at 100% 100%,rgba(154,120,54,.06),transparent 55%)}
 .paper .muted{color:var(--paper-muted)}
@@ -122,14 +125,15 @@ nav.links a.active{color:var(--parchment)}
 .diss{padding:116px 0;border-top:1px solid var(--rule-d);border-bottom:1px solid var(--rule-d);background:linear-gradient(180deg,var(--ink-2),var(--ink))}
 .euch{text-align:center;max-width:62ch;margin:0 auto 56px;padding-bottom:50px;border-bottom:1px solid var(--rule-d)}
 .euch-rose{width:64px;height:64px;opacity:.92;margin:0 auto 24px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+.euch-monstrance{height:104px;width:auto;opacity:.95;margin:0 auto 26px;display:block;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5))}
 .euch-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.55rem);color:var(--parchment);line-height:1.16;margin:0}
 .euch-q span{display:block;font-style:normal;font-size:.34em;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-soft);margin-top:16px}
-.euch-sub{color:var(--muted);font-size:1.02rem;line-height:1.7;margin:24px auto 0;max-width:54ch}
+.euch-sub{color:var(--muted);font-size:1.02rem;line-height:1.7;margin:24px auto 0;max-width:54ch}.patron-sec{padding:84px 0;background:var(--ink);border-top:1px solid var(--rule-d);text-align:center}.patron-orn{width:50px;height:50px;opacity:.95;margin:0 auto 22px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}.patron-label{font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gilt)}.patrons{display:grid;grid-template-columns:1fr 1fr;max-width:900px;margin:34px auto 0}.patron{text-align:center;padding:8px 42px}.patron-fig{width:190px;aspect-ratio:4/5;margin:0 auto 24px;padding:8px;background:#1c1013;border:2px solid var(--gilt);box-shadow:0 12px 30px rgba(0,0,0,.55)}.patron-fig img{display:block;width:100%;height:100%;object-fit:cover;border:1px solid var(--gilt-deep)}@media(max-width:680px){.patron-fig{margin-top:6px}}.patron+.patron{border-left:1px solid var(--rule-d)}.patron-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--parchment);line-height:1.12}.patron-desc{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-top:12px}.patron-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.12rem,2vw,1.5rem);color:var(--gilt-soft);line-height:1.26;margin:22px auto 0;max-width:26ch;border-top:1px solid var(--rule-d);padding-top:22px;text-wrap:balance}.patron-q span{display:block;font-style:normal;font-size:.46em;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:12px;line-height:1.5;max-width:30ch;margin-left:auto;margin-right:auto;text-wrap:balance}@media(max-width:680px){.patrons{grid-template-columns:1fr}.patron{padding:0 8px}.patron+.patron{border-left:none;border-top:1px solid var(--rule-d);margin-top:34px;padding-top:34px}}
 .diss-card{max-width:860px;margin:0 auto;text-align:center}
 .diss .deg{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gilt);margin-bottom:18px}
 .diss h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:400;font-style:italic;line-height:1.2}
 .diss .sub{color:var(--muted);margin-top:22px;font-size:1.04rem;max-width:60ch;margin-left:auto;margin-right:auto}
-.diss .meta{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 32px;margin-top:30px;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted-2)}
+.diss .meta{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 32px;margin-top:30px;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted-2)}.cv-inline{margin:30px auto 0;font-size:.92rem;line-height:1.6;color:var(--muted);max-width:56ch}.cv-inline a{color:var(--gilt-soft);text-decoration:underline;text-underline-offset:3px;transition:color .2s}.cv-inline a:hover{color:var(--gilt)}
 .diss .meta b{color:var(--gilt-soft);font-weight:600}
 /* PROGRAM (roles) */
 .program{width:100%;border-collapse:collapse}
@@ -257,67 +261,30 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   .nav-toggle{display:block;z-index:60}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 </style></head><body>
 <header class="nav" id="nav">
   <a class="brand" href="index.html"><img class="brand-rose" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><span class="brand-name"><b>Christa</b> Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
+  <nav class="links" id="navLinks"><a href="about.html">About</a><a href="performing.html">Performing</a><a href="directing.html">Directing</a><a href="teaching.html">Teaching</a><a href="weddings.html">Weddings</a><a href="gallery.html">Gallery</a><a href="contact.html" class="active">Contact</a></nav>
 </header>
-<section class="hero">
-  <img class="hero-rose reveal" src="assets/img/rose.svg" alt="" aria-hidden="true" />
-  <div class="wrap"><div class="hero-grid">
-  <div class="reveal">
-    <div class="hero-kicker">Classical &amp; Sacred Musician</div>
-    <h1>Christa<span class="sur">Dalmazio</span></h1>
-    <div class="roles">Soprano &middot; Conductor &middot; Doctor of Musical Arts</div>
-    <p class="lede">Trained at the Manhattan School of Music, she sings opera and oratorio while directing sacred music for choir and orchestra. Her doctorate, and most of her week, belong to the music of the Mass.</p>
-    <div class="cta-row">
-      <a class="btn btn-gilt" href="contact.html">Booking &amp; inquiries</a>
-      <a class="btn btn-ghost" href="performing.html#watch">Hear her sing</a>
-    </div>
-  </div>
-  <div class="hero-portrait reveal">
-    <div class="arch"><div class="arch-frame"></div><img src="assets/img/hero.jpg" alt="Soprano Christa Dalmazio" /></div>
-  </div>
-</div></div></section><div class="press-wrap reveal"><div class="press-label">Featured in</div>
-<div class="press-row"><img class="plogo" src="assets/img/l-ncr.png" alt="National Catholic Register" /><img class="plogo plogo-tall" src="assets/img/l-godsplaining.png" alt="Godsplaining" /><img class="plogo" src="assets/img/l-firstthings.png" alt="First Things" /><img class="plogo" src="assets/img/l-ewtn.png" alt="EWTN" /><img class="plogo" src="assets/img/l-goodnewsroom.png" alt="The Good Newsroom" /><img class="plogo" src="assets/img/l-cfn.png" alt="Catholic Faith Network" /><img class="plogo" src="assets/img/l-fairestlove.png" alt="Fairest Love Family Project" /></div></div></div><section class="highlights"><div class="wrap">
-  <div class="movement reveal"><span class="lbl">What Christa Does</span><span class="rule"></span></div>
-  <div class="hl-grid">
-    <a class="hl-card" href="performing.html"><img src="assets/img/g-papagena.jpg" alt="Performing" />
-    <div class="tx"><h3>Performing</h3><p>Opera and oratorio, from coloratura leads to trouser roles.</p><span class="go">Explore &rarr;</span></div></a>
-    <a class="hl-card" href="directing.html"><img src="assets/img/conducting.jpg" alt="Directing" />
-    <div class="tx"><h3>Directing</h3><p>Sacred music for choir and orchestra, in churches across New York and New Jersey.</p><span class="go">Explore &rarr;</span></div></a>
-    <a class="hl-card" href="teaching.html"><img src="assets/img/organ.jpg" alt="Teaching" />
-    <div class="tx"><h3>Teaching</h3><p>A private studio in voice, piano, harp, organ, and strings.</p><span class="go">Explore &rarr;</span></div></a>
-    <a class="hl-card" href="weddings.html"><img src="assets/img/harp-card.jpg" alt="Weddings &amp; Events" />
-    <div class="tx"><h3>Weddings &amp; Events</h3><p>Live ceremony and reception music for weddings and private occasions.</p><span class="go">Explore &rarr;</span></div></a>
-  </div>
-</div></section><section class="endorse"><div class="wrap">
-  <div class="movement center reveal"><span class="lbl">In Their Words</span></div>
-  <div class="en-grid">
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Catherine Malfitano</div><div class="en-role">Soprano &middot; Her teacher at the Manhattan School of Music</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Robert Cardinal Sarah</div><div class="en-role">Prefect Emeritus &middot; Dicastery for Divine Worship</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Frank La Rocca</div><div class="en-role">Composer &middot; Benedict XVI Institute</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Fr. Jonah Teller, O.P.</div><div class="en-role">Dominican Friars &middot; St. Joseph&rsquo;s, Greenwich Village &amp; NYU</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Rev. H. Todd Carter</div><div class="en-role">Pastor, Holy Innocents Church &middot; Neptune, NJ</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Spencer McIntosh</div><div class="en-role">Founder, Higher Word Orchestra</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Dr. Carly York</div><div class="en-role">Soprano &middot; &ldquo;The Catholic Cantor&rdquo;</div></div></div>
-    <div class="en-card reveal"><span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>
-    <div class="en-meta"><div class="en-name">Erin K. McAtee</div><div class="en-role">Co-Founder &amp; Executive Director, Arthouse2B</div></div></div>
+<section class="pagehead"><div class="wrap reveal">
+  <div class="kick">Contact</div><h1>Inquiries &amp; booking.</h1>
+  <p>For a performance, sacred-music direction, lessons, a masterclass, or music for a wedding, Christa welcomes your note. Tell her what you have in mind below, or write to her directly.</p>
+</div></section>
+<section class="offers"><div class="wrap">
+  <div class="movement center reveal"><span class="lbl">How she can help</span></div>
+  <div class="offer-grid">
+    <div class="offer-card reveal"><h3>Performing</h3><p>Recitals, opera, oratorio, and sacred concert work for soprano.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Performance%20inquiry">Make an inquiry &rarr;</a></div>
+    <div class="offer-card reveal"><h3>Directing</h3><p>Sacred-music direction, choral conducting, and program building for parishes and ensembles.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Directing%20inquiry">Make an inquiry &rarr;</a></div>
+    <div class="offer-card reveal"><h3>Teaching</h3><p>Private voice and instrument lessons, and masterclasses for serious students.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Lesson%20inquiry">Make an inquiry &rarr;</a></div>
+    <div class="offer-card reveal"><h3>Weddings</h3><p>Harp and voice for nuptial Masses and celebrations.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Wedding%20music%20inquiry">Make an inquiry &rarr;</a></div>
   </div>
 </div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
-  <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
-  <h2 class="reveal">Get in <em>touch.</em></h2>
-  <p class="reveal">For performances, sacred-music direction, private lessons, or music for a wedding or event, write to Christa directly.</p>
+  <div class="movement center reveal"><span class="lbl">Directly</span></div>
+  <h2 class="reveal">Write to <em>Christa.</em></h2>
+  <p class="reveal">She is available for liturgical consultation, sacred-music masterclasses, and select recital engagements &mdash; and reads every message herself.</p>
   <div class="cta-row reveal">
     <a class="btn btn-gilt" href="mailto:christadalmazio@gmail.com">Email Christa</a>
     <a class="btn btn-ghost" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Message on Instagram</a>
