@@ -55,3 +55,32 @@ collections:
                 label: "Link (optional)"
                 widget: "string"
                 required: false
+
+  - name: "endorsements"
+    label: "Endorsements"
+    icon: "format_quote"
+    files:
+      - name: "list"
+        label: "Endorsements"
+        file: "src/_data/endorsements.json"
+        description: >-
+          Each person already has a card on the homepage. Paste their quote into
+          the Quote box as it arrives — until then the card politely shows
+          "Endorsement forthcoming."
+        fields:
+          - name: "items"
+            label: "Endorsements"
+            label_singular: "Endorsement"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "role"
+                label: "Role / affiliation"
+                widget: "string"
+              - name: "quote"
+                label: "Quote (leave blank if not received yet)"
+                widget: "text"
+                required: false
