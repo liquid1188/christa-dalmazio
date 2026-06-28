@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: liquid1188/christa-dalmazio
+  branch: main
+  # auth_endpoint is set at launch to the Sveltia OAuth worker (see notes).
+
+# Where uploaded photos are stored / referenced
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+# Keep the editor small and friendly: only the things that change often.
+# More sections (bio, endorsements, gallery) are added as pages are migrated.
+collections:
+  - name: "updates"
+    label: "Events & Announcements"
+    icon: "calendar_month"
+    files:
+      - name: "feed"
+        label: "Events & Announcements"
+        file: "src/_data/updates.json"
+        description: >-
+          Add upcoming concerts and announcements. The newest item shows first
+          automatically — you don't need to reorder anything.
+        fields:
+          - name: "items"
+            label: "Entries"
+            label_singular: "Entry"
+            widget: "list"
+            summary: "{{fields.title}}  ·  {{fields.date}}"
+            fields:
+              - name: "type"
+                label: "Type"
+                widget: "select"
+                options:
+                  - { label: "Event (upcoming performance)", value: "event" }
+                  - { label: "Announcement (news, recording, feature)", value: "announcement" }
+                default: "event"
+              - name: "title"
+                label: "Title"
+                widget: "string"
+              - name: "date"
+                label: "Date"
+                widget: "datetime"
+                date_format: "YYYY-MM-DD"
+                time_format: false
+                picker_utc: true
+              - name: "location"
+                label: "Location (events only — leave blank for announcements)"
+                widget: "string"
+                required: false
+              - name: "body"
+                label: "Description"
+                widget: "text"
+              - name: "link"
+                label: "Link (optional)"
+                widget: "string"
+                required: false
