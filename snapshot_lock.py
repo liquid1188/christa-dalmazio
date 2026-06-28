@@ -51,7 +51,7 @@ def save():
     data = {
         "tag": TAG,
         "commit": head_commit(),
-        "saved_utc": datetime.datetime.utcnow().isoformat() + "Z",
+        "saved_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "file_count": len(files),
         "files": {f: sha(f) for f in files},
     }
