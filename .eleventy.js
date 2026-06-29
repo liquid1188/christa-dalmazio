@@ -16,5 +16,16 @@ module.exports = function (eleventyConfig) {
     return dt.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
   });
 
+  // Endorser roles: keep each segment whole and let the line break at the · separator,
+  // so a secondary institution falls cleanly onto the second line.
+  eleventyConfig.addFilter("roleBreak", (role) => {
+    if (!role) return role;
+    const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return role
+      .split(" \u00b7 ")
+      .map((seg) => `<span class="en-seg">${esc(seg)}</span>`)
+      .join("&#160;\u00b7 ");
+  });
+
   return { dir: { input: "src", includes: "_includes", data: "_data", output: "_site" } };
 };

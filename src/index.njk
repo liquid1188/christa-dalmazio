@@ -101,7 +101,9 @@ nav.links a.active{color:var(--parchment)}
 .en-ph{color:var(--muted-2);font-style:italic}
 .en-meta{margin-top:18px}
 .en-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--parchment)}
-.en-role{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-top:5px}
+.en-role{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-top:5px;text-wrap:balance}
+.en-seg{white-space:nowrap}
+@media (max-width:560px){.en-seg{white-space:normal}}
 .en-tag{display:inline-block;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gilt-deep);margin-bottom:14px}
 /* BAND */
 .band{position:relative;height:60vh;min-height:420px;max-height:600px;overflow:hidden;display:flex;align-items:flex-end}
@@ -301,7 +303,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 {% endraw %}
 {%- for e in endorsements.items %}
     <div class="en-card reveal">{% if e.quote %}<div class="en-q">&ldquo;{{ e.quote }}&rdquo;</div>{% else %}<span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>{% endif %}
-    <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role }}</div></div></div>
+    <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role | roleBreak | safe }}</div></div></div>
 {%- endfor %}
 {% raw %}
   </div>
