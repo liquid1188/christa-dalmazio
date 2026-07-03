@@ -224,6 +224,16 @@ nav.links a.active{color:var(--parchment)}
 .gal figure:hover img{transform:scale(1.035)}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;font-size:.72rem;letter-spacing:.04em;color:#f3ede1;background:linear-gradient(180deg,transparent,rgba(8,18,16,.82));opacity:0;transition:opacity .35s}
 .gal figure:hover figcaption{opacity:1}
+.mailing{padding:64px 0;background:var(--ink);border-top:1px solid var(--rule-d)}
+.ml-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.ml-text h3{font-size:1.9rem;color:var(--parchment)}
+.ml-text p{color:var(--muted);font-size:.98rem;margin:6px 0 0}
+.ml-form{display:flex;gap:12px;flex:1;min-width:300px;max-width:520px}
+.ml-form input{flex:1;min-width:0;background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:14px 18px;font-family:'Mulish';font-size:.95rem;border-radius:0;outline:none;transition:border-color .25s}
+.ml-form input:focus{border-color:var(--gilt)}
+.ml-form input::placeholder{color:var(--muted-2)}
+.ml-form .btn{white-space:nowrap}
+.ml-done{display:none;color:var(--gilt-soft);font-family:'Cormorant Garamond';font-style:italic;font-size:1.2rem}
 @media (max-width:900px){.gal{column-count:2}}
 @media (max-width:560px){.gal{column-count:1}}
 /* PRESS LIST */
@@ -307,6 +317,14 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   {%- endif %}
   </div>
 </div></section>
+<section class="mailing"><div class="wrap"><div class="ml-inner reveal">
+  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates and news, a few times a year and never more.</p></div>
+  <form class="ml-form" id="mlForm">
+    <input type="email" id="mlEmail" required placeholder="Your email address" aria-label="Email address" />
+    <button type="submit" class="btn btn-gilt">Subscribe</button>
+  </form>
+  <div class="ml-done" id="mlDone">Thank you. Opening your email to confirm.</div>
+</div></div></section>
 {% include "foot.njk" %}
 <script>
 const nav=document.getElementById('nav');
