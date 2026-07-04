@@ -266,32 +266,33 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+
+/* shared block styles (added for CMS section builder) */
+.patron-sec{padding:84px 0;background:var(--ink);border-top:1px solid var(--rule-d);text-align:center}
+.patron-orn{width:50px;height:50px;opacity:.95;margin:0 auto 22px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+.patron-label{font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gilt)}
+.patrons{display:grid;grid-template-columns:1fr 1fr;max-width:900px;margin:34px auto 0}
+.patron{text-align:center;padding:8px 42px}
+.patron-fig{width:190px;aspect-ratio:4/5;margin:0 auto 24px;padding:8px;background:#1c1013;border:2px solid var(--gilt);box-shadow:0 12px 30px rgba(0,0,0,.55)}
+.patron-fig img{display:block;width:100%;height:100%;object-fit:cover;border:1px solid var(--gilt-deep)}
+.patron+.patron{border-left:1px solid var(--rule-d)}
+.patron-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--parchment);line-height:1.12}
+.patron-desc{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-top:12px}
+.patron-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.12rem,2vw,1.5rem);color:var(--gilt-soft);line-height:1.26;margin:22px auto 0;max-width:26ch;border-top:1px solid var(--rule-d);padding-top:22px;text-wrap:balance}
+.patron-q span{display:block;font-style:normal;font-size:.52em;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:12px;line-height:1.5;max-width:30ch;margin-left:auto;margin-right:auto;text-wrap:balance}
+@media(max-width:680px){.patron-fig{margin-top:6px}}
+@media(max-width:680px){.patrons{grid-template-columns:1fr}.patron{padding:0 8px}.patron+.patron{border-left:none;border-top:1px solid var(--rule-d);margin-top:34px;padding-top:34px}}
+.perf-stack{display:flex;flex-direction:column;gap:22px}
+@media (max-width:900px){.two .perf-stack{order:-1;flex-direction:row;gap:14px}.two .perf-stack .figcap{flex:1;min-width:0}.two .perf-stack .figcap figcaption{font-size:.62rem}}
+.recital-fig{margin:14px 0 6px}
+.recital-fig img{width:100%;max-width:340px;height:auto;display:block;border:1px solid var(--rule-l)}
 </style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
+{% set pg = pages.teaching %}
+{% include "blocks.njk" %}
 {% raw %}
-<section class="pagehead"><div class="wrap reveal">
-  <div class="kick">Teaching</div><h1>The private studio.</h1>
-  <p>Christa keeps a private studio in Colts Neck, teaching voice and five instruments to students from their first lesson to conservatory auditions.</p>
-</div></section>
-<div class="band band-tall reveal"><img src="assets/img/organ.jpg" alt="Christa Dalmazio at the organ" style="object-position:center top" />
-  <div class="wrap"><div class="cap"><div class="q">One teacher, many instruments.</div><div class="src">At the organ &middot; Holy Innocents Church</div></div></div>
-</div>
-<section class="paper sec"><div class="wrap">
-  <div class="two">
-    <div class="bodytext reveal">
-      <p>A multi-instrumentalist herself, Christa teaches in classical and sacred technique across the disciplines she performs, including voice, piano, harp, organ, viola, violin, and cello. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work.</p>
-      <p>Lessons are built around the student in front of her, with solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it.</p>
-    </div>
-    <div class="studio reveal">
-      <div class="movement" style="margin-bottom:14px"><span class="lbl">Private Studio &middot; Colts Neck</span></div>
-      <h3>Lessons offered</h3>
-      <p>In person in Colts Neck, New Jersey, for students of every age and level.</p>
-      <div class="instr-grid"><div class="instr-card"><img src="assets/img/instr/voice.svg" alt="Voice" /><span>Voice</span></div><div class="instr-card"><img src="assets/img/instr/piano.svg" alt="Piano" /><span>Piano</span></div><div class="instr-card"><img src="assets/img/instr/harp.svg" alt="Harp" /><span>Harp</span></div><div class="instr-card"><img src="assets/img/instr/organ.svg" alt="Organ" /><span>Organ</span></div><div class="instr-card"><img src="assets/img/instr/viola.svg" alt="Viola" /><span>Viola</span></div><div class="instr-card"><img src="assets/img/instr/violin.svg" alt="Violin" /><span>Violin</span></div><div class="instr-card"><img src="assets/img/instr/cello.svg" alt="Cello" /><span>Cello</span></div></div>
-      <a class="btn btn-gilt" href="contact.html">Inquire about lessons</a>
-    </div>
-  </div>
-</div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
   <h2 class="reveal">Get in touch.</h2>

@@ -1,0 +1,36 @@
+{
+  "head": {
+    "kick": "Weddings & Private Events",
+    "title": "Music for the occasion.",
+    "intro": "Christa provides live music for weddings, funerals, and private celebrations, as a soprano, harpist, or organist, alone or with a small ensemble."
+  },
+  "sections": [
+    {
+      "type": "text_photo",
+      "paragraphs": [
+        {
+          "text": "Music sets the tone of a wedding more than almost anything else, and it deserves the same care as the flowers and the dress. Christa sings the nuptial Mass, plays the harp through the cocktail hour, and works with couples and planners to choose the repertoire, sacred or classical, traditional or entirely your own, and to fit each piece to the rhythm of the liturgy and the reception."
+        }
+      ],
+      "image": "/assets/img/harp.jpg",
+      "alt": "Christa Dalmazio playing the harp at an event",
+      "image_side": "left",
+      "offers": [
+        {
+          "heading": "Ceremonies",
+          "text": "Prelude, processional, the sacred moments of a Catholic or Christian wedding, and the recessional, for voice, harp, or organ."
+        },
+        {
+          "heading": "Receptions & events",
+          "text": "Cocktail hours, dinners, anniversaries, and private gatherings, solo or with ensemble."
+        },
+        {
+          "heading": "Funerals & memorials",
+          "text": "Cantor and instrumental music for funeral Masses and memorial services, with care and discretion."
+        }
+      ],
+      "cta_label": "Inquire about your date",
+      "cta_link": "contact.html"
+    }
+  ]
+}

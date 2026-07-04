@@ -1,0 +1,106 @@
+{
+  "head": {
+    "kick": "Directing",
+    "title": "Before the choir.",
+    "intro": "Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools."
+  },
+  "sections": [
+    {
+      "type": "band",
+      "image": "/assets/img/conducting.jpg",
+      "alt": "Christa Dalmazio conducting the Higher Word Choir",
+      "tall": false,
+      "position": "",
+      "quote": "Masterworks, and the stories behind them.",
+      "source": "Conducting the Higher Word Choir · New York City"
+    },
+    {
+      "type": "text_appointments",
+      "paragraphs": [
+        {
+          "text": "As <strong>music director and chorus conductor of the Higher Word Orchestra</strong>, Manhattan's roughly sixty-voice Catholic ensemble, Christa helps shape concerts that pair masterworks with the stories of the composers who wrote them, performed in some of the city's most beautiful churches, including the Basilica of St. Patrick's Old Cathedral, St. Agnes, and St. Anthony of Padua."
+        },
+        {
+          "text": "With the Catholic artist collective <strong>Arthouse2B</strong>, she has worked as music director and harpist, including the immersive <em>Ruah: Breath of Life</em>, staged at St. Joseph of Greenwich Village and Harlem's Church of the Annunciation, where she performed the music of Hildegard von Bingen on the harp."
+        },
+        {
+          "text": "Closer to home, she directs music week to week for parishes and schools across New Jersey, training choirs of every age, from grade-school singers to adult cantors, and building programs that draw on chant, polyphony, and the wider Catholic tradition. In December 2025 her Academy of Our Lady Sacred Music Choir, forty children in grades two through seven, sang as a prelude to the <strong>Christmas Spectacular at Radio City Music Hall</strong>."
+        }
+      ],
+      "posts": [
+        {
+          "role": "Director of Music",
+          "place": "Holy Innocents Church",
+          "location": "Neptune, NJ"
+        },
+        {
+          "role": "Assistant Music Director",
+          "place": "St. John the Baptist Church",
+          "location": "Allentown, NJ"
+        },
+        {
+          "role": "Director, Sacred Music Choir",
+          "place": "Academy of Our Lady",
+          "location": "Glen Rock, NJ"
+        },
+        {
+          "role": "Music Director",
+          "place": "Pivot Theater Company",
+          "location": "Holmdel, NJ"
+        },
+        {
+          "role": "Music Faculty, MS & HS",
+          "place": "Our Lady of Mt. Carmel School & Lumen Gentium Academy",
+          "location": "Boonton, NJ"
+        },
+        {
+          "role": "Music Director & Chorus Conductor",
+          "place": "Higher Word Orchestra",
+          "location": "Manhattan, NY"
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "image": "/assets/img/radio-city.jpg",
+      "alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
+      "tall": false,
+      "position": "",
+      "quote": "Forty young voices at Radio City.",
+      "source": "Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude · December 2025"
+    },
+    {
+      "type": "affiliations",
+      "label": "Collaborations & Affiliations",
+      "left": [
+        {
+          "extra_class": "",
+          "url": "https://higherword.org",
+          "image": "/assets/img/logo-hw.png",
+          "alt": "Higher Word Orchestra"
+        },
+        {
+          "extra_class": "lg-a2b",
+          "url": "https://www.arthouse2b.org",
+          "image": "/assets/img/logo-a2b.png",
+          "alt": "Arthouse2B"
+        }
+      ],
+      "center": "Manhattan School<br>of Music<small>Alma Mater &middot; D.M.A.</small>",
+      "right": [
+        {
+          "extra_class": "lg-pivot",
+          "url": "",
+          "image": "/assets/img/logo-pivot.png",
+          "alt": "Pivot Theatre Company"
+        },
+        {
+          "extra_class": "lg-dellarte",
+          "url": "",
+          "image": "/assets/img/logo-dellarte.png",
+          "alt": "Dell'Arte Opera Ensemble"
+        }
+      ]
+    }
+  ]
+}

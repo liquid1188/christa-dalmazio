@@ -265,44 +265,39 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+
+/* shared block styles (added for CMS section builder) */
+.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}
+.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}
+.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}
+.instr-card img{width:34px;height:34px;flex:0 0 auto}
+.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}
+@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
+.patron-sec{padding:84px 0;background:var(--ink);border-top:1px solid var(--rule-d);text-align:center}
+.patron-orn{width:50px;height:50px;opacity:.95;margin:0 auto 22px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+.patron-label{font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gilt)}
+.patrons{display:grid;grid-template-columns:1fr 1fr;max-width:900px;margin:34px auto 0}
+.patron{text-align:center;padding:8px 42px}
+.patron-fig{width:190px;aspect-ratio:4/5;margin:0 auto 24px;padding:8px;background:#1c1013;border:2px solid var(--gilt);box-shadow:0 12px 30px rgba(0,0,0,.55)}
+.patron-fig img{display:block;width:100%;height:100%;object-fit:cover;border:1px solid var(--gilt-deep)}
+.patron+.patron{border-left:1px solid var(--rule-d)}
+.patron-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--parchment);line-height:1.12}
+.patron-desc{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-top:12px}
+.patron-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.12rem,2vw,1.5rem);color:var(--gilt-soft);line-height:1.26;margin:22px auto 0;max-width:26ch;border-top:1px solid var(--rule-d);padding-top:22px;text-wrap:balance}
+.patron-q span{display:block;font-style:normal;font-size:.52em;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:12px;line-height:1.5;max-width:30ch;margin-left:auto;margin-right:auto;text-wrap:balance}
+@media(max-width:680px){.patron-fig{margin-top:6px}}
+@media(max-width:680px){.patrons{grid-template-columns:1fr}.patron{padding:0 8px}.patron+.patron{border-left:none;border-top:1px solid var(--rule-d);margin-top:34px;padding-top:34px}}
+.perf-stack{display:flex;flex-direction:column;gap:22px}
+@media (max-width:900px){.two .perf-stack{order:-1;flex-direction:row;gap:14px}.two .perf-stack .figcap{flex:1;min-width:0}.two .perf-stack .figcap figcaption{font-size:.62rem}}
+.recital-fig{margin:14px 0 6px}
+.recital-fig img{width:100%;max-width:340px;height:auto;display:block;border:1px solid var(--rule-l)}
 </style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
+{% set pg = pages.directing %}
+{% include "blocks.njk" %}
 {% raw %}
-<section class="pagehead"><div class="wrap reveal">
-  <div class="kick">Directing</div><h1>Before the choir.</h1>
-  <p>Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools.</p>
-</div></section>
-<div class="band reveal"><img src="assets/img/conducting.jpg" alt="Christa Dalmazio conducting the Higher Word Choir" />
-  <div class="wrap"><div class="cap"><div class="q">Masterworks, and the stories behind them.</div><div class="src">Conducting the Higher Word Choir &middot; New York City</div></div></div>
-</div>
-<section class="paper sec"><div class="wrap">
-  <div class="two">
-    <div class="bodytext reveal">
-      <p>As <strong>music director and chorus conductor of the Higher Word Orchestra</strong>, Manhattan's roughly sixty-voice Catholic ensemble, Christa helps shape concerts that pair masterworks with the stories of the composers who wrote them, performed in some of the city's most beautiful churches, including the Basilica of St. Patrick's Old Cathedral, St. Agnes, and St. Anthony of Padua.</p>
-      <p>With the Catholic artist collective <strong>Arthouse2B</strong>, she has worked as music director and harpist, including the immersive <em>Ruah: Breath of Life</em>, staged at St. Joseph of Greenwich Village and Harlem's Church of the Annunciation, where she performed the music of Hildegard von Bingen on the harp.</p>
-      <p>Closer to home, she directs music week to week for parishes and schools across New Jersey, training choirs of every age, from grade-school singers to adult cantors, and building programs that draw on chant, polyphony, and the wider Catholic tradition. In December 2025 her Academy of Our Lady Sacred Music Choir, forty children in grades two through seven, sang as a prelude to the <strong>Christmas Spectacular at Radio City Music Hall</strong>.</p>
-    </div>
-    <div class="reveal"><div class="post"><div><div class="p-role">Director of Music</div><div class="p-place">Holy Innocents Church</div></div><div class="p-loc">Neptune, NJ</div></div><div class="post"><div><div class="p-role">Assistant Music Director</div><div class="p-place">St. John the Baptist Church</div></div><div class="p-loc">Allentown, NJ</div></div><div class="post"><div><div class="p-role">Director, Sacred Music Choir</div><div class="p-place">Academy of Our Lady</div></div><div class="p-loc">Glen Rock, NJ</div></div><div class="post"><div><div class="p-role">Music Director</div><div class="p-place">Pivot Theater Company</div></div><div class="p-loc">Holmdel, NJ</div></div><div class="post"><div><div class="p-role">Music Faculty, MS &amp; HS</div><div class="p-place">Our Lady of Mt. Carmel School &amp; Lumen Gentium Academy</div></div><div class="p-loc">Boonton, NJ</div></div><div class="post"><div><div class="p-role">Music Director &amp; Chorus Conductor</div><div class="p-place">Higher Word Orchestra</div></div><div class="p-loc">Manhattan, NY</div></div></div>
-  </div>
-</div></section>
-<div class="band reveal"><img src="assets/img/radio-city.jpg" alt="Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall" />
-  <div class="wrap"><div class="cap"><div class="q">Forty young voices at Radio City.</div><div class="src">Academy of Our Lady Sacred Music Choir &middot; Christmas Spectacular prelude &middot; December 2025</div></div></div>
-</div>
-<section class="sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">
-  <div class="movement center reveal"><span class="lbl">Collaborations &amp; Affiliations</span></div>
-  <div class="logowall reveal">
-    <div class="lw-side lw-left">
-      <a class="lg" href="https://higherword.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/logo-hw.png" alt="Higher Word Orchestra" /></a>
-      <a class="lg lg-a2b" href="https://www.arthouse2b.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/logo-a2b.png" alt="Arthouse2B" /></a>
-    </div>
-    <span class="lg lg-feature lw-center"><span class="word word-lg">Manhattan School<br>of Music<small>Alma Mater &middot; D.M.A.</small></span></span>
-    <div class="lw-side lw-right">
-      <span class="lg lg-pivot"><img src="assets/img/logo-pivot.png" alt="Pivot Theatre Company" /></span>
-      <span class="lg lg-dellarte"><img src="assets/img/logo-dellarte.png" alt="Dell'Arte Opera Ensemble" /></span>
-    </div>
-  </div>
-</div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
   <h2 class="reveal">Get in touch.</h2>

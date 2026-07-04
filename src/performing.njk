@@ -277,97 +277,35 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+
+/* shared block styles (added for CMS section builder) */
+.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}
+.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}
+.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}
+.instr-card img{width:34px;height:34px;flex:0 0 auto}
+.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}
+@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
+.patron-sec{padding:84px 0;background:var(--ink);border-top:1px solid var(--rule-d);text-align:center}
+.patron-orn{width:50px;height:50px;opacity:.95;margin:0 auto 22px;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+.patron-label{font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gilt)}
+.patrons{display:grid;grid-template-columns:1fr 1fr;max-width:900px;margin:34px auto 0}
+.patron{text-align:center;padding:8px 42px}
+.patron-fig{width:190px;aspect-ratio:4/5;margin:0 auto 24px;padding:8px;background:#1c1013;border:2px solid var(--gilt);box-shadow:0 12px 30px rgba(0,0,0,.55)}
+.patron-fig img{display:block;width:100%;height:100%;object-fit:cover;border:1px solid var(--gilt-deep)}
+.patron+.patron{border-left:1px solid var(--rule-d)}
+.patron-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--parchment);line-height:1.12}
+.patron-desc{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-top:12px}
+.patron-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.12rem,2vw,1.5rem);color:var(--gilt-soft);line-height:1.26;margin:22px auto 0;max-width:26ch;border-top:1px solid var(--rule-d);padding-top:22px;text-wrap:balance}
+.patron-q span{display:block;font-style:normal;font-size:.52em;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:12px;line-height:1.5;max-width:30ch;margin-left:auto;margin-right:auto;text-wrap:balance}
+@media(max-width:680px){.patron-fig{margin-top:6px}}
+@media(max-width:680px){.patrons{grid-template-columns:1fr}.patron{padding:0 8px}.patron+.patron{border-left:none;border-top:1px solid var(--rule-d);margin-top:34px;padding-top:34px}}
 </style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
+{% set pg = pages.performing %}
+{% include "blocks.njk" %}
 {% raw %}
-<section class="pagehead"><div class="wrap reveal">
-  <div class="kick">Performing</div><h1>On the stage.</h1>
-  <p>Christa has sung opera, operetta, oratorio, and the American musical, from coloratura leads to trouser roles, on stages from New York to the Ozarks &mdash; in Italian, German, French, Latin, Spanish, and English.</p>
-</div></section>
-<section class="paper sec"><div class="wrap">
-  <div class="movement reveal"><span class="lbl">Opera &amp; Musical Theater</span><span class="rule"></span></div>
-  <div class="two">
-    <div class="reveal"><table class="program"><tr><td class="role">Gilda</td><td class="work">Rigoletto</td><td class="co">Footlight Players</td></tr><tr><td class="role">Maria</td><td class="work">West Side Story</td><td class="co">Phoenix Productions</td></tr><tr><td class="role">Papagena</td><td class="work">The Magic Flute</td><td class="co">Manhattan School of Music</td></tr><tr><td class="role">Flora</td><td class="work">The Turn of the Screw</td><td class="co">Manhattan School of Music</td></tr><tr><td class="role">Philom&egrave;le</td><td class="work">Le roi l'a dit</td><td class="co">Manhattan School of Music</td></tr><tr><td class="role">Norina</td><td class="work">Don Pasquale</td><td class="co">Manhattan School of Music</td></tr><tr><td class="role">Concepci&oacute;n</td><td class="work">Juana</td><td class="co">dell'Arte Opera</td></tr><tr><td class="role">Oscar</td><td class="work">Un Ballo in Maschera</td><td class="co">Amore Opera</td></tr><tr><td class="role">Emmie</td><td class="work">Albert Herring</td><td class="co">Opera in the Ozarks</td></tr><tr><td class="role">Euridice</td><td class="work">Orpheus in the Underworld</td><td class="co">Concordia Vocal Academy</td></tr></table>
-      <div class="scenes"><b>In scenes &amp; workshop</b>Norina <em>(Don Pasquale)</em> &middot; Nannetta <em>(Falstaff)</em> &middot; Adele <em>(Die Fledermaus)</em> &middot; Blonde <em>(Die Entf&uuml;hrung aus dem Serail)</em> &middot; Joanna <em>(Sweeney Todd)</em></div>
-    </div>
-    <div class="perf-stack reveal"><figure class="figcap" style="margin:0"><img src="assets/img/g-papagena.jpg" alt="Christa Dalmazio as Papagena" /><figcaption>As Papagena &middot; Mozart's <em>The Magic Flute</em></figcaption></figure><figure class="figcap" style="margin:0"><img src="assets/img/g-ballo.jpg" alt="Christa Dalmazio as Oscar in Verdi's Un Ballo in Maschera" /><figcaption>As Oscar &middot; Verdi's <em>Un Ballo in Maschera</em></figcaption></figure></div>
-  </div>
-  <div class="listcols reveal">
-    <div><h3>In concert &amp; oratorio</h3>
-      <div class="cs-entry"><div class="t">Mass in B Minor, BWV 232 &middot; Bach</div><div class="d">Soprano soloist &middot; MSM Chamber Chorale under Kent Tritle</div></div>
-      <div class="cs-entry"><div class="t">Requiem &middot; Faur&eacute;</div><div class="d">Soprano soloist</div></div>
-      <div class="cs-entry"><div class="t">Missa Sancti Leopoldi &middot; M. Haydn</div><div class="d">Soloist</div></div>
-      <div class="cs-entry"><div class="t">Baroque Aria Ensemble</div><div class="d">Member, three seasons &middot; Manhattan School of Music</div></div>
-    </div>
-    <div><h3>Appearances &amp; recitals</h3>
-      <div class="cs-entry"><span class="tag">2026 &middot; Recital</span><div class="t">Final Doctoral Recital</div><div class="d">Greenfield Hall, Manhattan School of Music &middot; May 2026 &middot; with Chun-Wei Kang, piano &middot; Program included Santoliquido, Mahler, Hildegard (voice &amp; harp), Holst, and Purcell</div></div>
-      <div class="cs-entry"><span class="tag">Recital</span><div class="t">Hildegard von Bingen &middot; Ave generosa</div><div class="d">Soprano with cello &middot; D.M.A. chamber recital</div></div>
-      <div class="cs-entry"><span class="tag">2025 &middot; Soloist</span><div class="t">Italian National Anthem</div><div class="d">Italian American Baseball Foundation fundraising gala &middot; December 2025</div></div><figure class="recital-fig reveal"><img src="assets/img/italian-anthem.jpg" alt="Christa Dalmazio singing the Italian national anthem" /></figure>
-    </div>
-  </div>
-</div></section>
-<section class="recordings sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">
-  <div class="movement reveal"><span class="lbl">Recordings</span><span class="rule"></span></div>
-  <p class="rec-intro reveal">Christa appears as harpist and organist on this live sacred-music album with soprano Dr. Carly York, <a href="https://www.thecatholiccantor.com" target="_blank" rel="noopener noreferrer">The Catholic Cantor</a>. It is available to stream and download.</p>
-  <div class="rel-list">
-    <article class="rel-card reveal">
-      <img class="rel-cover" src="assets/img/release-glorious.jpg" alt="Glorious Mystery cover art" loading="lazy" />
-      <div class="rel-body">
-        <div class="rel-tag">Album &middot; August 2025</div>
-        <h3 class="rel-title">Glorious Mystery</h3>
-        <div class="rel-credit">Dr. Carly York, soprano &middot; The Catholic Cantor</div>
-        <div class="rel-role">Christa Dalmazio &middot; harp &amp; organ</div>
-        <div class="rel-note">Six Marian chants recorded live at Holy Cross Church, Rumson, NJ, closing with the Magnificat.</div>
-        <div class="rel-links">
-          <a class="rel-btn" href="https://open.spotify.com/artist/3jheZsiQBSKlXBlgq78Gu1" target="_blank" rel="noopener noreferrer">Spotify</a>
-          <a class="rel-btn" href="https://music.apple.com/us/search?term=The%20Catholic%20Cantor" target="_blank" rel="noopener noreferrer">Apple Music</a>
-          <a class="rel-btn" href="https://www.youtube.com/results?search_query=Catholic+Cantor+Glorious+Mystery+Carly+York" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</div></section>
-<section id="watch" class="sec"><div class="wrap">
-  <div class="movement reveal"><span class="lbl">Watch &amp; Listen</span><span class="rule"></span></div>
-  <div class="feature-film">
-    <div class="vframe reveal"><iframe src="https://player.vimeo.com/video/1127554336" title="Created to Create" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-    <div class="film-meta reveal"><div class="tag">The Good Newsroom &middot; Archdiocese of New York</div><h3>Created to Create</h3>
-      <p>A short film, made at Holy Innocents Parish, on living a life of faith through music.</p>
-      <a class="btn btn-ghost" href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener noreferrer">More on YouTube</a></div>
-  </div>
-  <div class="vgrid">
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="qbeHxd-c3aY" aria-label="Play video"><img src="https://i.ytimg.com/vi/qbeHxd-c3aY/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Ave generosa&rdquo; &middot; Hildegard</div><div class="vc">D.M.A. chamber recital</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="lN1ezxDVdDw" aria-label="Play video"><img src="https://i.ytimg.com/vi/lN1ezxDVdDw/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;The Silver Aria&rdquo; &middot; Moore</div><div class="vc">The Ballad of Baby Doe</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="pViE8k_huTo" aria-label="Play video"><img src="https://i.ytimg.com/vi/pViE8k_huTo/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Presentation of the Rose&rdquo; &middot; Strauss</div><div class="vc">Der Rosenkavalier</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="qWapjoyCdRY" aria-label="Play video"><img src="https://i.ytimg.com/vi/qWapjoyCdRY/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Volta la terrea&rdquo; &middot; Verdi</div><div class="vc">Un ballo in maschera</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="BF0qMJNeSDI" aria-label="Play video"><img src="https://i.ytimg.com/vi/BF0qMJNeSDI/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Fire Aria&rdquo; &middot; Ravel</div><div class="vc">L&rsquo;enfant et les sortil&egrave;ges</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="gZrDjOraxDg" aria-label="Play video"><img src="https://i.ytimg.com/vi/gZrDjOraxDg/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;La Danza&rdquo; &middot; Rossini</div><div class="vc">First D.M.A. recital</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="kIZ5Z9ud1LI" aria-label="Play video"><img src="https://i.ytimg.com/vi/kIZ5Z9ud1LI/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Sweet Bird&rdquo; &middot; Handel</div><div class="vc">from L&rsquo;Allegro</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="n0fOloQcFmU" aria-label="Play video"><img src="https://i.ytimg.com/vi/n0fOloQcFmU/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Armatae face et anguibus&rdquo; &middot; Vivaldi</div><div class="vc">Juditha Triumphans</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="DjK3kMB1RYU" aria-label="Play video"><img src="https://i.ytimg.com/vi/DjK3kMB1RYU/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Lady with the Hand Mirror&rdquo; &middot; Argento</div><div class="vc">from Postcard from Morocco</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="3xMERkJQGfk" aria-label="Play video"><img src="https://i.ytimg.com/vi/3xMERkJQGfk/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Uplifting a Struggling Spirit&rdquo;</div><div class="vc">dell&rsquo;Arte Opera Ensemble</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="jfhaKZa0ZVY" aria-label="Play video"><img src="https://i.ytimg.com/vi/jfhaKZa0ZVY/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Amor&rdquo; &middot; Richard Strauss</div><div class="vc">Brentano Lied, Op. 68</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="E7CqDd7g6bU" aria-label="Play video"><img src="https://i.ytimg.com/vi/E7CqDd7g6bU/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Embraceable You&rdquo; &middot; Gershwin</div><div class="vc">In recital</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="GXeruQn0KMY" aria-label="Play video"><img src="https://i.ytimg.com/vi/GXeruQn0KMY/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Into the Unknown&rdquo;</div><div class="vc">Frozen 2 &middot; one-woman orchestra</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="B4HurUaf12Y" aria-label="Play video"><img src="https://i.ytimg.com/vi/B4HurUaf12Y/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Regina Caeli&rdquo;</div><div class="vc">Easter chant &middot; with Carly York</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="HxG2ox187kM" aria-label="Play video"><img src="https://i.ytimg.com/vi/HxG2ox187kM/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Magnificat&rdquo;</div><div class="vc">Plainchant &amp; harp &middot; with Carly York</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="Rk8u_grTHAs" aria-label="Play video"><img src="https://i.ytimg.com/vi/Rk8u_grTHAs/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Glorious Things Are Spoken of You&rdquo;</div><div class="vc">with Carly York</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="rObo1HXjDGM" aria-label="Play video"><img src="https://i.ytimg.com/vi/rObo1HXjDGM/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Amazing Grace&rdquo;</div><div class="vc">Voice &amp; harp &middot; with Sulgi Cho</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="O6OcE2COAz4" aria-label="Play video"><img src="https://i.ytimg.com/vi/O6OcE2COAz4/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">&ldquo;Salve Regina&rdquo;</div><div class="vc">Mass of St. Hildegard</div></div>
-  </div>
-<div class="movement reveal" style="margin-top:64px"><span class="lbl">Conversations &amp; Features</span><span class="rule"></span></div>
-  <div class="vgrid">
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="oLvbd7VWCmc" aria-label="Play video"><img src="https://i.ytimg.com/vi/oLvbd7VWCmc/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">Evangelizing Through Beauty</div><div class="vc">Higher Word Orchestra &middot; Part 1</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="hxwFabM7HBU" aria-label="Play video"><img src="https://i.ytimg.com/vi/hxwFabM7HBU/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">Evangelizing Through Beauty</div><div class="vc">Higher Word Orchestra &middot; Part 2</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="iJID5qX6-rY" aria-label="Play video"><img src="https://i.ytimg.com/vi/iJID5qX6-rY/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">Winning Souls in NYC</div><div class="vc">Godsplaining podcast</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="gQ_xjpIdxiw" aria-label="Play video"><img src="https://i.ytimg.com/vi/gQ_xjpIdxiw/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">On Catholic Faith Network</div><div class="vc">with Jacob Beranek</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="Yh_tnr25VHI" aria-label="Play video"><img src="https://i.ytimg.com/vi/Yh_tnr25VHI/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">Easter Symphony in NYC</div><div class="vc">Catholic Faith Network</div></div>
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="YXaC9_ic0K0" aria-label="Play video"><img src="https://i.ytimg.com/vi/YXaC9_ic0K0/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">The Beauty of Music</div><div class="vc">Raritan Oratory of St. Philip Neri</div></div>
-    <div class="vcard reveal"><a class="vframe vlink" href="https://www.foxnews.com/video/6367785849112" target="_blank" rel="noopener noreferrer" aria-label="Watch on Fox News"><span class="vlink-label">Watch on Fox News</span><span class="vplay-ico" aria-hidden="true"></span></a><div class="vt">Fox &amp; Friends</div><div class="vc">Fox News appearance</div></div>
-  </div>
-  <script>(function(){document.querySelectorAll(".vplay").forEach(function(b){b.addEventListener("click",function(){var id=b.getAttribute("data-yt"),f=b.closest(".vframe");if(!f)return;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0&autoplay=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});});})();</script>
-</div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
   <h2 class="reveal">Get in touch.</h2>

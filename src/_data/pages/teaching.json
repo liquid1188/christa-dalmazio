@@ -1,0 +1,64 @@
+{
+  "head": {
+    "kick": "Teaching",
+    "title": "The private studio.",
+    "intro": "Christa keeps a private studio in Colts Neck, teaching voice and five instruments to students from their first lesson to conservatory auditions."
+  },
+  "sections": [
+    {
+      "type": "band",
+      "image": "/assets/img/organ.jpg",
+      "alt": "Christa Dalmazio at the organ",
+      "tall": true,
+      "position": "center top",
+      "quote": "One teacher, many instruments.",
+      "source": "At the organ · Holy Innocents Church"
+    },
+    {
+      "type": "text_studio",
+      "paragraphs": [
+        {
+          "text": "A multi-instrumentalist herself, Christa teaches in classical and sacred technique across the disciplines she performs, including voice, piano, harp, organ, viola, violin, and cello. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work."
+        },
+        {
+          "text": "Lessons are built around the student in front of her, with solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it."
+        }
+      ],
+      "studio_label": "Private Studio · Colts Neck",
+      "studio_heading": "Lessons offered",
+      "studio_text": "In person in Colts Neck, New Jersey, for students of every age and level.",
+      "instruments": [
+        {
+          "icon": "/assets/img/instr/voice.svg",
+          "label": "Voice"
+        },
+        {
+          "icon": "/assets/img/instr/piano.svg",
+          "label": "Piano"
+        },
+        {
+          "icon": "/assets/img/instr/harp.svg",
+          "label": "Harp"
+        },
+        {
+          "icon": "/assets/img/instr/organ.svg",
+          "label": "Organ"
+        },
+        {
+          "icon": "/assets/img/instr/viola.svg",
+          "label": "Viola"
+        },
+        {
+          "icon": "/assets/img/instr/violin.svg",
+          "label": "Violin"
+        },
+        {
+          "icon": "/assets/img/instr/cello.svg",
+          "label": "Cello"
+        }
+      ],
+      "cta_label": "Inquire about lessons",
+      "cta_link": "contact.html"
+    }
+  ]
+}

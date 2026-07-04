@@ -266,56 +266,25 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+
+/* shared block styles (added for CMS section builder) */
+.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}
+.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}
+.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}
+.instr-card img{width:34px;height:34px;flex:0 0 auto}
+.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}
+@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
+.perf-stack{display:flex;flex-direction:column;gap:22px}
+@media (max-width:900px){.two .perf-stack{order:-1;flex-direction:row;gap:14px}.two .perf-stack .figcap{flex:1;min-width:0}.two .perf-stack .figcap figcaption{font-size:.62rem}}
+.recital-fig{margin:14px 0 6px}
+.recital-fig img{width:100%;max-width:340px;height:auto;display:block;border:1px solid var(--rule-l)}
 </style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
+{% set pg = pages.about %}
+{% include "blocks.njk" %}
 {% raw %}
-<section class="pagehead"><div class="wrap reveal">
-  <div class="kick">About</div><h1>The way of beauty.</h1>
-  <p>A soprano and multi-instrumentalist whose life in music keeps returning to a single question. What makes a thing beautiful enough to carry a prayer?</p>
-</div></section>
-<div class="band reveal"><img src="assets/img/g-harp-outdoor.jpg" alt="Christa Dalmazio playing the harp and singing outdoors" /></div>
-<section class="paper sec"><div class="wrap">
-  <div class="two">
-    <div class="bodytext reveal">
-      <p>Christa Marie Dalmazio is a soprano and conductor from Colts Neck, New Jersey. Her training began at the <strong>Ranney School</strong>, where she studied voice with Cynthia Springsteen and sang with the Concordia Youth Chorale, touring France and Canada as a choral soloist. She went on to the <strong>Manhattan School of Music</strong>, earning a bachelor's and master's in vocal performance and, this spring, a <strong>Doctor of Musical Arts</strong>, studying throughout with the celebrated soprano Catherine Malfitano. The Metropolitan Opera's Laffont Competition named her an Encouragement Award winner three years running (2018&ndash;2020), and as a young singer she took a Merit Award in Classical Voice from the National YoungArts Foundation. She has sung as a soloist at Carnegie Hall and Avery Fisher Hall, and in churches from Manhattan to Qu&eacute;bec.</p>
-      <p>She plays the harp, organ, piano, viola, and violin, and teaches a private studio besides. But the center of her work is sacred music. As music director of the <strong>Higher Word Orchestra</strong> and director of music for parishes and schools across New Jersey, she has built a vocation around the Church's <em>via pulchritudinis</em>, the way of beauty.</p>
-      <p>It is an old idea, and a demanding one, kept alive in our own time by the thinkers she returns to, Dietrich von Hildebrand and Roger Scruton. The medieval test for beauty asked three things of a work. It must be whole, well proportioned, and radiant. Christa listens for those same qualities in a line of chant or a Mozart aria, and tries to give them back to a congregation, so that what is heard becomes, for a moment, a way of praying.</p>
-    </div>
-    <figure class="portrait-card reveal" style="margin:0"><img src="assets/img/about.jpg" alt="Christa Dalmazio" /></figure>
-  </div>
-</div></section>
-<section class="diss"><div class="wrap">
-  <div class="euch reveal">
-    <img class="euch-monstrance" src="assets/img/monstrance.svg" alt="" aria-hidden="true" />
-    <blockquote class="euch-q">Panis angelicus fit panis hominum<span>The Bread of Angels becomes the Bread of men</span></blockquote>
-    <p class="euch-sub">Christa's scholarship and most of her singing return to one center, the Holy Eucharist and the beauty of sacred song offered at the altar, where song becomes a form of prayer.</p>
-  </div>
-  <div class="diss-card reveal">
-  <div class="movement center"><span class="lbl">The Doctorate</span></div>
-  <div class="deg">Doctor of Musical Arts &middot; Manhattan School of Music</div>
-  <h2>The Aesthetic of Beauty in Eucharistic Repertoire</h2>
-  <p class="sub">Her dissertation examines the sacred solo repertoire most fitting for the Mass, the music that belongs at the altar.</p>
-  <div class="meta"><span>Advisor &nbsp;<b>Dr. J. Mark Stambaugh</b></span><span>Second Reader &nbsp;<b>Dr. Timothy McDonnell</b></span><span>Voice &nbsp;<b>Catherine Malfitano</b></span></div>
-</div></div></section>
-<section class="patron-sec reveal"><div class="wrap">
-  <img class="patron-orn" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
-  <div class="patron-label">Under the patronage of</div>
-  <div class="patrons">
-    <div class="patron">
-      <figure class="patron-fig"><img src="assets/img/patron-cecilia.jpg" alt="Saint Cecilia, after José Gutiérrez de la Vega" /></figure>
-      <div class="patron-name">Saint Cecilia</div>
-      <div class="patron-desc">Patroness of Music &middot; Roman Martyr &middot; 3rd century</div>
-      <blockquote class="patron-q">Fiat cor meum immaculatum, ut non confundar<span>Let my heart be undefiled, that I be not confounded</span></blockquote>
-    </div>
-    <div class="patron">
-      <figure class="patron-fig"><img src="assets/img/patron-hildegard-scivias.jpg" alt="Saint Hildegard of Bingen receiving the living light, from the Scivias" /></figure>
-      <div class="patron-name">Saint Hildegard of Bingen</div>
-      <div class="patron-desc">Doctor of the Church &middot; Composer &amp; Mystic &middot; 1098&ndash;1179</div>
-      <blockquote class="patron-q">Anima hominis symphoniam in se habet<span>The human soul holds a symphony within itself</span></blockquote>
-    </div>
-  </div>
-</div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
   <h2 class="reveal">Get in touch.</h2>

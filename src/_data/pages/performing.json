@@ -1,0 +1,350 @@
+{
+  "head": {
+    "kick": "Performing",
+    "title": "On the stage.",
+    "intro": "Christa has sung opera, operetta, oratorio, and the American musical, from coloratura leads to trouser roles, on stages from New York to the Ozarks — in Italian, German, French, Latin, Spanish, and English."
+  },
+  "sections": [
+    {
+      "type": "stage_work",
+      "label": "Opera & Musical Theater",
+      "roles": [
+        {
+          "role": "Gilda",
+          "work": "Rigoletto",
+          "company": "Footlight Players"
+        },
+        {
+          "role": "Maria",
+          "work": "West Side Story",
+          "company": "Phoenix Productions"
+        },
+        {
+          "role": "Papagena",
+          "work": "The Magic Flute",
+          "company": "Manhattan School of Music"
+        },
+        {
+          "role": "Flora",
+          "work": "The Turn of the Screw",
+          "company": "Manhattan School of Music"
+        },
+        {
+          "role": "Philomèle",
+          "work": "Le roi l'a dit",
+          "company": "Manhattan School of Music"
+        },
+        {
+          "role": "Norina",
+          "work": "Don Pasquale",
+          "company": "Manhattan School of Music"
+        },
+        {
+          "role": "Concepción",
+          "work": "Juana",
+          "company": "dell'Arte Opera"
+        },
+        {
+          "role": "Oscar",
+          "work": "Un Ballo in Maschera",
+          "company": "Amore Opera"
+        },
+        {
+          "role": "Emmie",
+          "work": "Albert Herring",
+          "company": "Opera in the Ozarks"
+        },
+        {
+          "role": "Euridice",
+          "work": "Orpheus in the Underworld",
+          "company": "Concordia Vocal Academy"
+        }
+      ],
+      "scenes_heading": "In scenes & workshop",
+      "scenes_text": "Norina <em>(Don Pasquale)</em> · Nannetta <em>(Falstaff)</em> · Adele <em>(Die Fledermaus)</em> · Blonde <em>(Die Entführung aus dem Serail)</em> · Joanna <em>(Sweeney Todd)</em>",
+      "photos": [
+        {
+          "image": "/assets/img/g-papagena.jpg",
+          "alt": "Christa Dalmazio as Papagena",
+          "caption": "As Papagena · Mozart's <em>The Magic Flute</em>"
+        },
+        {
+          "image": "/assets/img/g-ballo.jpg",
+          "alt": "Christa Dalmazio as Oscar in Verdi's Un Ballo in Maschera",
+          "caption": "As Oscar · Verdi's <em>Un Ballo in Maschera</em>"
+        }
+      ],
+      "columns": [
+        {
+          "heading": "In concert & oratorio",
+          "entries": [
+            {
+              "tag": "",
+              "title": "Mass in B Minor, BWV 232 · Bach",
+              "detail": "Soprano soloist · MSM Chamber Chorale under Kent Tritle"
+            },
+            {
+              "tag": "",
+              "title": "Requiem · Fauré",
+              "detail": "Soprano soloist"
+            },
+            {
+              "tag": "",
+              "title": "Missa Sancti Leopoldi · M. Haydn",
+              "detail": "Soloist"
+            },
+            {
+              "tag": "",
+              "title": "Baroque Aria Ensemble",
+              "detail": "Member, three seasons · Manhattan School of Music"
+            }
+          ],
+          "photo": "",
+          "photo_alt": ""
+        },
+        {
+          "heading": "Appearances & recitals",
+          "entries": [
+            {
+              "tag": "2026 · Recital",
+              "title": "Final Doctoral Recital",
+              "detail": "Greenfield Hall, Manhattan School of Music · May 2026 · with Chun-Wei Kang, piano · Program included Santoliquido, Mahler, Hildegard (voice & harp), Holst, and Purcell"
+            },
+            {
+              "tag": "Recital",
+              "title": "Hildegard von Bingen · Ave generosa",
+              "detail": "Soprano with cello · D.M.A. chamber recital"
+            },
+            {
+              "tag": "2025 · Soloist",
+              "title": "Italian National Anthem",
+              "detail": "Italian American Baseball Foundation fundraising gala · December 2025"
+            }
+          ],
+          "photo": "/assets/img/italian-anthem.jpg",
+          "photo_alt": "Christa Dalmazio singing the Italian national anthem"
+        }
+      ]
+    },
+    {
+      "type": "recordings",
+      "label": "Recordings",
+      "intro": "Christa appears as harpist and organist on this live sacred-music album with soprano Dr. Carly York, <a href=\"https://www.thecatholiccantor.com\" target=\"_blank\" rel=\"noopener noreferrer\">The Catholic Cantor</a>. It is available to stream and download.",
+      "releases": [
+        {
+          "cover": "/assets/img/release-glorious.jpg",
+          "cover_alt": "Glorious Mystery cover art",
+          "tag": "Album · August 2025",
+          "title": "Glorious Mystery",
+          "credit": "Dr. Carly York, soprano · The Catholic Cantor",
+          "role": "Christa Dalmazio · harp & organ",
+          "note": "Six Marian chants recorded live at Holy Cross Church, Rumson, NJ, closing with the Magnificat.",
+          "links": [
+            {
+              "label": "Spotify",
+              "url": "https://open.spotify.com/artist/3jheZsiQBSKlXBlgq78Gu1"
+            },
+            {
+              "label": "Apple Music",
+              "url": "https://music.apple.com/us/search?term=The%20Catholic%20Cantor"
+            },
+            {
+              "label": "YouTube",
+              "url": "https://www.youtube.com/results?search_query=Catholic+Cantor+Glorious+Mystery+Carly+York"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "label": "Watch & Listen",
+      "feature_embed": "https://player.vimeo.com/video/1127554336",
+      "feature_tag": "The Good Newsroom · Archdiocese of New York",
+      "feature_title": "Created to Create",
+      "feature_text": "A short film, made at Holy Innocents Parish, on living a life of faith through music.",
+      "feature_button_label": "More on YouTube",
+      "feature_button_url": "https://www.youtube.com/@christadalmazio",
+      "videos": [
+        {
+          "youtube_id": "qbeHxd-c3aY",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Ave generosa” · Hildegard",
+          "credit": "D.M.A. chamber recital"
+        },
+        {
+          "youtube_id": "lN1ezxDVdDw",
+          "external_url": "",
+          "external_label": "",
+          "title": "“The Silver Aria” · Moore",
+          "credit": "The Ballad of Baby Doe"
+        },
+        {
+          "youtube_id": "pViE8k_huTo",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Presentation of the Rose” · Strauss",
+          "credit": "Der Rosenkavalier"
+        },
+        {
+          "youtube_id": "qWapjoyCdRY",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Volta la terrea” · Verdi",
+          "credit": "Un ballo in maschera"
+        },
+        {
+          "youtube_id": "BF0qMJNeSDI",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Fire Aria” · Ravel",
+          "credit": "L’enfant et les sortilèges"
+        },
+        {
+          "youtube_id": "gZrDjOraxDg",
+          "external_url": "",
+          "external_label": "",
+          "title": "“La Danza” · Rossini",
+          "credit": "First D.M.A. recital"
+        },
+        {
+          "youtube_id": "kIZ5Z9ud1LI",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Sweet Bird” · Handel",
+          "credit": "from L’Allegro"
+        },
+        {
+          "youtube_id": "n0fOloQcFmU",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Armatae face et anguibus” · Vivaldi",
+          "credit": "Juditha Triumphans"
+        },
+        {
+          "youtube_id": "DjK3kMB1RYU",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Lady with the Hand Mirror” · Argento",
+          "credit": "from Postcard from Morocco"
+        },
+        {
+          "youtube_id": "3xMERkJQGfk",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Uplifting a Struggling Spirit”",
+          "credit": "dell’Arte Opera Ensemble"
+        },
+        {
+          "youtube_id": "jfhaKZa0ZVY",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Amor” · Richard Strauss",
+          "credit": "Brentano Lied, Op. 68"
+        },
+        {
+          "youtube_id": "E7CqDd7g6bU",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Embraceable You” · Gershwin",
+          "credit": "In recital"
+        },
+        {
+          "youtube_id": "GXeruQn0KMY",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Into the Unknown”",
+          "credit": "Frozen 2 · one-woman orchestra"
+        },
+        {
+          "youtube_id": "B4HurUaf12Y",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Regina Caeli”",
+          "credit": "Easter chant · with Carly York"
+        },
+        {
+          "youtube_id": "HxG2ox187kM",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Magnificat”",
+          "credit": "Plainchant & harp · with Carly York"
+        },
+        {
+          "youtube_id": "Rk8u_grTHAs",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Glorious Things Are Spoken of You”",
+          "credit": "with Carly York"
+        },
+        {
+          "youtube_id": "rObo1HXjDGM",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Amazing Grace”",
+          "credit": "Voice & harp · with Sulgi Cho"
+        },
+        {
+          "youtube_id": "O6OcE2COAz4",
+          "external_url": "",
+          "external_label": "",
+          "title": "“Salve Regina”",
+          "credit": "Mass of St. Hildegard"
+        }
+      ],
+      "label2": "Conversations & Features",
+      "videos2": [
+        {
+          "youtube_id": "oLvbd7VWCmc",
+          "external_url": "",
+          "external_label": "",
+          "title": "Evangelizing Through Beauty",
+          "credit": "Higher Word Orchestra · Part 1"
+        },
+        {
+          "youtube_id": "hxwFabM7HBU",
+          "external_url": "",
+          "external_label": "",
+          "title": "Evangelizing Through Beauty",
+          "credit": "Higher Word Orchestra · Part 2"
+        },
+        {
+          "youtube_id": "iJID5qX6-rY",
+          "external_url": "",
+          "external_label": "",
+          "title": "Winning Souls in NYC",
+          "credit": "Godsplaining podcast"
+        },
+        {
+          "youtube_id": "gQ_xjpIdxiw",
+          "external_url": "",
+          "external_label": "",
+          "title": "On Catholic Faith Network",
+          "credit": "with Jacob Beranek"
+        },
+        {
+          "youtube_id": "Yh_tnr25VHI",
+          "external_url": "",
+          "external_label": "",
+          "title": "Easter Symphony in NYC",
+          "credit": "Catholic Faith Network"
+        },
+        {
+          "youtube_id": "YXaC9_ic0K0",
+          "external_url": "",
+          "external_label": "",
+          "title": "The Beauty of Music",
+          "credit": "Raritan Oratory of St. Philip Neri"
+        },
+        {
+          "youtube_id": "",
+          "external_url": "https://www.foxnews.com/video/6367785849112",
+          "external_label": "Watch on Fox News",
+          "title": "Fox & Friends",
+          "credit": "Fox News appearance"
+        }
+      ]
+    }
+  ]
+}
