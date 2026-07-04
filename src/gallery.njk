@@ -287,38 +287,11 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <p>On the stage, in the choir loft, at the harp and the organ, a few moments from Christa's seasons of music.</p>
 </div></section>
 <section class="gallery"><div class="wrap"><div class="gal">
-  <figure><img src="assets/img/gal-recital-red.jpg" alt="In recital" loading="lazy" /><figcaption>In recital</figcaption></figure>
-  <figure><img src="assets/img/gal-concert-soprano.jpg" alt="In concert &middot; with choir and orchestra" loading="lazy" /><figcaption>In concert &middot; with choir and orchestra</figcaption></figure>
-  <figure><img src="assets/img/gal-conducting-organ.jpg" alt="Conducting &middot; in concert" loading="lazy" /><figcaption>Conducting &middot; in concert</figcaption></figure>
-  <figure><img src="assets/img/gal-harp-portrait.jpg" alt="At the harp &middot; Arthouse2B" loading="lazy" /><figcaption>At the harp &middot; Arthouse2B</figcaption></figure>
-  <figure><img src="assets/img/gal-harp-sing.jpg" alt="Singing at the harp" loading="lazy" /><figcaption>Singing at the harp</figcaption></figure>
-  <figure><img src="assets/img/g-harp-bw.jpg" alt="Christa Dalmazio at the harp" loading="lazy" /><figcaption>At the harp &middot; photo by Mark Gurevich</figcaption></figure>
-  <figure><img src="assets/img/g-harp-outdoor.jpg" alt="Christa Dalmazio playing harp and singing outdoors" loading="lazy" /><figcaption>Harp &amp; voice &middot; outdoor set</figcaption></figure>
-  <figure><img src="assets/img/conducting.jpg" alt="Conducting the Higher Word Choir &middot; NYC" loading="lazy" /><figcaption>Conducting the Higher Word Choir &middot; NYC</figcaption></figure>
-  <figure><img src="assets/img/gal-recital-ensemble.jpg" alt="D.M.A. recital &middot; with chamber ensemble" loading="lazy" /><figcaption>D.M.A. recital &middot; with chamber ensemble</figcaption></figure>
-  <figure><img src="assets/img/gal-mantilla.jpg" alt="Before Mass" loading="lazy" /><figcaption>Before Mass</figcaption></figure>
-  <figure><img src="assets/img/g-string-trio.jpg" alt="Christa Dalmazio performing with her string trio" loading="lazy" /><figcaption>String trio &middot; private event</figcaption></figure>
-  <figure><img src="assets/img/gal-cello-duo.jpg" alt="In recital &middot; soprano and cello" loading="lazy" /><figcaption>In recital &middot; soprano and cello</figcaption></figure>
-  <figure><img src="assets/img/harp.jpg" alt="Harp &middot; gala performance" loading="lazy" /><figcaption>Harp &middot; gala performance</figcaption></figure>
-  <figure><img src="assets/img/gal-gown.jpg" alt="In recital" loading="lazy" /><figcaption>In recital</figcaption></figure>
-  <figure><img src="assets/img/gal-choir-christmas.jpg" alt="Christmas concert &middot; with her choir" loading="lazy" /><figcaption>Christmas concert &middot; with her choir</figcaption></figure>
-  <figure><img src="assets/img/g-papagena.jpg" alt="As Papagena &middot; The Magic Flute" loading="lazy" /><figcaption>As Papagena &middot; The Magic Flute</figcaption></figure>
-  <figure><img src="assets/img/gal-keyboard.jpg" alt="At the keyboard" loading="lazy" /><figcaption>At the keyboard</figcaption></figure>
-  <figure><img src="assets/img/gal-quintet-church.jpg" alt="After a sacred concert" loading="lazy" /><figcaption>After a sacred concert</figcaption></figure>
-  <figure><img src="assets/img/gal-concert-group.jpg" alt="After a concert" loading="lazy" /><figcaption>After a concert &middot; photo by Nick Tan</figcaption></figure>
-  <figure><img src="assets/img/gal-concert-purple.jpg" alt="In concert with orchestra" loading="lazy" /><figcaption>In concert &middot; photo by Nick Tan</figcaption></figure>
-  <figure><img src="assets/img/gal-pivot-cast.jpg" alt="With the cast of Beauty and the Beast, Pivot Theatre Company" loading="lazy" /><figcaption>Music directing &middot; Beauty and the Beast, Pivot Theatre Company</figcaption></figure>
-  <figure><img src="assets/img/gal-pit-keyboard.jpg" alt="At the keyboard" loading="lazy" /><figcaption>At the keyboard &middot; photo by Forever Young Photography</figcaption></figure>
-  <figure><img src="assets/img/gal-harp-strings.jpg" alt="At the harp" loading="lazy" /><figcaption>At the harp</figcaption></figure>
-  <figure><img src="assets/img/gal-harp-hands-bw.jpg" alt="Hands at the harp" loading="lazy" /><figcaption>At the harp</figcaption></figure>
-  <figure><img src="assets/img/gal-piano-hands-bw.jpg" alt="Hands at the piano" loading="lazy" /><figcaption>At the piano</figcaption></figure>
-  <figure><img src="assets/img/gal-harp-church.jpg" alt="Harp in the sanctuary" loading="lazy" /><figcaption>Harp in the sanctuary</figcaption></figure>
-  <figure><img src="assets/img/italian-anthem.jpg" alt="Singing the Italian National Anthem" loading="lazy" /><figcaption>Singing the Italian National Anthem</figcaption></figure>
-  <figure><img src="assets/img/gal-mic-event.jpg" alt="At a gala" loading="lazy" /><figcaption>At a gala</figcaption></figure>
-  <figure><img src="assets/img/gal-trio.jpg" alt="With students &middot; harp &amp; strings" loading="lazy" /><figcaption>With students &middot; harp &amp; strings</figcaption></figure>
-  <figure><img src="assets/img/organ.jpg" alt="At the organ" loading="lazy" /><figcaption>At the organ</figcaption></figure>
-  <figure><img src="assets/img/gal-accompanist.jpg" alt="After a recital" loading="lazy" /><figcaption>After a recital</figcaption></figure>
-  <figure><img src="assets/img/gal-outdoor.jpg" alt="Christa Dalmazio" loading="lazy" /></figure>
+{% endraw %}
+{%- for g in gallery.items %}
+  <figure><img src="{{ g.image | replace("/assets/img/", "assets/img/") }}" alt="{{ g.alt }}" loading="lazy" />{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
+{%- endfor %}
+{% raw %}
 </div></div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>

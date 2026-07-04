@@ -84,3 +84,32 @@ collections:
                 label: "Quote (leave blank if not received yet)"
                 widget: "text"
                 required: false
+
+  - name: "gallery"
+    label: "Photo Gallery"
+    icon: "photo_library"
+    files:
+      - name: "photos"
+        label: "Photo Gallery"
+        file: "src/_data/gallery.json"
+        description: >-
+          The photos on the Gallery page, in the order shown. Click an entry to
+          change its caption, or add a new photo at the bottom — you can drag
+          entries to reorder them. Captions are optional.
+        fields:
+          - name: "items"
+            label: "Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - name: "image"
+                label: "Photo"
+                widget: "image"
+              - name: "alt"
+                label: "Short description (for accessibility — a few words)"
+                widget: "string"
+              - name: "caption"
+                label: "Caption (optional, shows under the photo)"
+                widget: "string"
+                required: false
