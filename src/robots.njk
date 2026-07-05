@@ -2,8 +2,13 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
+{%- if site.setupMode %}
+User-agent: *
+Disallow: /
+{%- else %}
 User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://liquid1188.github.io/christa-dalmazio/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
+{%- endif %}
