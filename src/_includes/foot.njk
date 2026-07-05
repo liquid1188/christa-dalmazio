@@ -1,6 +1,6 @@
 <footer><div class="wrap">
   <a class="f-lockup" href="index.html" aria-label="Home">
-    <img src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
+    <img src="assets/img/rose-mark.svg" alt="" aria-hidden="true"  loading="lazy" />
     <div class="f-name">Christa Dalmazio</div>
     <div class="f-tag">Classical &amp; Sacred Musician</div>
   </a>
@@ -11,11 +11,14 @@
     <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="mailto:christadalmazio@gmail.com">Email</a>
   </div>
-  <div class="f-meta">&copy; 2026 Christa Dalmazio</div>
+  <div class="f-meta">&copy; 2026 Christa Dalmazio<span class="f-credit">Site by Lickity Split Web Design</span></div>
   <a class="f-login" href="admin/" aria-label="Sign in to edit the site"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Sign in</a>
 </div></footer>
 <style>
 footer{position:relative}
+.f-credit{display:block;margin-top:6px;font-size:.62rem;letter-spacing:.1em;color:var(--muted-2);opacity:.7}
+.f-credit a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:color .25s,border-color .25s}
+.f-credit a:hover{color:var(--gilt);border-color:var(--gilt)}
 .f-lockup{cursor:pointer}
 .f-lockup .f-name{transition:color .25s}
 .f-lockup:hover .f-name{color:var(--gilt)}

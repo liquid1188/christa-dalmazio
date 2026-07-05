@@ -1,0 +1,11 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set pages = ["index.html","about.html","performing.html","directing.html","teaching.html","weddings.html","gallery.html","upcoming.html","contact.html"] %}
+{%- for p in pages %}
+  <url><loc>https://liquid1188.github.io/christa-dalmazio/{{ p }}</loc>{% if p == "index.html" %}<priority>1.0</priority>{% else %}<priority>0.8</priority>{% endif %}</url>
+{%- endfor %}
+</urlset>

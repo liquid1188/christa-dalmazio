@@ -4,7 +4,7 @@
 </div></section>
 {%- for b in pg.sections %}
 {%- if b.type == "band" %}
-<div class="band{% if b.tall %} band-tall{% endif %} reveal"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}"{% if b.position %} style="object-position:{{ b.position }}"{% endif %} />
+<div class="band{% if b.tall %} band-tall{% endif %} reveal"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}"{% if b.position %} style="object-position:{{ b.position }}"{% endif %}  loading="lazy" />
 {%- if b.quote %}
   <div class="wrap"><div class="cap"><div class="q">{{ b.quote | safe }}</div><div class="src">{{ b.source | safe }}</div></div></div>
 {%- endif %}
@@ -24,7 +24,7 @@
 <section class="paper sec"><div class="wrap">
   <div class="two">
     {%- if b.image_side == "left" %}
-    <figure class="portrait-card reveal" style="margin:0"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}" /></figure>
+    <figure class="portrait-card reveal" style="margin:0"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}"  loading="lazy" /></figure>
     {%- endif %}
     <div class="bodytext reveal">
       {%- for p in b.paragraphs %}
@@ -42,7 +42,7 @@
       {%- endif %}
     </div>
     {%- if b.image_side != "left" %}
-    <figure class="portrait-card reveal" style="margin:0"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}" /></figure>
+    <figure class="portrait-card reveal" style="margin:0"><img src="{{ b.image | replace("/assets/img/", "assets/img/") }}" alt="{{ b.alt }}"  loading="lazy" /></figure>
     {%- endif %}
   </div>
 </div></section>
@@ -69,7 +69,7 @@
       <div class="movement" style="margin-bottom:14px"><span class="lbl">{{ b.studio_label | safe }}</span></div>
       <h3>{{ b.studio_heading | safe }}</h3>
       <p>{{ b.studio_text | safe }}</p>
-      <div class="instr-grid">{% for i in b.instruments %}<div class="instr-card"><img src="{{ i.icon | replace("/assets/img/", "assets/img/") }}" alt="{{ i.label }}" /><span>{{ i.label | safe }}</span></div>{% endfor %}</div>
+      <div class="instr-grid">{% for i in b.instruments %}<div class="instr-card"><img src="{{ i.icon | replace("/assets/img/", "assets/img/") }}" alt="{{ i.label }}"  loading="lazy" /><span>{{ i.label | safe }}</span></div>{% endfor %}</div>
       <a class="btn btn-gilt" href="{{ b.cta_link }}">{{ b.cta_label | safe }}</a>
     </div>
   </div>
@@ -77,7 +77,7 @@
 {%- elif b.type == "scholarship" %}
 <section class="diss"><div class="wrap">
   <div class="euch reveal">
-    <img class="euch-monstrance" src="assets/img/monstrance.svg" alt="" aria-hidden="true" />
+    <img class="euch-monstrance" src="assets/img/monstrance.svg" alt="" aria-hidden="true"  loading="lazy" />
     <blockquote class="euch-q">{{ b.latin | safe }}<span>{{ b.translation | safe }}</span></blockquote>
     <p class="euch-sub">{{ b.text | safe }}</p>
   </div>
@@ -90,12 +90,12 @@
 </div></div></section>
 {%- elif b.type == "patrons" %}
 <section class="patron-sec reveal"><div class="wrap">
-  <img class="patron-orn" src="assets/img/rose-mark.svg" alt="" aria-hidden="true" />
+  <img class="patron-orn" src="assets/img/rose-mark.svg" alt="" aria-hidden="true"  loading="lazy" />
   <div class="patron-label">{{ b.label | safe }}</div>
   <div class="patrons">
     {%- for p in b.patrons %}
     <div class="patron">
-      <figure class="patron-fig"><img src="{{ p.image | replace("/assets/img/", "assets/img/") }}" alt="{{ p.alt }}" /></figure>
+      <figure class="patron-fig"><img src="{{ p.image | replace("/assets/img/", "assets/img/") }}" alt="{{ p.alt }}"  loading="lazy" /></figure>
       <div class="patron-name">{{ p.name | safe }}</div>
       <div class="patron-desc">{{ p.description | safe }}</div>
       <blockquote class="patron-q">{{ p.latin | safe }}<span>{{ p.translation | safe }}</span></blockquote>
@@ -110,7 +110,7 @@
     <div class="reveal"><table class="program">{% for r in b.roles %}<tr><td class="role">{{ r.role | safe }}</td><td class="work">{{ r.work | safe }}</td><td class="co">{{ r.company | safe }}</td></tr>{% endfor %}</table>
       <div class="scenes"><b>{{ b.scenes_heading | safe }}</b>{{ b.scenes_text | safe }}</div>
     </div>
-    <div class="perf-stack reveal">{% for f in b.photos %}<figure class="figcap" style="margin:0"><img src="{{ f.image | replace("/assets/img/", "assets/img/") }}" alt="{{ f.alt }}" /><figcaption>{{ f.caption | safe }}</figcaption></figure>{% endfor %}</div>
+    <div class="perf-stack reveal">{% for f in b.photos %}<figure class="figcap" style="margin:0"><img src="{{ f.image | replace("/assets/img/", "assets/img/") }}" alt="{{ f.alt }}"  loading="lazy" /><figcaption>{{ f.caption | safe }}</figcaption></figure>{% endfor %}</div>
   </div>
   <div class="listcols reveal">
     {%- for col in b.columns %}
@@ -118,7 +118,7 @@
       {%- for e in col.entries %}
       <div class="cs-entry">{% if e.tag %}<span class="tag">{{ e.tag | safe }}</span>{% endif %}<div class="t">{{ e.title | safe }}</div><div class="d">{{ e.detail | safe }}</div></div>
       {%- endfor %}
-      {%- if col.photo %}<figure class="recital-fig reveal"><img src="{{ col.photo | replace("/assets/img/", "assets/img/") }}" alt="{{ col.photo_alt }}" /></figure>{% endif %}
+      {%- if col.photo %}<figure class="recital-fig reveal"><img src="{{ col.photo | replace("/assets/img/", "assets/img/") }}" alt="{{ col.photo_alt }}"  loading="lazy" /></figure>{% endif %}
     </div>
     {%- endfor %}
   </div>
@@ -179,13 +179,13 @@
   <div class="logowall reveal">
     <div class="lw-side lw-left">
       {%- for l in b.left %}
-      {%- if l.url %}<a class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener noreferrer"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}" /></a>{% else %}<span class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}" /></span>{% endif %}
+      {%- if l.url %}<a class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener noreferrer"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}"  loading="lazy" /></a>{% else %}<span class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}"  loading="lazy" /></span>{% endif %}
       {%- endfor %}
     </div>
     <span class="lg lg-feature lw-center"><span class="word word-lg">{{ b.center | safe }}</span></span>
     <div class="lw-side lw-right">
       {%- for l in b.right %}
-      {%- if l.url %}<a class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener noreferrer"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}" /></a>{% else %}<span class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}" /></span>{% endif %}
+      {%- if l.url %}<a class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener noreferrer"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}"  loading="lazy" /></a>{% else %}<span class="lg{% if l.extra_class %} {{ l.extra_class }}{% endif %}"><img src="{{ l.image | replace("/assets/img/", "assets/img/") }}" alt="{{ l.alt }}"  loading="lazy" /></span>{% endif %}
       {%- endfor %}
     </div>
   </div>
