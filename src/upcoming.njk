@@ -229,6 +229,8 @@ nav.links a.active{color:var(--parchment)}
 .ml-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
 .ml-text h3{font-size:1.9rem;color:var(--parchment)}
 .ml-text p{color:var(--muted);font-size:.98rem;margin:6px 0 0}
+.ml-ig{color:var(--gilt-soft);border-bottom:1px solid rgba(200,168,102,.35);transition:color .25s,border-color .25s}
+.ml-ig:hover{color:var(--gilt);border-color:var(--gilt)}
 .ml-form{display:flex;gap:12px;flex:1;min-width:300px;max-width:520px}
 .ml-form input{flex:1;min-width:0;background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:14px 18px;font-family:'Mulish';font-size:.95rem;border-radius:0;outline:none;transition:border-color .25s}
 .ml-form input:focus{border-color:var(--gilt)}
@@ -302,6 +304,9 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 /* upcoming hero caption: one line, same size as other bands (design-consistent) */
 .band.band-wide .q{max-width:none;white-space:nowrap}
 @media (max-width:640px){.band.band-wide .q{white-space:normal;max-width:22ch}}
+/* upcoming hero: shorter band on desktop; caption right-aligned to clear the photographer watermark */
+@media (min-width:761px){.band.band-wide{aspect-ratio:auto;height:min(54vh,500px)}}
+.band.band-wide .cap{text-align:right}
 </style>
 </head><body>
 {% include "nav.njk" %}
@@ -334,7 +339,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   </div>
 </div></section>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">
-  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates and news, a few times a year and never more.</p></div>
+  <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates and news, a few times a year and never more. You can also <a class="ml-ig" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">follow along on Instagram</a>.</p></div>
   <form class="ml-form" id="mlForm">
     <input type="email" id="mlEmail" required placeholder="Your email address" aria-label="Email address" />
     <button type="submit" class="btn btn-gilt">Subscribe</button>
