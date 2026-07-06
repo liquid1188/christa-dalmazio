@@ -1,5 +1,5 @@
 {%- if v.youtube_id %}
-    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="{{ v.youtube_id }}" aria-label="Play video"><img src="https://i.ytimg.com/vi/{{ v.youtube_id }}/hqdefault.jpg" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">{{ v.title | safe }}</div><div class="vc">{{ v.credit | safe }}</div></div>
+    <div class="vcard reveal"><div class="vframe"><button class="vplay" type="button" data-yt="{{ v.youtube_id }}" aria-label="Play video"><img src="https://i.ytimg.com/vi/{{ v.youtube_id }}/sddefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/{{ v.youtube_id }}/hqdefault.jpg'" alt="" loading="lazy" /><span class="vplay-ico" aria-hidden="true"></span></button></div><div class="vt">{{ v.title | safe }}</div><div class="vc">{{ v.credit | safe }}</div></div>
 {%- else %}
     <div class="vcard reveal"><a class="vframe vlink" href="{{ v.external_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ v.external_label }}"><span class="vlink-label">{{ v.external_label | safe }}</span><span class="vplay-ico" aria-hidden="true"></span></a><div class="vt">{{ v.title | safe }}</div><div class="vc">{{ v.credit | safe }}</div></div>
 {%- endif %}

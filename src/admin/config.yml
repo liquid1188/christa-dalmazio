@@ -76,6 +76,17 @@ collections:
         label: Quote (leave blank if not received yet)
         widget: text
         required: false
+      - name: featured
+        label: Feature on homepage quote band
+        widget: boolean
+        required: false
+        default: false
+        hint: Turn on for one endorsement only. It appears large and centered above the grid.
+      - name: featured_quote
+        label: Short excerpt for the quote band
+        widget: text
+        required: false
+        hint: One sentence taken from the quote above. If left blank, the full quote is shown.
 - name: gallery
   label: Photo Gallery
   icon: photo_library
