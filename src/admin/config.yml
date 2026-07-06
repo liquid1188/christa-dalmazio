@@ -540,6 +540,14 @@ collections:
             label: External link label (e.g. 'Watch on Fox News')
             widget: string
             required: false
+          - name: mp4_url
+            label: OR direct video file URL (plays on the site)
+            widget: string
+            required: false
+          - name: poster
+            label: Poster image URL (for direct video)
+            widget: string
+            required: false
           - name: title
             label: Title
             widget: string
@@ -1044,6 +1052,14 @@ collections:
             required: false
           - name: external_label
             label: External link label (e.g. 'Watch on Fox News')
+            widget: string
+            required: false
+          - name: mp4_url
+            label: OR direct video file URL (plays on the site)
+            widget: string
+            required: false
+          - name: poster
+            label: Poster image URL (for direct video)
             widget: string
             required: false
           - name: title
@@ -1552,6 +1568,14 @@ collections:
             label: External link label (e.g. 'Watch on Fox News')
             widget: string
             required: false
+          - name: mp4_url
+            label: OR direct video file URL (plays on the site)
+            widget: string
+            required: false
+          - name: poster
+            label: Poster image URL (for direct video)
+            widget: string
+            required: false
           - name: title
             label: Title
             widget: string
@@ -2058,6 +2082,14 @@ collections:
             label: External link label (e.g. 'Watch on Fox News')
             widget: string
             required: false
+          - name: mp4_url
+            label: OR direct video file URL (plays on the site)
+            widget: string
+            required: false
+          - name: poster
+            label: Poster image URL (for direct video)
+            widget: string
+            required: false
           - name: title
             label: Title
             widget: string
@@ -2562,6 +2594,14 @@ collections:
             required: false
           - name: external_label
             label: External link label (e.g. 'Watch on Fox News')
+            widget: string
+            required: false
+          - name: mp4_url
+            label: OR direct video file URL (plays on the site)
+            widget: string
+            required: false
+          - name: poster
+            label: Poster image URL (for direct video)
             widget: string
             required: false
           - name: title

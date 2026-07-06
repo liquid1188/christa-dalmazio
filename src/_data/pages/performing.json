@@ -339,10 +339,12 @@
         },
         {
           "youtube_id": "",
+          "mp4_url": "https://vod.foxnews.com/media/v1/pmp4/static/clear/694940094001/08dadb55-d3cc-4f13-94a2-11ec351a07fe/b68313e2-d83d-4040-9edf-e37e2c7120a1/main.mp4",
+          "poster": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/08dadb55-d3cc-4f13-94a2-11ec351a07fe/9d4ff87c-05b9-4b50-b0a3-db7ead43187a/1280x720/match/1280/720/image.jpg?ve=1&tl=1",
           "external_url": "https://www.foxnews.com/video/6367785849112",
           "external_label": "Watch on Fox News",
           "title": "Fox & Friends",
-          "credit": "Fox News appearance"
+          "credit": "Catholic Schools Week · <a href=\"https://www.foxnews.com/video/6367785849112\" target=\"_blank\" rel=\"noopener noreferrer\">Fox News</a> · January 2025"
         }
       ]
     }
