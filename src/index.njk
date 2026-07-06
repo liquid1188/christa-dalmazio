@@ -319,10 +319,8 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <div class="en-grid">
 {% endraw %}
 {%- for e in endorsements.items %}
-{%- if not (e.featured and e.quote) %}
     <div class="en-card reveal">{% if e.quote %}<div class="en-q">&ldquo;{{ e.quote | safe }}&rdquo;</div>{% else %}<span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>{% endif %}
     <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role | roleBreak | safe }}</div></div></div>
-{%- endif %}
 {%- endfor %}
 {% raw %}
   </div>
