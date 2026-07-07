@@ -313,7 +313,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 {%- set feat = endorsements.items | selectattr("featured") | first %}
 {%- if feat and feat.quote %}
   <div class="qband reveal">
-    <div class="qband-q">&ldquo;{{ (feat.featured_quote or feat.quote) | safe }}&rdquo;</div>
+    <div class="qband-q">{{ (feat.featured_quote or feat.quote) | safe }}</div>
     <div class="qband-rule"></div>
     <div class="qband-name">{{ feat.name }}</div>
     <div class="qband-role">{{ feat.role | roleBreak | safe }}</div>
