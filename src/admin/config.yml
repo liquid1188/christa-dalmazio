@@ -136,6 +136,18 @@ collections:
       - name: intro
         label: Intro paragraph
         widget: text
+      - name: photo
+        label: Header photo (optional)
+        widget: image
+        required: false
+      - name: photo_alt
+        label: Header photo description (accessibility)
+        widget: string
+        required: false
+      - name: photo_caption
+        label: Header photo caption (optional)
+        widget: string
+        required: false
     - name: sections
       label: Sections
       label_singular: Section
@@ -257,6 +269,18 @@ collections:
           - name: location
             label: Location
             widget: string
+        - name: photo
+          label: Photo under the text (optional)
+          widget: image
+          required: false
+        - name: photo_alt
+          label: Photo description (accessibility)
+          widget: string
+          required: false
+        - name: photo_caption
+          label: Photo caption (optional)
+          widget: string
+          required: false
       - name: text_studio
         label: Text with studio card
         widget: object
@@ -296,6 +320,18 @@ collections:
         - name: cta_link
           label: Button link
           widget: string
+        - name: photo
+          label: Photo under the text (optional)
+          widget: image
+          required: false
+        - name: photo_alt
+          label: Photo description (accessibility)
+          widget: string
+          required: false
+        - name: photo_caption
+          label: Photo caption (optional)
+          widget: string
+          required: false
       - name: scholarship
         label: Epigraph & doctorate card
         widget: object
@@ -650,6 +686,18 @@ collections:
       - name: intro
         label: Intro paragraph
         widget: text
+      - name: photo
+        label: Header photo (optional)
+        widget: image
+        required: false
+      - name: photo_alt
+        label: Header photo description (accessibility)
+        widget: string
+        required: false
+      - name: photo_caption
+        label: Header photo caption (optional)
+        widget: string
+        required: false
     - name: sections
       label: Sections
       label_singular: Section
@@ -1164,6 +1212,18 @@ collections:
       - name: intro
         label: Intro paragraph
         widget: text
+      - name: photo
+        label: Header photo (optional)
+        widget: image
+        required: false
+      - name: photo_alt
+        label: Header photo description (accessibility)
+        widget: string
+        required: false
+      - name: photo_caption
+        label: Header photo caption (optional)
+        widget: string
+        required: false
     - name: sections
       label: Sections
       label_singular: Section
@@ -1678,6 +1738,18 @@ collections:
       - name: intro
         label: Intro paragraph
         widget: text
+      - name: photo
+        label: Header photo (optional)
+        widget: image
+        required: false
+      - name: photo_alt
+        label: Header photo description (accessibility)
+        widget: string
+        required: false
+      - name: photo_caption
+        label: Header photo caption (optional)
+        widget: string
+        required: false
     - name: sections
       label: Sections
       label_singular: Section
@@ -2192,6 +2264,18 @@ collections:
       - name: intro
         label: Intro paragraph
         widget: text
+      - name: photo
+        label: Header photo (optional)
+        widget: image
+        required: false
+      - name: photo_alt
+        label: Header photo description (accessibility)
+        widget: string
+        required: false
+      - name: photo_caption
+        label: Header photo caption (optional)
+        widget: string
+        required: false
     - name: sections
       label: Sections
       label_singular: Section
