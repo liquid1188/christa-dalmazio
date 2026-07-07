@@ -16,6 +16,9 @@
 </div></footer>
 <style>
 footer{position:relative}
+/* the lockup is an anchor; without this it stretches full-width and the whole
+   band becomes an invisible click target */
+.f-lockup{width:max-content;max-width:100%;margin-left:auto;margin-right:auto}
 .f-social a{display:inline-flex;padding:3px}
 .f-social a svg{width:26px;height:26px;display:block}
 .f-credit{display:block;margin-top:6px;font-size:.62rem;letter-spacing:.1em;color:var(--muted-2);opacity:.7}
