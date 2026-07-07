@@ -2,7 +2,10 @@
   "head": {
     "kick": "Performing",
     "title": "On the stage.",
-    "intro": "Christa has sung opera, operetta, oratorio, and the American musical, from coloratura leads to trouser roles, on stages from New York to the Ozarks — in Italian, German, French, Latin, Spanish, and English."
+    "intro": "Christa has sung opera, operetta, oratorio, and the American musical, from coloratura leads to trouser roles, on stages from New York to the Ozarks — in Italian, German, French, Latin, Spanish, and English.",
+    "photo": "/assets/img/italian-anthem.jpg",
+    "photo_alt": "Singing the Italian National Anthem",
+    "photo_caption": "The Italian National Anthem"
   },
   "sections": [
     {
@@ -120,9 +123,7 @@
               "title": "Italian National Anthem",
               "detail": "Italian American Baseball Foundation fundraising gala · December 2025"
             }
-          ],
-          "photo": "/assets/img/italian-anthem.jpg",
-          "photo_alt": "Christa Dalmazio singing the Italian national anthem"
+          ]
         }
       ]
     },

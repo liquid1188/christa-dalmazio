@@ -2,7 +2,10 @@
   "head": {
     "kick": "Weddings & Private Events",
     "title": "Music for the occasion.",
-    "intro": "Christa provides live music for weddings, funerals, and private celebrations, as a soprano, harpist, or organist, alone or with a small ensemble."
+    "intro": "Christa provides live music for weddings, funerals, and private celebrations, as a soprano, harpist, or organist, alone or with a small ensemble.",
+    "photo": "/assets/img/g-string-trio.jpg",
+    "photo_alt": "Christa performing with her string trio at a private event",
+    "photo_caption": "String trio · private event"
   },
   "sections": [
     {

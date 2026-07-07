@@ -1,7 +1,23 @@
+{%- if pg.head.photo %}
+{%- set hd = pg.head.photo | imgDims %}
+<section class="pagehead pagehead-split"><div class="wrap reveal">
+  <div class="ph-grid">
+    <div class="ph-text">
+      <div class="kick">{{ pg.head.kick | safe }}</div><h1>{{ pg.head.title | safe }}</h1>
+      <p>{{ pg.head.intro | safe }}</p>
+    </div>
+    <div class="ph-photo">
+      <img src="{{ pg.head.photo }}" alt="{{ pg.head.photo_alt }}"{% if hd %} width="{{ hd.w }}" height="{{ hd.h }}"{% endif %} />
+      {%- if pg.head.photo_caption %}<div class="cap-inline">{{ pg.head.photo_caption | safe }}</div>{% endif %}
+    </div>
+  </div>
+</div></section>
+{%- else %}
 <section class="pagehead"><div class="wrap reveal">
   <div class="kick">{{ pg.head.kick | safe }}</div><h1>{{ pg.head.title | safe }}</h1>
   <p>{{ pg.head.intro | safe }}</p>
 </div></section>
+{%- endif %}
 {%- for b in pg.sections %}
 {%- if b.type == "band" %}
 <div class="band{% if b.tall %} band-tall{% endif %} reveal"><img src="{{ b.image | replace("XNONEX", "XNONEX") }}" alt="{{ b.alt }}"{% if b.position %} style="object-position:{{ b.position }}"{% endif %}  loading="lazy" />
