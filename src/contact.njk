@@ -267,13 +267,28 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+.ph-grid{display:grid;gap:44px;align-items:center}
+.ph-photo{position:relative;overflow:hidden;border:1px solid rgba(200,168,102,.45);box-shadow:0 30px 70px -30px rgba(0,0,0,.85),0 0 0 9px rgba(200,168,102,.05);outline:1px solid rgba(200,168,102,.20);outline-offset:11px}
+.ph-photo img{width:100%;height:auto;display:block}
+.ph-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,0) 62%,rgba(25,13,16,.45) 100%);pointer-events:none}
+.cap-inline{position:absolute;right:0;bottom:0;padding:12px 16px;z-index:2;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--parchment)}
+@media (min-width:900px){.pagehead-split{padding:150px 0 64px}.ph-grid{grid-template-columns:minmax(0,46fr) minmax(0,54fr)}}
+@media (max-width:899px){.ph-photo{margin-top:34px;outline-offset:8px}}
 </style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
 {% raw %}
-<section class="pagehead"><div class="wrap reveal">
-  <div class="kick">Contact</div><h1>Inquiries &amp; booking.</h1>
-  <p>For a performance, sacred-music direction, lessons, a masterclass, or music for a wedding, Christa welcomes your note. Tell her what you have in mind below, or write to her directly.</p>
+<section class="pagehead pagehead-split"><div class="wrap reveal">
+  <div class="ph-grid">
+    <div class="ph-text">
+      <div class="kick">Contact</div><h1>Inquiries &amp; booking.</h1>
+      <p>For a performance, sacred-music direction, lessons, a masterclass, or music for a wedding, Christa welcomes your note. Tell her what you have in mind below, or write to her directly.</p>
+    </div>
+    <div class="ph-photo">
+      <img src="/assets/img/gal-cantor-rome.jpg" alt="Christa Dalmazio cantoring at the Basilica di Sant'Agostino in Campo Marzio, Rome" width="1206" height="798" />
+      <div class="cap-inline">Cantoring &middot; Sant&rsquo;Agostino in Campo Marzio, Rome</div>
+    </div>
+  </div>
 </div></section>
 <section class="offers"><div class="wrap">
   <div class="movement center reveal"><span class="lbl">How she can help</span></div>
