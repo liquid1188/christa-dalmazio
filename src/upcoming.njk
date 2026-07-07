@@ -306,6 +306,10 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 @media (max-width:640px){.band.band-wide .q{white-space:normal;max-width:22ch}}
 /* upcoming hero: shorter band on desktop; caption right-aligned to clear the photographer watermark */
 .band.band-wide .cap{text-align:right}
+/* framed, not full-bleed: whole crop visible without swallowing the viewport */
+@media (min-width:761px){
+  .band.band-wide{width:min(960px,92vw);margin:0 auto;border:1px solid rgba(200,168,102,.28);box-shadow:0 26px 60px -30px rgba(0,0,0,.8)}
+}
 .band-credit{position:absolute;left:0;bottom:0;padding:10px 14px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,236,221,.55);z-index:2}
 </style>
 </head><body>
