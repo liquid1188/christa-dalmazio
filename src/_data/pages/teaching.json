@@ -3,8 +3,9 @@
     "kick": "Teaching",
     "title": "The private studio.",
     "intro": "Christa keeps a private studio in Colts Neck, teaching voice and six instruments to students from their first lesson to conservatory auditions.",
-    "photo": "/assets/img/organ.jpg",
-    "photo_alt": "At the organ"
+    "photo": "/assets/img/gal-trio.jpg",
+    "photo_alt": "Christa with her students, harp and strings",
+    "photo_caption": "With students · harp &amp; strings"
   },
   "sections": [
     {
@@ -55,9 +56,12 @@
     },
     {
       "type": "band",
-      "image": "/assets/img/gal-trio.jpg",
-      "alt": "Christa with her students, harp and strings",
-      "quote": "With students · harp &amp; strings"
+      "image": "/assets/img/organ.jpg",
+      "alt": "Christa Dalmazio at the organ",
+      "tall": true,
+      "position": "center top",
+      "quote": "One teacher, many instruments.",
+      "source": "At the organ · Holy Innocents Church"
     }
   ]
 }
