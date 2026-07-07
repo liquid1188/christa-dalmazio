@@ -305,8 +305,10 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 .band.band-wide .q{max-width:none;white-space:nowrap}
 @media (max-width:640px){.band.band-wide .q{white-space:normal;max-width:22ch}}
 /* upcoming hero: shorter band on desktop; caption right-aligned to clear the photographer watermark */
-@media (min-width:761px){.band.band-wide{aspect-ratio:auto;height:min(54vh,500px)}}
+@media (min-width:761px){.band.band-wide{aspect-ratio:auto;height:min(54vh,500px)}.band.band-wide img{object-position:center 8%}}
 .band.band-wide .cap{text-align:right}
+.band-credit{position:absolute;left:0;bottom:0;padding:10px 14px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,236,221,.55);z-index:2;display:none}
+@media (min-width:761px){.band-credit{display:block}}
 </style>
 </head><body>
 {% include "nav.njk" %}
@@ -315,6 +317,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <p>Upcoming performances, new recordings, and recent news.</p>
 </div></section>
 <div class="band band-wide reveal"><img width="1206" height="759" src="/assets/img/gal-concert-group-cropped.jpg" alt="Christa Dalmazio with her ensemble after a concert"  loading="lazy" />
+  <span class="band-credit">Photo: Nick Tan</span>
   <div class="wrap"><div class="cap"><div class="q">The next time you can hear her.</div></div></div>
 </div>
 </div>
