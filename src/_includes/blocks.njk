@@ -131,10 +131,10 @@
 <section class="paper sec"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
   <div class="two">
+    <div class="perf-stack reveal">{% for f in b.photos %}<figure class="figcap" style="margin:0"><img src="{{ f.image }}" alt="{{ f.alt }}"  loading="lazy" /><figcaption>{{ f.caption | safe }}</figcaption></figure>{% endfor %}</div>
     <div class="reveal"><table class="program">{% for r in b.roles %}<tr><td class="role">{{ r.role | safe }}</td><td class="work">{{ r.work | safe }}</td><td class="co">{{ r.company | safe }}</td></tr>{% endfor %}</table>
       <div class="scenes"><b>{{ b.scenes_heading | safe }}</b>{{ b.scenes_text | safe }}</div>
     </div>
-    <div class="perf-stack reveal">{% for f in b.photos %}<figure class="figcap" style="margin:0"><img src="{{ f.image | replace("XNONEX", "XNONEX") }}" alt="{{ f.alt }}"  loading="lazy" /><figcaption>{{ f.caption | safe }}</figcaption></figure>{% endfor %}</div>
   </div>
   <div class="listcols reveal">
     {%- for col in b.columns %}
