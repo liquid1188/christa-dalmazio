@@ -26,11 +26,6 @@
       "caption": "Mass for Artists · Arthouse2B, Church of St. Joseph in Greenwich Village · photo by Edwin Lucero"
     },
     {
-      "image": "/assets/img/gal-harp-sing.jpg",
-      "alt": "Singing at the harp",
-      "caption": "Singing at the harp"
-    },
-    {
       "image": "/assets/img/about.jpg",
       "alt": "Christa Dalmazio with her harp",
       "caption": "At the harp"
@@ -39,6 +34,11 @@
       "image": "/assets/img/g-harp-bw.jpg",
       "alt": "Christa Dalmazio at the harp",
       "caption": "At the harp · photo by Mark Gurevich"
+    },
+    {
+      "image": "/assets/img/gal-pivot-cast.jpg",
+      "alt": "With the cast of Beauty and the Beast, Pivot Theatre Company",
+      "caption": "Music directing · Beauty and the Beast, Pivot Theatre Company"
     },
     {
       "image": "/assets/img/gal-harp-ruah-bw.jpg",
@@ -56,9 +56,19 @@
       "caption": "Conducting the Higher Word Choir · NYC"
     },
     {
-      "image": "/assets/img/radio-city.jpg",
-      "alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
-      "caption": "Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude, Radio City · December 2025"
+      "image": "/assets/img/gal-accompanist.jpg",
+      "alt": "After a recital",
+      "caption": "After a recital"
+    },
+    {
+      "image": "/assets/img/gal-harp-hands-bw.jpg",
+      "alt": "Hands at the harp",
+      "caption": "At the harp"
+    },
+    {
+      "image": "/assets/img/gal-piano-hands-bw.jpg",
+      "alt": "Hands at the piano",
+      "caption": "At the piano"
     },
     {
       "image": "/assets/img/gal-recital-ensemble.jpg",
@@ -66,24 +76,9 @@
       "caption": "D.M.A. recital · with chamber ensemble"
     },
     {
-      "image": "/assets/img/gal-mantilla.jpg",
-      "alt": "Before Mass",
-      "caption": "Before Mass"
-    },
-    {
-      "image": "/assets/img/gal-cantor-rome.jpg",
-      "alt": "Christa Dalmazio cantoring at the Basilica di Sant'Agostino in Campo Marzio, Rome",
-      "caption": "Cantoring · Basilica di Sant'Agostino in Campo Marzio, Rome"
-    },
-    {
-      "image": "/assets/img/g-string-trio.jpg",
-      "alt": "Christa Dalmazio performing with her string trio",
-      "caption": "String trio · private event"
-    },
-    {
-      "image": "/assets/img/gal-costume-ensemble.jpg",
-      "alt": "Christa Dalmazio at the harp with The Jane Austen Playlist ensemble in period costume, Zoellner Arts Center",
-      "caption": "The Jane Austen Playlist · Zoellner Arts Center, Bethlehem"
+      "image": "/assets/img/gal-harp-sing.jpg",
+      "alt": "Singing at the harp",
+      "caption": "Singing at the harp"
     },
     {
       "image": "/assets/img/gal-cello-duo.jpg",
@@ -116,29 +111,29 @@
       "caption": "As Oscar · Verdi's <em>Un Ballo in Maschera</em>"
     },
     {
+      "image": "/assets/img/gal-harp-strings.jpg",
+      "alt": "At the harp",
+      "caption": "At the harp"
+    },
+    {
+      "image": "/assets/img/gal-mantilla.jpg",
+      "alt": "Before Mass",
+      "caption": "Before Mass"
+    },
+    {
+      "image": "/assets/img/gal-cantor-rome.jpg",
+      "alt": "Christa Dalmazio cantoring at the Basilica di Sant'Agostino in Campo Marzio, Rome",
+      "caption": "Cantoring · Basilica di Sant'Agostino in Campo Marzio, Rome"
+    },
+    {
       "image": "/assets/img/gal-quintet-church.jpg",
       "alt": "After a sacred music concert",
       "caption": "After a sacred music concert"
     },
     {
-      "image": "/assets/img/gal-concert-group.jpg",
-      "alt": "Christa Dalmazio with Higher Word Orchestra musicians at St. Anthony of Padua Church",
-      "caption": "With the Higher Word Orchestra · St. Anthony of Padua · photo by Nick Tan"
-    },
-    {
-      "image": "/assets/img/gal-concert-purple.jpg",
-      "alt": "In concert with orchestra",
-      "caption": "In concert · photo by Nick Tan"
-    },
-    {
-      "image": "/assets/img/gal-pivot-cast.jpg",
-      "alt": "With the cast of Beauty and the Beast, Pivot Theatre Company",
-      "caption": "Music directing · Beauty and the Beast, Pivot Theatre Company"
-    },
-    {
-      "image": "/assets/img/gal-harp-strings.jpg",
-      "alt": "At the harp",
-      "caption": "At the harp"
+      "image": "/assets/img/g-string-trio.jpg",
+      "alt": "Christa Dalmazio performing with her string trio",
+      "caption": "String trio · private event"
     },
     {
       "image": "/assets/img/gal-pit-keyboard.jpg",
@@ -146,14 +141,9 @@
       "caption": "At the keyboard · photo by Forever Young Photography"
     },
     {
-      "image": "/assets/img/gal-harp-hands-bw.jpg",
-      "alt": "Hands at the harp",
-      "caption": "At the harp"
-    },
-    {
-      "image": "/assets/img/gal-piano-hands-bw.jpg",
-      "alt": "Hands at the piano",
-      "caption": "At the piano"
+      "image": "/assets/img/radio-city.jpg",
+      "alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
+      "caption": "Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude, Radio City · December 2025"
     },
     {
       "image": "/assets/img/gal-harp-church.jpg",
@@ -176,6 +166,11 @@
       "caption": "Singing the Italian National Anthem · 2021"
     },
     {
+      "image": "/assets/img/gal-concert-group.jpg",
+      "alt": "Christa Dalmazio with Higher Word Orchestra musicians at St. Anthony of Padua Church",
+      "caption": "With the Higher Word Orchestra · St. Anthony of Padua · photo by Nick Tan"
+    },
+    {
       "image": "/assets/img/gal-trio.jpg",
       "alt": "With students · harp & strings",
       "caption": "With students · harp & strings"
@@ -186,9 +181,14 @@
       "caption": "At the organ"
     },
     {
-      "image": "/assets/img/gal-accompanist.jpg",
-      "alt": "After a recital",
-      "caption": "After a recital"
+      "image": "/assets/img/gal-concert-purple.jpg",
+      "alt": "In concert with orchestra",
+      "caption": "In concert · photo by Nick Tan"
+    },
+    {
+      "image": "/assets/img/gal-costume-ensemble.jpg",
+      "alt": "Christa Dalmazio at the harp with The Jane Austen Playlist ensemble in period costume, Zoellner Arts Center",
+      "caption": "The Jane Austen Playlist · Zoellner Arts Center, Bethlehem"
     },
     {
       "image": "/assets/img/gal-outdoor.jpg",
