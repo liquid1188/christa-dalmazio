@@ -37,7 +37,9 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .paper .movement .lbl{color:var(--gilt-deep)}.paper .movement .rule{background:linear-gradient(90deg,var(--gilt-deep),transparent)}
 /* NAV */
 header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 34px;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
-header.nav.scrolled{background:rgba(25,13,16,.92);backdrop-filter:blur(12px);padding:13px 34px;border-bottom:1px solid var(--rule-d)}
+header.nav.scrolled{padding:13px 34px;border-bottom:1px solid var(--rule-d)}
+header.nav::before{content:"";position:absolute;inset:0;background:rgba(25,13,16,0);backdrop-filter:blur(0);transition:background .4s;z-index:-1;pointer-events:none}
+header.nav.scrolled::before{background:rgba(25,13,16,.92);backdrop-filter:blur(12px)}
 .brand{display:inline-flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--parchment)}.brand-txt{display:flex;flex-direction:column;text-align:center;line-height:1}.brand-name{font-size:1.5rem}.brand-tag{font-family:'Mulish',sans-serif;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gilt);font-weight:600;margin-top:4px}.brand-rose{width:33px;height:33px;flex:0 0 auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}header.nav.scrolled .brand-rose{width:29px;height:29px}.brand-txt{display:flex;flex-direction:column;line-height:1.02}.brand-tag{font-family:'Mulish',sans-serif;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gilt);font-weight:600;margin-top:5px}
 .brand b{font-weight:600}
 nav.links{display:flex;gap:24px}
