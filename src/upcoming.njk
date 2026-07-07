@@ -108,7 +108,7 @@ nav.links a.active{color:var(--parchment)}
 .en-role{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-top:5px}
 .en-tag{display:inline-block;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gilt-deep);margin-bottom:14px}
 /* BAND */
-.band{position:relative;width:100%;aspect-ratio:1206/759;overflow:hidden;display:flex;align-items:flex-end}
+.band{position:relative;width:100%;aspect-ratio:1206/684;overflow:hidden;display:flex;align-items:flex-end}
 .band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom}
 .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,.12) 0%,rgba(25,13,16,.08) 45%,rgba(25,13,16,.8) 100%)}
 .band .cap{position:relative;z-index:2;padding:0 0 40px}
@@ -305,10 +305,8 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 .band.band-wide .q{max-width:none;white-space:nowrap}
 @media (max-width:640px){.band.band-wide .q{white-space:normal;max-width:22ch}}
 /* upcoming hero: shorter band on desktop; caption right-aligned to clear the photographer watermark */
-@media (min-width:761px){.band.band-wide{aspect-ratio:auto;height:min(68vh,48vw)}.band.band-wide img{object-position:center 7%}}
 .band.band-wide .cap{text-align:right}
-.band-credit{position:absolute;left:0;bottom:0;padding:10px 14px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,236,221,.55);z-index:2;display:none}
-@media (min-width:761px){.band-credit{display:block}}
+.band-credit{position:absolute;left:0;bottom:0;padding:10px 14px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,236,221,.55);z-index:2}
 </style>
 </head><body>
 {% include "nav.njk" %}
@@ -316,7 +314,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <div class="kick">Events &amp; Announcements</div><h1>What&rsquo;s next.</h1>
   <p>Upcoming performances, new recordings, and recent news.</p>
 </div></section>
-<div class="band band-wide reveal"><img width="1206" height="759" src="/assets/img/gal-concert-group-cropped.jpg" alt="Christa Dalmazio with her ensemble after a concert"  loading="lazy" />
+<div class="band band-wide reveal"><img width="1206" height="684" src="/assets/img/gal-concert-group-hero.jpg" alt="Christa Dalmazio with her ensemble after a concert"  loading="lazy" />
   <span class="band-credit">Photo: Nick Tan</span>
   <div class="wrap"><div class="cap"><div class="q">The next time you can hear her.</div></div></div>
 </div>
