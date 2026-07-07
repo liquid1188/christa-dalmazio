@@ -3,12 +3,12 @@
     "kick": "About",
     "title": "The way of beauty.",
     "intro": "A soprano and multi-instrumentalist whose life in music keeps returning to a single question. What makes a thing beautiful enough to carry a prayer?",
-    "photo": "/assets/img/about.jpg",
-    "photo_alt": "Christa Dalmazio at the harp"
+    "photo": "/assets/img/g-harp-outdoor.jpg",
+    "photo_alt": "Christa Dalmazio playing harp and singing outdoors"
   },
   "sections": [
     {
-      "type": "text",
+      "type": "text_photo",
       "paragraphs": [
         {
           "text": "Christa Marie Dalmazio is a soprano and conductor from Colts Neck, New Jersey. Her training began at the <strong>Ranney School</strong>, where she studied voice with Cynthia Springsteen and sang with the Concordia Youth Chorale, touring France and Canada as a choral soloist. She went on to the <strong>Manhattan School of Music</strong>, earning a bachelor's and master's in vocal performance and, this spring, a <strong>Doctor of Musical Arts</strong>, studying throughout with the celebrated soprano Catherine Malfitano. The Metropolitan Opera's Laffont Competition named her an Encouragement Award winner three years running (2018–2020), and as a young singer she took a Merit Award in Classical Voice from the National YoungArts Foundation. She has sung as a soloist at Carnegie Hall and Avery Fisher Hall, and in churches on both sides of the Atlantic."
@@ -19,7 +19,13 @@
         {
           "text": "It is an old idea, and a demanding one. She returns to it in thinkers like Dietrich von Hildebrand and Roger Scruton. The medieval test for beauty asked three things of a work. It must be whole, well proportioned, and radiant. Christa listens for those same qualities in a line of chant or a Mozart aria, and tries to give them back to a congregation at prayer."
         }
-      ]
+      ],
+      "image": "/assets/img/about.jpg",
+      "alt": "Christa Dalmazio",
+      "image_side": "right",
+      "offers": [],
+      "cta_label": "",
+      "cta_link": ""
     },
     {
       "type": "scholarship",
