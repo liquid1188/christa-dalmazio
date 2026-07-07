@@ -290,7 +290,8 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 <section class="gallery"><div class="wrap"><div class="gal">
 {% endraw %}
 {%- for g in gallery.items %}
-  <figure><img src="{{ g.image | replace("XNONEX", "XNONEX") }}" alt="{{ g.alt }}" loading="lazy" />{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
+  {%- set d = g.image | imgDims %}
+  <figure><img src="{{ g.image }}" alt="{{ g.alt }}"{% if d %} width="{{ d.w }}" height="{{ d.h }}"{% endif %} loading="lazy" />{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
 {%- endfor %}
 {% raw %}
 </div></div></section>
