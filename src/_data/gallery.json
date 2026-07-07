@@ -2,8 +2,8 @@
   "items": [
     {
       "image": "/assets/img/gal-recital-red.jpg",
-      "alt": "In recital",
-      "caption": "In recital"
+      "alt": "Christa Dalmazio at her Final Doctoral Recital",
+      "caption": "Final Doctoral Recital · in attainment of the D.M.A."
     },
     {
       "image": "/assets/img/gal-concert-soprano.jpg",
@@ -34,6 +34,11 @@
       "image": "/assets/img/g-harp-bw.jpg",
       "alt": "Christa Dalmazio at the harp",
       "caption": "At the harp · photo by Mark Gurevich"
+    },
+    {
+      "image": "/assets/img/gal-harp-ruah-bw.jpg",
+      "alt": "Christa Dalmazio behind the strings of her harp, black and white, at Ruah",
+      "caption": "Ruah · multi-disciplinary arts performance · photo by MJ O'Toole"
     },
     {
       "image": "/assets/img/g-harp-outdoor.jpg",
@@ -67,8 +72,8 @@
     },
     {
       "image": "/assets/img/gal-costume-ensemble.jpg",
-      "alt": "Christa Dalmazio at the harp in period costume with a chamber ensemble",
-      "caption": "At the harp · in period costume"
+      "alt": "Christa Dalmazio at the harp with The Jane Austen Playlist ensemble in period costume, Zoellner Arts Center",
+      "caption": "The Jane Austen Playlist · Zoellner Arts Center, Bethlehem"
     },
     {
       "image": "/assets/img/gal-cello-duo.jpg",
