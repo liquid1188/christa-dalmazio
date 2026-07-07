@@ -31,6 +31,11 @@
       "caption": "Singing at the harp"
     },
     {
+      "image": "/assets/img/about.jpg",
+      "alt": "Christa Dalmazio with her harp",
+      "caption": "At the harp"
+    },
+    {
       "image": "/assets/img/g-harp-bw.jpg",
       "alt": "Christa Dalmazio at the harp",
       "caption": "At the harp · photo by Mark Gurevich"
@@ -49,6 +54,11 @@
       "image": "/assets/img/conducting.jpg",
       "alt": "Conducting the Higher Word Choir · NYC",
       "caption": "Conducting the Higher Word Choir · NYC"
+    },
+    {
+      "image": "/assets/img/radio-city.jpg",
+      "alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
+      "caption": "Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude, Radio City · December 2025"
     },
     {
       "image": "/assets/img/gal-recital-ensemble.jpg",
@@ -99,6 +109,11 @@
       "image": "/assets/img/g-papagena.jpg",
       "alt": "As Papagena · The Magic Flute",
       "caption": "As Papagena · The Magic Flute"
+    },
+    {
+      "image": "/assets/img/g-ballo.jpg",
+      "alt": "Christa Dalmazio as Oscar in Verdi's Un Ballo in Maschera",
+      "caption": "As Oscar · Verdi's <em>Un Ballo in Maschera</em>"
     },
     {
       "image": "/assets/img/gal-quintet-church.jpg",
