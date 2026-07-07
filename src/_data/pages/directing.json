@@ -2,18 +2,12 @@
   "head": {
     "kick": "Directing",
     "title": "Before the choir.",
-    "intro": "Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools."
+    "intro": "Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools.",
+    "photo": "/assets/img/conducting.jpg",
+    "photo_alt": "Christa Dalmazio conducting the Higher Word Choir",
+    "photo_caption": "Conducting the Higher Word Choir · NYC"
   },
   "sections": [
-    {
-      "type": "band",
-      "image": "/assets/img/conducting.jpg",
-      "alt": "Christa Dalmazio conducting the Higher Word Choir",
-      "tall": false,
-      "position": "",
-      "quote": "Masterworks, and the stories behind them.",
-      "source": "Conducting the Higher Word Choir · New York City"
-    },
     {
       "type": "text_appointments",
       "paragraphs": [
@@ -58,16 +52,10 @@
           "place": "Higher Word Orchestra",
           "location": "Manhattan, NY"
         }
-      ]
-    },
-    {
-      "type": "band",
-      "image": "/assets/img/radio-city.jpg",
-      "alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
-      "tall": false,
-      "position": "",
-      "quote": "Forty young voices at Radio City.",
-      "source": "Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude · December 2025"
+      ],
+      "photo": "/assets/img/radio-city.jpg",
+      "photo_alt": "Christa Dalmazio conducting the Academy of Our Lady Sacred Music Choir at Radio City Music Hall",
+      "photo_caption": "Forty young voices at Radio City"
     },
     {
       "type": "affiliations",

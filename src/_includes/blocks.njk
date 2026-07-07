@@ -69,6 +69,10 @@
       {%- for p in b.paragraphs %}
       <p>{{ p.text | safe }}</p>
       {%- endfor %}
+      {%- if b.photo %}
+      {%- set ad = b.photo | imgDims %}
+      <figure class="portrait-card studio-photo reveal" style="margin:30px 0 0"><img src="{{ b.photo }}" alt="{{ b.photo_alt }}"{% if ad %} width="{{ ad.w }}" height="{{ ad.h }}"{% endif %} loading="lazy" />{% if b.photo_caption %}<div class="cap">{{ b.photo_caption | safe }}</div>{% endif %}</figure>
+      {%- endif %}
     </div>
     <div class="reveal">{% for po in b.posts %}<div class="post"><div><div class="p-role">{{ po.role | safe }}</div><div class="p-place">{{ po.place | safe }}</div></div><div class="p-loc">{{ po.location | safe }}</div></div>{% endfor %}</div>
   </div>
