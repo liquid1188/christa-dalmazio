@@ -67,8 +67,8 @@
     },
     {
       "image": "/assets/img/gal-gown.jpg",
-      "alt": "In recital",
-      "caption": "In recital"
+      "alt": "Christa Dalmazio in a gown",
+      "caption": ""
     },
     {
       "image": "/assets/img/gal-choir-christmas.jpg",
@@ -106,11 +106,6 @@
       "caption": "Music directing · Beauty and the Beast, Pivot Theatre Company"
     },
     {
-      "image": "/assets/img/gal-pit-keyboard.jpg",
-      "alt": "At the keyboard",
-      "caption": "At the keyboard · photo by Forever Young Photography"
-    },
-    {
       "image": "/assets/img/gal-harp-strings.jpg",
       "alt": "At the harp",
       "caption": "At the harp"
@@ -127,18 +122,23 @@
     },
     {
       "image": "/assets/img/gal-harp-church.jpg",
-      "alt": "Harp in the sanctuary",
-      "caption": "Harp in the sanctuary"
+      "alt": "At the harp in church",
+      "caption": "At the harp · in church"
     },
     {
       "image": "/assets/img/italian-anthem.jpg",
-      "alt": "Singing the Italian National Anthem",
-      "caption": "Singing the Italian National Anthem"
+      "alt": "Singing the Italian National Anthem, 2025",
+      "caption": "Singing the Italian National Anthem · 2025"
+    },
+    {
+      "image": "/assets/img/gal-anthem-2024.jpg",
+      "alt": "Singing the Italian National Anthem, 2024",
+      "caption": "Singing the Italian National Anthem · 2024"
     },
     {
       "image": "/assets/img/gal-mic-event.jpg",
-      "alt": "At a gala",
-      "caption": "At a gala"
+      "alt": "Singing the Italian National Anthem, 2021",
+      "caption": "Singing the Italian National Anthem · 2021"
     },
     {
       "image": "/assets/img/gal-trio.jpg",
