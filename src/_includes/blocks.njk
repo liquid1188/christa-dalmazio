@@ -142,7 +142,7 @@
       {%- for e in col.entries %}
       <div class="cs-entry">{% if e.tag %}<span class="tag">{{ e.tag | safe }}</span>{% endif %}<div class="t">{{ e.title | safe }}</div><div class="d">{{ e.detail | safe }}</div></div>
       {%- endfor %}
-      {%- if col.photo %}<figure class="recital-fig reveal"><img src="{{ col.photo | replace("XNONEX", "XNONEX") }}" alt="{{ col.photo_alt }}"  loading="lazy" /></figure>{% endif %}
+      {%- if col.photo %}<figure class="figcap recital-fig reveal"><img src="{{ col.photo }}" alt="{{ col.photo_alt }}"  loading="lazy" />{% if col.photo_caption %}<figcaption>{{ col.photo_caption | safe }}</figcaption>{% endif %}</figure>{% endif %}
     </div>
     {%- endfor %}
   </div>
