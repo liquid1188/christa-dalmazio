@@ -2,7 +2,7 @@
   "head": {
     "kick": "Teaching",
     "title": "From first lesson to conservatory.",
-    "intro": "Christa keeps a private studio in Colts Neck, teaching voice and six instruments.",
+    "intro": "Christa keeps a private studio in New Jersey, teaching voice and six instruments.",
     "photo": "/assets/img/organ.jpg",
     "photo_alt": "Christa Dalmazio at the organ, Holy Innocents Church",
     "photo_caption": "At the organ · Holy Innocents Church"
@@ -15,9 +15,9 @@
           "text": "A multi-instrumentalist herself, Christa teaches in classical and sacred technique across the disciplines she performs, including voice, piano, harp, organ, viola, violin, and cello. Her students range from young beginners to singers and players preparing for competitions, auditions, and church work. Because she performs and directs year-round, her students learn from a musician who is still actively living the craft she teaches."
         }
       ],
-      "studio_label": "Private Studio · Colts Neck",
+      "studio_label": "Private Studio · New Jersey",
       "studio_heading": "Lessons offered",
-      "studio_text": "In person in Colts Neck, New Jersey, for students of every age and level. Lessons are built around the student, with solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it.",
+      "studio_text": "In person in New Jersey, for students of every age and level. Lessons are built around the student, with solid fundamentals, repertoire chosen to fit a voice or a pair of hands, and the patience to let a musician grow into the music rather than rush it.",
       "instruments": [
         {
           "icon": "/assets/img/instr/voice.svg",
