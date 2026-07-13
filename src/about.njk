@@ -303,7 +303,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <h2 class="reveal">Get in touch.</h2>
   <p class="reveal">For performances, sacred-music direction, private lessons, or music for a wedding or event, write to Christa directly.</p>
   <div class="cta-row reveal">
-    <a class="btn btn-gilt" href="mailto:christadalmazio@gmail.com">Email Christa</a>
+    <button type="button" class="btn btn-gilt" data-inquiry="general">Send a message</button>
     <a class="btn btn-ghost" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Message on Instagram</a>
   </div>
 </div></div></section>
@@ -341,7 +341,7 @@ if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
     }else{throw new Error('send failed');}
   }).catch(function(){
     btn.disabled=false;btn.textContent='Subscribe';
-    alert('Sorry, that didn\u2019t go through. Please email christadalmazio@gmail.com to join the list.');
+    alert('Sorry, that didn\u2019t go through. Please try again in a moment.');
   });
 });}
 </script>

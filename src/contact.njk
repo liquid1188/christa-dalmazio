@@ -294,17 +294,17 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 <section class="offers"><div class="wrap">
   <div class="movement center reveal"><span class="lbl">How she can help</span></div>
   <div class="offer-grid">
-    <div class="offer-card reveal"><div class="offer-img"><img width="1200" height="801" src="/assets/img/italian-anthem.jpg" alt="Christa Dalmazio performing" loading="lazy" style="object-position:center 28%" /></div><div class="offer-body"><h3>Performing</h3><p>Recitals, opera, oratorio, and sacred music concerts for a soprano.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Performance%20inquiry">Make an inquiry &rarr;</a></div></div>
-    <div class="offer-card reveal"><div class="offer-img"><img width="1900" height="758" src="/assets/img/conducting.jpg" alt="Christa Dalmazio conducting" loading="lazy" style="object-position:72% center" /></div><div class="offer-body"><h3>Directing</h3><p>Sacred-music direction, choral conducting, and program building for parishes and ensembles.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Directing%20inquiry">Make an inquiry &rarr;</a></div></div>
-    <div class="offer-card reveal"><div class="offer-img"><img width="1600" height="900" src="/assets/img/organ.jpg" alt="Christa Dalmazio at the organ" loading="lazy" style="object-position:center" /></div><div class="offer-body"><h3>Teaching</h3><p>Private voice and instrument lessons, and masterclasses for serious students.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Lesson%20inquiry">Make an inquiry &rarr;</a></div></div>
-    <div class="offer-card reveal"><div class="offer-img"><img width="726" height="1246" src="/assets/img/harp.jpg" alt="Christa Dalmazio playing the harp" loading="lazy" style="object-position:center 30%" /></div><div class="offer-body"><h3>Weddings</h3><p>Harp, voice, and multi-instrumental music for nuptial Masses, funerals, and special occasions.</p><a class="offer-link" href="mailto:christadalmazio@gmail.com?subject=Wedding%20music%20inquiry">Make an inquiry &rarr;</a></div></div>
+    <div class="offer-card reveal"><div class="offer-img"><img width="1200" height="801" src="/assets/img/italian-anthem.jpg" alt="Christa Dalmazio performing" loading="lazy" style="object-position:center 28%" /></div><div class="offer-body"><h3>Performing</h3><p>Recitals, opera, oratorio, and sacred music concerts for a soprano.</p><button type="button" class="offer-link" data-inquiry="performing">Make an inquiry &rarr;</button></div></div>
+    <div class="offer-card reveal"><div class="offer-img"><img width="1900" height="758" src="/assets/img/conducting.jpg" alt="Christa Dalmazio conducting" loading="lazy" style="object-position:72% center" /></div><div class="offer-body"><h3>Directing</h3><p>Sacred-music direction, choral conducting, and program building for parishes and ensembles.</p><button type="button" class="offer-link" data-inquiry="directing">Make an inquiry &rarr;</button></div></div>
+    <div class="offer-card reveal"><div class="offer-img"><img width="1600" height="900" src="/assets/img/organ.jpg" alt="Christa Dalmazio at the organ" loading="lazy" style="object-position:center" /></div><div class="offer-body"><h3>Teaching</h3><p>Private voice and instrument lessons, and masterclasses for serious students.</p><button type="button" class="offer-link" data-inquiry="teaching">Make an inquiry &rarr;</button></div></div>
+    <div class="offer-card reveal"><div class="offer-img"><img width="726" height="1246" src="/assets/img/harp.jpg" alt="Christa Dalmazio playing the harp" loading="lazy" style="object-position:center 30%" /></div><div class="offer-body"><h3>Weddings</h3><p>Harp, voice, and multi-instrumental music for nuptial Masses, funerals, and special occasions.</p><button type="button" class="offer-link" data-inquiry="weddings">Make an inquiry &rarr;</button></div></div>
   </div>
 </div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <h2 class="reveal">Write to <em>Christa.</em></h2>
   <p class="reveal">She is available for liturgical consultation, sacred-music masterclasses, and select&nbsp;recital&nbsp;engagements.</p>
   <div class="cta-row reveal">
-    <a class="btn btn-gilt" href="mailto:christadalmazio@gmail.com">Email Christa</a>
+    <button type="button" class="btn btn-gilt" data-inquiry="general">Send a message</button>
     <a class="btn btn-ghost" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Message on Instagram</a>
   </div>
 </div></div></section>
@@ -342,7 +342,7 @@ if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
     }else{throw new Error('send failed');}
   }).catch(function(){
     btn.disabled=false;btn.textContent='Subscribe';
-    alert('Sorry, that didn\u2019t go through. Please email christadalmazio@gmail.com to join the list.');
+    alert('Sorry, that didn\u2019t go through. Please try again in a moment.');
   });
 });}
 </script>

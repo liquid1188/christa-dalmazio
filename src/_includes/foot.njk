@@ -9,7 +9,7 @@
     <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.6" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.6"/><circle cx="17.1" cy="6.9" r="1.15" fill="currentColor"/></svg></a>
     <a href="https://www.youtube.com/@christadalmazio" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.6" y="5.4" width="18.8" height="13.2" rx="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 9.3l4.6 2.7-4.6 2.7z" fill="currentColor"/></svg></a>
     <a href="https://www.facebook.com/ClassicalDiva94" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.6 8.2h2.6V5h-2.6a4.1 4.1 0 0 0-4.1 4.1v2H8.2v3.1h2.3V21h3.2v-6.8h2.5l.5-3.1h-3V9.4a1.2 1.2 0 0 1 1.2-1.2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
-    <a href="mailto:christadalmazio@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.4" width="18" height="13.2" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M4.2 7.2L12 13l7.8-5.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <button type="button" class="f-mailbtn" data-inquiry="general" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.4" width="18" height="13.2" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M4.2 7.2L12 13l7.8-5.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   </div>
   <div class="f-meta">&copy; 2026 Christa Dalmazio<span class="f-credit">Site by <a href="https://lickitysplitweb.com" target="_blank" rel="noopener noreferrer">Lickity Split Web Design</a></span></div>
   <a class="f-login" href="admin/" aria-label="Sign in to edit the site"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Sign in</a>
@@ -32,3 +32,4 @@ footer{position:relative}
 .f-login:hover{color:var(--gilt)}
 @media (max-width:760px){.f-login{position:static;justify-content:center;width:max-content;margin:22px auto 0}}
 </style>
+{% include "inquiry-modal.njk" %}
