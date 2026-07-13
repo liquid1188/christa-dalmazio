@@ -341,11 +341,11 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
 </div></div></section>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">
   <div class="ml-text"><h3>Join the mailing list</h3><p>Performance updates and news.</p></div>
-  <form class="ml-form" id="mlForm">
+  <form class="ml-form" id="mlForm"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
     <input type="email" id="mlEmail" required placeholder="Email address" aria-label="Email address" />
     <button type="submit" class="btn btn-gilt">Subscribe</button>
   </form>
-  <div class="ml-done" id="mlDone">Thank you. Opening your email to confirm.</div>
+  <div class="ml-done" id="mlDone">Thank you &mdash; you&rsquo;re on the list.</div>
 </div></div></section>
 {% endraw %}
 {% include "foot.njk" %}
@@ -360,10 +360,21 @@ const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.ta
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const mf=document.getElementById('mlForm');
 if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
+  if(mf._gotcha&&mf._gotcha.value)return;
   var em=document.getElementById('mlEmail').value;
-  mf.style.display='none';
-  var d=document.getElementById('mlDone'); if(d) d.style.display='block';
-  window.location.href='mailto:christadalmazio@gmail.com?subject='+encodeURIComponent('Mailing list signup')+'&body='+encodeURIComponent('Please add me to your mailing list: '+em);
+  var btn=mf.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Subscribing\u2026';
+  fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({email:em,_replyto:em,_subject:'Mailing list signup: '+em,_template:'table',_captcha:'false',message:'Please add '+em+' to the mailing list.'})
+  }).then(function(r){return r.json();}).then(function(d2){
+    if(d2.success==='true'||d2.success===true){
+      mf.style.display='none';
+      var d=document.getElementById('mlDone'); if(d) d.style.display='block';
+    }else{throw new Error('send failed');}
+  }).catch(function(){
+    btn.disabled=false;btn.textContent='Subscribe';
+    alert('Sorry, that didn\u2019t go through. Please email christadalmazio@gmail.com to join the list.');
+  });
 });}
 </script>
 </body></html>{% endraw %}
