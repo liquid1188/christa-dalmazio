@@ -374,7 +374,9 @@ if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
   if(mf._gotcha&&mf._gotcha.value)return;
   var em=document.getElementById('mlEmail').value;
   var btn=mf.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Subscribing\u2026';
-  fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',
+  var ML_ENDPOINT='';/* LAUNCH: set to FormSubmit alias URL */
+  if(!ML_ENDPOINT){btn.disabled=false;btn.textContent='Subscribe';alert('The mailing list opens very soon \u2014 please check back shortly.');return;}
+  fetch(ML_ENDPOINT,{method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({email:em,_replyto:em,_subject:'Mailing list signup: '+em,_template:'table',_captcha:'false',message:'Please add '+em+' to the mailing list.'})
   }).then(function(r){return r.json();}).then(function(d2){

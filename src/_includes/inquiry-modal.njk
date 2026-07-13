@@ -61,6 +61,8 @@ button.f-mailbtn svg{width:26px;height:26px;display:block}
 </style>
 <script>
 (function(){
+/* LAUNCH: set INQ_ENDPOINT to the FormSubmit alias URL, e.g. 'https://formsubmit.co/ajax/abc123...' */
+var INQ_ENDPOINT='';
 var CATS={
   general:{lbl:'Inquiry',title:'Write to <em>Christa.</em>',subj:'Website inquiry',extra:null},
   performing:{lbl:'Performing',title:'Performance <em>inquiry.</em>',subj:'Performance inquiry',extra:'inqExtraOrg'},
@@ -101,7 +103,16 @@ form.addEventListener('submit',function(e){
   ['event_date','venue','organization','target_date','lessons_for'].forEach(function(k){
     var f=form.elements[k];if(f&&!f.closest('.inq-extra').hidden&&f.value)payload[k]=f.value;
   });
-  fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',
+  if(!INQ_ENDPOINT){
+    b.disabled=false;b.textContent='Send inquiry';
+    if(!form.querySelector('.inq-err')){
+      var hp=document.createElement('p');hp.className='inq-err';
+      hp.textContent='The inquiry form opens very soon \u2014 please check back shortly.';
+      form.appendChild(hp);
+    }
+    return;
+  }
+  fetch(INQ_ENDPOINT,{method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify(payload)
   }).then(function(r){return r.json();}).then(function(d){
