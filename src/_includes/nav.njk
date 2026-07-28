@@ -1,11 +1,16 @@
 <header class="nav" id="nav">
-  <a class="brand" href="/"><img class="brand-rose" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><img class="brand-mark" src="/assets/img/wordmark-christa.svg" alt="Christa Dalmazio" width="944" height="100" /><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
+  <a class="brand" href="/"><img class="brand-rose" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><img class="brand-mark" src="/assets/img/wordmark-christa.svg" alt="" aria-hidden="true" width="944" height="100" /><span class="brand-name-sr">Christa Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   <nav class="links" id="navLinks"><a href="/about/"{% if active == 'about' %} class="active"{% endif %}>About</a><span class="nav-div" aria-hidden="true"></span><a href="/directing/"{% if active == 'directing' %} class="active"{% endif %}>Directing</a><a href="/performing/"{% if active == 'performing' %} class="active"{% endif %}>Performing</a><a href="/teaching/"{% if active == 'teaching' %} class="active"{% endif %}>Teaching</a><a href="/weddings/"{% if active == 'weddings' %} class="active"{% endif %}>Weddings</a><span class="nav-div" aria-hidden="true"></span><a href="/gallery/"{% if active == 'gallery' %} class="active"{% endif %}>Gallery</a><a href="/upcoming/"{% if active == 'upcoming' %} class="active"{% endif %}>Upcoming</a><a class="nav-cta{% if active == 'contact' %} is-current{% endif %}" href="/contact/">Contact</a></nav>
 </header>
 <style>
 .nav-div{width:1px;height:15px;background:rgba(200,168,102,.5);align-self:center;flex:0 0 auto}
 .brand-mark{height:30px;width:auto;display:block;transition:height .4s}
+/* The wordmark is an image, so her name would otherwise exist only in alt
+   text: not selectable, skipped by page translation, weighted less by search.
+   This span carries the real text; the image is alt="" + aria-hidden so
+   screen readers announce the name once, not twice. */
+.brand-name-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 /* Tagline is sized to track the wordmark, which is a very wide 9.44:1 script.
    Tracking stays in em so it scales with font-size; text-indent cancels the
    trailing letter-space so the line stays optically centred. The C swash
