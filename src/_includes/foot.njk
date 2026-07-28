@@ -1,7 +1,7 @@
 <footer><div class="wrap">
   <a class="f-lockup" href="/" aria-label="Home">
     <img class="f-crest" src="/assets/img/rose-organ-crest.svg" alt="" aria-hidden="true" width="490" height="296" loading="lazy" />
-    <div class="f-name">Christa Dalmazio</div>
+    <div class="f-name"><img class="f-wordmark" src="/assets/img/wordmark-christa.svg" alt="" aria-hidden="true" width="944" height="100" loading="lazy" /><span class="f-name-sr">Christa Dalmazio</span></div>
     <div class="f-tag">Classical &amp; Sacred Musician</div>
   </a>
   <nav class="f-menu"><a href="/">Home</a><a href="/about/">About</a><a href="/directing/">Directing</a><a href="/performing/">Performing</a><a href="/teaching/">Teaching</a><a href="/weddings/">Weddings</a><a href="/gallery/">Gallery</a><a href="/upcoming/">Upcoming</a><a href="/contact/">Contact</a></nav>
@@ -32,6 +32,16 @@ footer{position:relative}
 .f-credit a:hover{color:var(--gilt);border-color:var(--gilt)}
 .f-lockup{cursor:pointer}
 .f-lockup .f-name{transition:color .25s}
+/* Footer name is now the Snell wordmark. Sized so the existing tagline sits
+   at ~93% of it, matching the nav lockup's proportion. Real text kept in a
+   hidden span so the name stays selectable, translatable and indexable.
+   NB: .f-lockup img{width:48px;height:48px} is (0,1,1), so these need the
+   .f-lockup img.f-wordmark form to win, exactly as .f-crest does. */
+.f-name{line-height:0}
+.f-lockup img.f-wordmark{display:block;width:256px;max-width:100%;height:auto;margin:0 auto;opacity:.96;transition:opacity .25s}
+.f-lockup:hover img.f-wordmark{opacity:1}
+.f-name-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+@media (max-width:420px){.f-lockup img.f-wordmark{width:214px}.f-tag{font-size:.53rem}}
 .f-lockup:hover .f-name{color:var(--gilt)}
 .f-login{position:absolute;right:30px;bottom:30px;display:inline-flex;align-items:center;gap:6px;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);transition:color .25s}
 .f-login svg{width:12px;height:12px}
