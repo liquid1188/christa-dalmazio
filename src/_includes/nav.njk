@@ -1,10 +1,15 @@
 <header class="nav" id="nav">
-  <a class="brand" href="/"><img class="brand-rose" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><span class="brand-name"><b>Christa</b> Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
+  <a class="brand" href="/"><img class="brand-rose" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><img class="brand-mark" src="/assets/img/wordmark-christa.svg" alt="Christa Dalmazio" width="944" height="100" /><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   <nav class="links" id="navLinks"><a href="/about/"{% if active == 'about' %} class="active"{% endif %}>About</a><span class="nav-div" aria-hidden="true"></span><a href="/directing/"{% if active == 'directing' %} class="active"{% endif %}>Directing</a><a href="/performing/"{% if active == 'performing' %} class="active"{% endif %}>Performing</a><a href="/teaching/"{% if active == 'teaching' %} class="active"{% endif %}>Teaching</a><a href="/weddings/"{% if active == 'weddings' %} class="active"{% endif %}>Weddings</a><span class="nav-div" aria-hidden="true"></span><a href="/gallery/"{% if active == 'gallery' %} class="active"{% endif %}>Gallery</a><a href="/upcoming/"{% if active == 'upcoming' %} class="active"{% endif %}>Upcoming</a><a class="nav-cta{% if active == 'contact' %} is-current{% endif %}" href="/contact/">Contact</a></nav>
 </header>
 <style>
 .nav-div{width:1px;height:15px;background:rgba(200,168,102,.5);align-self:center;flex:0 0 auto}
+.brand-mark{height:30px;width:auto;display:block;transition:height .4s}
+header.nav.scrolled .brand-mark{height:27px}
+@media (max-width:1100px){.brand-mark{height:26px}}
+@media (max-width:900px){.brand-mark{height:24px}}
+@media (max-width:420px){.brand-mark{height:20px}}
 .links a.nav-cta{border:1px solid var(--gilt-deep);border-radius:2px;padding:7px 17px;color:var(--gilt-soft)}
 .links a.nav-cta::after{display:none}
 .links a.nav-cta:hover{background:var(--gilt);border-color:var(--gilt);color:var(--ink)}
