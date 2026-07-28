@@ -1,7 +1,7 @@
 <header class="nav" id="nav">
   <a class="brand" href="/"><img class="brand-rose" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true" /><span class="brand-txt"><img class="brand-mark" src="/assets/img/wordmark-christa.svg" alt="" aria-hidden="true" width="944" height="100" /><span class="brand-name-sr">Christa Dalmazio</span><span class="brand-tag">Classical &amp; Sacred Musician</span></span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-  <nav class="links" id="navLinks"><img class="menu-crest" src="/assets/img/rose-organ-crest.svg" alt="" aria-hidden="true" width="490" height="296" /><a href="/about/"{% if active == 'about' %} class="active"{% endif %}>About</a><span class="nav-div" aria-hidden="true"></span><a href="/directing/"{% if active == 'directing' %} class="active"{% endif %}>Directing</a><a href="/performing/"{% if active == 'performing' %} class="active"{% endif %}>Performing</a><a href="/teaching/"{% if active == 'teaching' %} class="active"{% endif %}>Teaching</a><a href="/weddings/"{% if active == 'weddings' %} class="active"{% endif %}>Weddings</a><span class="nav-div" aria-hidden="true"></span><a href="/gallery/"{% if active == 'gallery' %} class="active"{% endif %}>Gallery</a><a href="/upcoming/"{% if active == 'upcoming' %} class="active"{% endif %}>Upcoming</a><a class="nav-cta{% if active == 'contact' %} is-current{% endif %}" href="/contact/">Contact</a></nav>
+  <nav class="links" id="navLinks"><a class="menu-crest-link" href="/" aria-label="Home"><img class="menu-crest" src="/assets/img/rose-organ-crest.svg" alt="" aria-hidden="true" width="490" height="296" /></a><a href="/about/"{% if active == 'about' %} class="active"{% endif %}>About</a><span class="nav-div" aria-hidden="true"></span><a href="/directing/"{% if active == 'directing' %} class="active"{% endif %}>Directing</a><a href="/performing/"{% if active == 'performing' %} class="active"{% endif %}>Performing</a><a href="/teaching/"{% if active == 'teaching' %} class="active"{% endif %}>Teaching</a><a href="/weddings/"{% if active == 'weddings' %} class="active"{% endif %}>Weddings</a><span class="nav-div" aria-hidden="true"></span><a href="/gallery/"{% if active == 'gallery' %} class="active"{% endif %}>Gallery</a><a href="/upcoming/"{% if active == 'upcoming' %} class="active"{% endif %}>Upcoming</a><a class="nav-cta{% if active == 'contact' %} is-current{% endif %}" href="/contact/">Contact</a></nav>
 </header>
 <style>
 .nav-div{width:1px;height:15px;background:rgba(200,168,102,.5);align-self:center;flex:0 0 auto}
@@ -28,10 +28,18 @@ header.nav.scrolled .brand-tag{font-size:.53rem}
    The panel is viewport-height with justify-content:center, so anything added
    here eats headroom: on shorter phones the crest shrinks, and on the shortest
    it steps aside entirely rather than pushing links off-screen. */
-.menu-crest{display:none}
-@media (max-width:900px){.menu-crest{display:block;width:160px;height:auto;margin:0 auto 4px;opacity:.92}}
-@media (max-width:900px) and (max-height:700px){.menu-crest{width:100px}nav.links{gap:15px}}
-@media (max-width:900px) and (max-height:520px){.menu-crest{display:none}nav.links{gap:12px}}
+.menu-crest,.menu-crest-link{display:none}
+@media (max-width:900px){
+  /* the crest links home; these must outrank nav.links a (0,1,1) and
+     nav.links a::after, hence the fuller selector */
+  nav.links a.menu-crest-link{display:block;margin:0 auto 4px;padding:0;line-height:0;font-size:0}
+  nav.links a.menu-crest-link::after{display:none}
+  nav.links a.menu-crest-link:focus-visible{outline:1px solid var(--gilt);outline-offset:5px}
+  .menu-crest{display:block;width:190px;height:auto;opacity:.92;transition:opacity .3s}
+  nav.links a.menu-crest-link:hover .menu-crest{opacity:1}
+}
+@media (max-width:900px) and (max-height:700px){.menu-crest{width:108px}nav.links{gap:15px}}
+@media (max-width:900px) and (max-height:520px){nav.links a.menu-crest-link{display:none}nav.links{gap:12px}}
 .links a.nav-cta{border:1px solid var(--gilt-deep);border-radius:2px;padding:7px 17px;color:var(--gilt-soft)}
 .links a.nav-cta::after{display:none}
 .links a.nav-cta:hover{background:var(--gilt);border-color:var(--gilt);color:var(--ink)}
