@@ -8,12 +8,15 @@
 .brand-mark{height:30px;width:auto;display:block;transition:height .4s}
 /* Tagline is sized to track the wordmark, which is a very wide 9.44:1 script.
    Tracking stays in em so it scales with font-size; text-indent cancels the
-   trailing letter-space so the line stays optically centred. */
-.brand-tag{font-size:.54rem;letter-spacing:.44em;text-indent:.44em;transition:font-size .4s}
+   trailing letter-space so the line stays optically centred. The C swash
+   reaches further left than the script's right terminal, so the mark's optical
+   centre sits ~1.6% of its width left of its bounding-box centre; translateX
+   in em compensates and scales with the mark. */
+.brand-tag{font-size:.58rem;letter-spacing:.44em;text-indent:.44em;transform:translateX(-.48em);transition:font-size .4s}
 header.nav.scrolled .brand-mark{height:27px}
-header.nav.scrolled .brand-tag{font-size:.49rem}
-@media (max-width:1100px){.brand-mark{height:26px}.brand-tag{font-size:.47rem}}
-@media (max-width:900px){.brand-mark{height:24px}.brand-tag{font-size:.43rem}}
+header.nav.scrolled .brand-tag{font-size:.53rem}
+@media (max-width:1100px){.brand-mark{height:26px}.brand-tag{font-size:.50rem}}
+@media (max-width:900px){.brand-mark{height:24px}.brand-tag{font-size:.46rem}}
 @media (max-width:420px){.brand-mark{height:20px}.brand-tag{font-size:.40rem;letter-spacing:.34em;text-indent:.34em}}
 .links a.nav-cta{border:1px solid var(--gilt-deep);border-radius:2px;padding:7px 17px;color:var(--gilt-soft)}
 .links a.nav-cta::after{display:none}
