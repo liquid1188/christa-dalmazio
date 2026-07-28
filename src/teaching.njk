@@ -208,7 +208,13 @@ nav.links a.active{color:var(--parchment)}
 .post .p-loc{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-muted);white-space:nowrap;text-align:right;padding-top:6px}
 .studio{background:var(--paper-2);border:1px solid var(--rule-l);padding:38px;border-radius:0}
 .studio h3{font-size:1.7rem;margin-bottom:12px;color:var(--paper-ink)}
-.studio p{color:var(--paper-muted);font-size:.96rem}.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}.instr-card img{width:34px;height:34px;flex:0 0 auto}.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
+.studio p{color:var(--paper-muted);font-size:.96rem}.instr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 26px}.instr-card{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid var(--rule-l);border-radius:0;background:var(--paper);transition:border-color .2s,transform .2s}.instr-card:hover{border-color:var(--gilt-deep);transform:translateY(-1px)}.instr-card img{width:34px;height:34px;flex:0 0 auto}.instr-card span{font-size:.86rem;letter-spacing:.03em;color:var(--paper-ink)}
+/* Voice leads the grid full-width, leaving the six instruments to fill
+   3 balanced rows of 2 instead of 3 rows plus an orphan. Element+class form
+   so these outrank .instr-card img (0,1,1). */
+.instr-card.instr-lead{grid-column:1/-1;padding:13px 15px;gap:14px;border-color:var(--gilt-deep)}
+.instr-card.instr-lead img{width:46px;height:46px}
+.instr-card.instr-lead span{font-size:1.02rem;letter-spacing:.05em}@media(max-width:380px){.instr-grid{grid-template-columns:1fr}}
 .instruments{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 26px}
 .pill{font-size:.71rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gilt-deep);border:1px solid rgba(154,120,54,.4);padding:8px 14px;border-radius:0}
 .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}

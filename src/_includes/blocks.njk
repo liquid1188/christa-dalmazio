@@ -93,7 +93,7 @@
       <div class="movement" style="margin-bottom:14px"><span class="lbl">{{ b.studio_label | safe }}</span></div>
       <h3>{{ b.studio_heading | safe }}</h3>
       <p>{{ b.studio_text | safe }}</p>
-      <div class="instr-grid">{% for i in b.instruments %}<div class="instr-card"><img src="{{ i.icon | replace("XNONEX", "XNONEX") }}" alt="{{ i.label }}"  loading="lazy" /><span>{{ i.label | safe }}</span></div>{% endfor %}</div>
+      <div class="instr-grid">{% for i in b.instruments %}<div class="instr-card{% if loop.first %} instr-lead{% endif %}"><img src="{{ i.icon | replace("XNONEX", "XNONEX") }}" alt="{{ i.label }}"  loading="lazy" /><span>{{ i.label | safe }}</span></div>{% endfor %}</div>
       <a class="btn btn-gilt" href="{{ b.cta_link }}">{{ b.cta_label | safe }}</a>
     </div>
   </div>
