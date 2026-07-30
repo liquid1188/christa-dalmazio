@@ -5,7 +5,7 @@
 </header>
 <style>
 .nav-div{width:1px;height:15px;background:rgba(200,168,102,.5);align-self:center;flex:0 0 auto}
-.brand-mark{height:30px;width:auto;display:block;transition:height .4s}
+.brand-mark{height:30px;width:auto;display:block}
 /* The wordmark is an image, so her name would otherwise exist only in alt
    text: not selectable, skipped by page translation, weighted less by search.
    This span carries the real text; the image is alt="" + aria-hidden so
@@ -17,9 +17,12 @@
    reaches further left than the script's right terminal, so the mark's optical
    centre sits ~1.6% of its width left of its bounding-box centre; translateX
    in em compensates and scales with the mark. */
-.brand-tag{font-size:.58rem;letter-spacing:.44em;text-indent:.44em;transform:translateX(-.48em);transition:font-size .4s}
-header.nav.scrolled .brand-mark{height:27px}
-header.nav.scrolled .brand-tag{font-size:.53rem}
+.brand-tag{font-size:.58rem;letter-spacing:.44em;text-indent:.44em;transform:translateX(-.48em)}
+/* The header shrinks on scroll. Scaling the whole lockup once keeps the rose,
+   wordmark and tagline in proportion and runs on the compositor; animating each
+   element's height/font-size instead forced a reflow every frame, and the rose
+   had no transition at all, so it snapped while the rest eased. */
+header.nav.scrolled .brand{transform:scale(.9)}
 @media (max-width:1100px){.brand-mark{height:26px}.brand-tag{font-size:.50rem}}
 @media (max-width:900px){.brand-mark{height:24px}.brand-tag{font-size:.46rem}}
 @media (max-width:420px){.brand-mark{height:20px}.brand-tag{font-size:.40rem;letter-spacing:.34em;text-indent:.34em}}
