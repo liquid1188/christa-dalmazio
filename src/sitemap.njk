@@ -2,10 +2,13 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-<?xml version="1.0" encoding="UTF-8"?>
+{%- if site.setupMode %}<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>
+{%- else %}<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- set pages = ["", "about", "performing", "directing", "teaching", "weddings", "gallery", "upcoming", "contact"] %}
 {%- for p in pages %}
   <url><loc>https://christadalmazio.com/{{ p }}</loc>{% if p == "" %}<priority>1.0</priority>{% else %}<priority>0.8</priority>{% endif %}</url>
 {%- endfor %}
 </urlset>
+{%- endif %}
