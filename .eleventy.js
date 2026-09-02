@@ -11,6 +11,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
   eleventyConfig.ignores.add("src/admin/**");
 
+  // First sentence or two of a quote, for the press kit
+  eleventyConfig.addFilter("firstSentences", (t, max = 170) => {
+    const parts = String(t).match(/[^.!?]+[.!?]+/g) || [String(t)];
+    let out = "";
+    for (const s of parts) { if ((out + s).length > max && out) break; out += s; }
+    return out.trim();
+  });
+
   // Date helper for the updates feed
   eleventyConfig.addFilter("prettyDate", (d) => {
     const dt = new Date(d + "T12:00:00");
