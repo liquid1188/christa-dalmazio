@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "type": "event",
+      "title": "Holy Mass with the Music of St. Hildegard von Bingen",
+      "date": "2026-09-18",
+      "location": "The Church of St. Rocco, 18 Third St., Glen Cove, NY, 7:00 pm",
+      "body": "Music led by Dr. Christa Dalmazio and Mrs. Theresa Volpe. Following Mass, all are invited to light refreshments and a lecture on St. Hildegard by Dr. Dalmazio.",
+      "link": ""
+    },
+    {
       "type": "announcement",
       "title": "Featured by The Good Newsroom",
       "date": "2025-10-15",

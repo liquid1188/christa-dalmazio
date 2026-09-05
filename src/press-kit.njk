@@ -289,10 +289,12 @@ nav.links a.active{color:var(--parchment)}
 .bio-card .copy:hover{border-color:var(--gilt)}
 .credit-line{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;color:var(--gilt-soft);margin:0 0 8px}
 .kit-note{color:var(--muted);font-size:.92rem;max-width:44em}
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
+.photo-card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.6fr 1fr;align-items:center}
+.photo-card.wide .pb{padding:28px 32px}
 .photo-card{border:1px solid var(--rule-d);background:var(--ink-2)}
-.photo-card .ph{aspect-ratio:4/5;overflow:hidden}
-.photo-card .ph img{width:100%;height:100%;object-fit:cover}
+.photo-card .ph{background:var(--ink-2)}
+.photo-card .ph img{width:100%;height:auto;display:block}
 .photo-card .pb{padding:16px 18px}
 .photo-card h4{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.25rem;margin:0 0 4px}
 .photo-card .meta{font-size:.78rem;color:var(--muted);margin:0 0 10px}
@@ -302,7 +304,9 @@ nav.links a.active{color:var(--parchment)}
 .kq p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;line-height:1.3;margin:0 0 10px;color:var(--parchment)}
 .kq cite{font-style:normal;font-size:.8rem;color:var(--muted)}
 .kq cite b{display:block;color:var(--gilt-soft);font-weight:600}
-@media(max-width:900px){.kit-grid,.photo-grid,.kit-quotes{grid-template-columns:1fr}}
+@media(max-width:1100px){.photo-grid{grid-template-columns:1fr 1fr}.photo-card.wide{grid-template-columns:1fr}}
+@media(max-width:900px){.kit-grid,.kit-quotes{grid-template-columns:1fr}}
+@media(max-width:560px){.photo-grid{grid-template-columns:1fr}}
 </style></head><body>
 {% endraw %}
 
@@ -346,9 +350,10 @@ nav.links a.active{color:var(--parchment)}
   <div class="movement reveal" style="margin-top:54px"><span class="lbl">Photographs</span><span class="rule"></span></div>
   <p class="kit-note reveal">Approved for editorial and program use. Web resolution; for print, request originals.</p>
   <div class="photo-grid" style="margin-top:22px">
-    <div class="photo-card reveal"><div class="ph"><img src="/assets/img/hero.jpg" alt="Christa Dalmazio, portrait" loading="lazy" style="object-position:center 16%" /></div><div class="pb"><h4>Portrait</h4><p class="meta">1000 &times; 1294, JPEG</p><a class="dl" href="/assets/img/hero.jpg" download="christa-dalmazio-portrait.jpg">Download &rarr;</a></div></div>
+    <div class="photo-card reveal"><div class="ph"><img src="/assets/img/hero.jpg" alt="Christa Dalmazio, portrait" loading="lazy" /></div><div class="pb"><h4>Portrait</h4><p class="meta">1000 &times; 1294, JPEG</p><a class="dl" href="/assets/img/hero.jpg" download="christa-dalmazio-portrait.jpg">Download &rarr;</a></div></div>
     <div class="photo-card reveal"><div class="ph"><img src="/assets/img/about.jpg" alt="Christa Dalmazio" loading="lazy" /></div><div class="pb"><h4>Portrait, alternate</h4><p class="meta">900 &times; 1326, JPEG</p><a class="dl" href="/assets/img/about.jpg" download="christa-dalmazio-portrait-2.jpg">Download &rarr;</a></div></div>
-    <div class="photo-card reveal"><div class="ph"><img src="/assets/img/g-harp-outdoor.jpg" alt="Christa Dalmazio singing at the harp" loading="lazy" /></div><div class="pb"><h4>At the harp</h4><p class="meta">1700 &times; 1260, JPEG</p><a class="dl" href="/assets/img/g-harp-outdoor.jpg" download="christa-dalmazio-harp.jpg">Download &rarr;</a></div></div>
+    <div class="photo-card reveal"><div class="ph"><img src="/assets/img/gal-gown.jpg" alt="Christa Dalmazio in concert gown" loading="lazy" /></div><div class="pb"><h4>In concert gown</h4><p class="meta">1000 &times; 997, JPEG</p><a class="dl" href="/assets/img/gal-gown.jpg" download="christa-dalmazio-gown.jpg">Download &rarr;</a></div></div>
+    <div class="photo-card wide reveal"><div class="ph"><img src="/assets/img/g-harp-outdoor.jpg" alt="Christa Dalmazio singing at the harp" loading="lazy" /></div><div class="pb"><h4>At the harp</h4><p class="meta">1700 &times; 1260, JPEG</p><a class="dl" href="/assets/img/g-harp-outdoor.jpg" download="christa-dalmazio-harp.jpg">Download &rarr;</a></div></div>
   </div>
 
   <div class="movement reveal" style="margin-top:54px"><span class="lbl">In their words</span><span class="rule"></span></div>
