@@ -257,7 +257,6 @@ nav.links a.active{color:var(--parchment)}
 .contact p{color:var(--muted);font-size:1.07rem;margin-bottom:30px}
 .contact .cta-row{justify-content:center}
 /* FOOTER */
-footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}.f-lockup{display:flex;flex-direction:column;align-items:center;gap:9px;margin-bottom:30px}.f-lockup img{width:48px;height:48px}.f-lockup img.f-crest{width:150px;height:auto;opacity:.92}.f-name{font-family:'Cormorant Garamond',serif;font-size:1.65rem;color:var(--parchment);letter-spacing:.02em;line-height:1}.f-tag{font-size:.63rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gilt)}.f-menu{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 26px;margin-bottom:22px}.f-menu a{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);transition:color .25s}.f-menu a:hover{color:var(--gilt)}.f-social{display:flex;justify-content:center;gap:22px;flex-wrap:wrap}.f-social a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);transition:color .25s}.f-social a:hover{color:var(--gilt)}.f-meta{font-size:.68rem;letter-spacing:.05em;color:var(--muted-2);padding-top:22px;margin-top:26px;border-top:1px solid var(--rule-d)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
 .reveal.in{opacity:1;transform:none}
 @media (max-width:900px){
@@ -285,7 +284,7 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
   <div class="ph-grid">
     <div class="ph-text">
       <div class="kick">Contact</div><h1>Let&rsquo;s begin.</h1>
-      <p>For a performance, sacred-music direction, lessons, a masterclass, or music for a wedding, Christa welcomes your note. Tell her what you have in mind below, or write to her directly.</p>
+      <p>For a performance, sacred-music direction, lessons, a masterclass, or music for a wedding, Christa welcomes your note. Tell her what you have in mind below, or write to her directly at <a href="mailto:christadalmazio@gmail.com">christadalmazio@gmail.com</a>.</p>
     </div>
     <div class="ph-photo">
       <img src="/assets/img/gal-outdoor.jpg" alt="Christa Dalmazio" width="1100" height="732" />
@@ -301,15 +300,42 @@ footer{padding:60px 0 38px;border-top:1px solid var(--rule-d);text-align:center}
     <div class="offer-card reveal"><div class="offer-img"><img width="726" height="1246" src="/assets/img/harp.jpg" alt="Christa Dalmazio playing the harp" loading="lazy" style="object-position:center 30%" /></div><div class="offer-body"><h3>Weddings</h3><p>Harp, voice, and multi-instrumental music for nuptial Masses, funerals, and special occasions.</p><button type="button" class="offer-link" data-inquiry="weddings">Make an inquiry &rarr;</button></div></div>
   </div>
 </div></section>
-<section id="contact" class="contact"><div class="wrap"><div class="inner">
-  <h2 class="reveal">Write to <em>Christa.</em></h2>
-  <p class="reveal">She is available for liturgical consultation, sacred-music masterclasses, and select&nbsp;recital&nbsp;engagements.</p>
-  <div class="cta-row reveal">
-    <button type="button" class="btn btn-gilt" data-inquiry="general">Send a message</button>
-    <a class="btn btn-ghost" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Message on Instagram</a>
-    <a class="btn btn-ghost" href="/press-kit/">Press kit</a>
-  </div>
-</div></div></section>
+<section class="inline-inq" id="write"><div class="wrap">
+  <div class="movement center reveal"><span class="lbl">Write to Christa</span></div>
+  <form id="inqInline" class="inq-inline reveal" novalidate>
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <div class="inq-row">
+      <div class="inq-fld"><label for="inName">Your name</label><input id="inName" name="name" type="text" required autocomplete="name"></div>
+      <div class="inq-fld"><label for="inEmail">Email</label><input id="inEmail" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="inq-row">
+      <div class="inq-fld"><label for="inCat">This is about</label><select id="inCat" name="category"><option value="general">A general question</option><option value="performing">A performance</option><option value="directing">Sacred-music direction</option><option value="teaching">Lessons or a masterclass</option><option value="weddings">Music for a wedding</option></select></div>
+      <div class="inq-fld"><label for="inWhen">Date <span>(if known)</span></label><input id="inWhen" name="target_date" type="text" placeholder="e.g. June 2027"></div>
+    </div>
+    <div class="inq-fld"><label for="inMsg">Message</label><textarea id="inMsg" name="message" rows="5" required></textarea></div>
+    <button class="btn btn-gilt inq-send" type="submit">Send inquiry</button>
+  </form>
+  <div class="inq-done" id="inDone" hidden><h3>Message sent.</h3><p>Thank you for writing &mdash; Christa will be in touch soon.</p></div>
+  <p class="inq-alt reveal">Or <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">message on Instagram</a>. Presenters and press: <a href="/press-kit/">press kit</a>.</p>
+</div></section>
+<style>
+.inline-inq{padding:70px 0 40px}
+.inq-inline{max-width:640px;margin:0 auto}
+.inq-inline .inq-fld input,.inq-inline .inq-fld textarea,.inq-inline .inq-fld select{background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:13px 15px;font-family:'Mulish',sans-serif;font-size:.95rem;border-radius:0;outline:none}
+.inq-inline .inq-fld input:focus,.inq-inline .inq-fld textarea:focus,.inq-inline .inq-fld select:focus{border-color:var(--gilt)}
+.inline-inq .inq-done{text-align:center;color:var(--parchment)}
+.inq-alt{text-align:center;font-family:'Mulish',sans-serif;font-size:.85rem;color:var(--muted);margin:22px auto 0;max-width:640px}.inq-alt a{color:var(--gilt)}
+@media (max-width:600px){.inq-inline .inq-row{flex-direction:column;gap:0}}
+</style>
+<script>
+(function(){var f=document.getElementById('inqInline'),d=document.getElementById('inDone');if(!f)return;
+var SUBJ={general:'Website inquiry',performing:'Performance inquiry',directing:'Directing inquiry',teaching:'Lesson inquiry',weddings:'Wedding music inquiry'};
+f.addEventListener('submit',function(e){e.preventDefault();if(f._honey&&f._honey.value)return;if(!f.checkValidity()){f.reportValidity();return}
+var b=f.querySelector('.inq-send');b.disabled=true;b.textContent='Sending\u2026';var c=f.category.value;
+var p={name:f.name.value,email:f.email.value,message:f.message.value,category:c,_replyto:f.email.value,_subject:(SUBJ[c]||SUBJ.general)+' \u2014 '+f.name.value,_template:'table',_captcha:'false'};
+if(f.target_date.value)p.target_date=f.target_date.value;
+fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(p)}).then(function(r){return r.json()}).then(function(x){if(x.success==='true'||x.success===true){f.hidden=true;d.hidden=false}else throw 0}).catch(function(){b.disabled=false;b.textContent='Send inquiry';if(!f.querySelector('.inq-err')){var q=document.createElement('p');q.className='inq-err';q.textContent='Sorry, something went wrong. Please try again in a moment.';f.appendChild(q)}})});})();
+</script>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">
   <div class="ml-text"><h3>Join the mailing list.</h3><p>Performance updates and news.</p></div>
   <form class="ml-form" id="mlForm"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
