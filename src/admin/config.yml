@@ -8,6 +8,7 @@ collections:
 - name: updates
   label: Upcoming & Announcements
   icon: calendar_month
+  description: "Made a mistake? Open Site history (/admin/history/) to restore any earlier version, or text Andrew."
   files:
   - name: feed
     label: Upcoming & Announcements
