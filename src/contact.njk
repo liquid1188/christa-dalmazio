@@ -303,7 +303,7 @@ nav.links a.active{color:var(--parchment)}
 <section class="inline-inq" id="write"><div class="wrap">
   <div class="movement center inq-head-block reveal"><span class="lbl">Something else?</span><h2 class="inq-h">Write to <em>Christa.</em></h2></div>
   <form id="inqInline" class="inq-inline reveal" novalidate>
-    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
     <div class="inq-row">
       <div class="inq-fld"><label for="inName">Your name</label><input id="inName" name="name" type="text" required autocomplete="name"></div>
       <div class="inq-fld"><label for="inEmail">Email</label><input id="inEmail" name="email" type="email" required autocomplete="email"></div>
@@ -332,15 +332,15 @@ nav.links a.active{color:var(--parchment)}
 <script>
 (function(){var f=document.getElementById('inqInline'),d=document.getElementById('inDone');if(!f)return;
 var SUBJ={general:'Website inquiry',performing:'Performance inquiry',directing:'Directing inquiry',teaching:'Lesson inquiry',weddings:'Wedding music inquiry'};
-f.addEventListener('submit',function(e){e.preventDefault();if(f._honey&&f._honey.value)return;if(!f.checkValidity()){f.reportValidity();return}
+f.addEventListener('submit',function(e){e.preventDefault();if(f.botcheck&&f.botcheck.checked)return;if(!f.checkValidity()){f.reportValidity();return}
 var b=f.querySelector('.inq-send');b.disabled=true;b.textContent='Sending\u2026';var c=f.category.value;
 var p={name:f.name.value,email:f.email.value,message:f.message.value,category:c,_replyto:f.email.value,_subject:(SUBJ[c]||SUBJ.general)+' \u2014 '+f.name.value,_template:'table',_captcha:'false'};
 if(f.target_date.value)p.target_date=f.target_date.value;
-fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(p)}).then(function(r){return r.json()}).then(function(x){if(x.success==='true'||x.success===true){f.hidden=true;d.hidden=false}else throw 0}).catch(function(){b.disabled=false;b.textContent='Send inquiry';if(!f.querySelector('.inq-err')){var q=document.createElement('p');q.className='inq-err';q.textContent='Sorry, something went wrong. Please try again in a moment.';f.appendChild(q)}})});})();
+fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:w3fBody(p)}).then(function(r){return r.json()}).then(function(x){if(x.success==='true'||x.success===true){f.hidden=true;d.hidden=false}else throw 0}).catch(function(){b.disabled=false;b.textContent='Send inquiry';if(!f.querySelector('.inq-err')){var q=document.createElement('p');q.className='inq-err';q.textContent='Sorry, something went wrong. Please try again in a moment.';f.appendChild(q)}})});})();
 </script>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">
   <div class="ml-text"><h3>Join the mailing list.</h3><p>Performance updates and news.</p></div>
-  <form class="ml-form" id="mlForm"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+  <form class="ml-form" id="mlForm"><input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
     <input type="email" id="mlEmail" required placeholder="Email address" aria-label="Email address" />
     <button type="submit" class="btn btn-gilt">Subscribe</button>
   </form>
@@ -359,12 +359,12 @@ const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.ta
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const mf=document.getElementById('mlForm');
 if(mf){mf.addEventListener('submit',function(e){e.preventDefault();
-  if(mf._gotcha&&mf._gotcha.value)return;
+  if(mf.botcheck&&mf.botcheck.checked)return;
   var em=document.getElementById('mlEmail').value;
   var btn=mf.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Subscribing\u2026';
-  fetch('https://formsubmit.co/ajax/christadalmazio@gmail.com',{method:'POST',
+  fetch('https://api.web3forms.com/submit',{method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({email:em,_replyto:em,_subject:'Mailing list signup: '+em,_template:'table',_captcha:'false',message:'Please add '+em+' to the mailing list.'})
+    body:w3fBody({email:em,_replyto:em,_subject:'Mailing list signup: '+em,_template:'table',_captcha:'false',message:'Please add '+em+' to the mailing list.'})
   }).then(function(r){return r.json();}).then(function(d2){
     if(d2.success==='true'||d2.success===true){
       mf.style.display='none';
