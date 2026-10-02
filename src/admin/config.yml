@@ -88,6 +88,12 @@ collections:
         widget: text
         required: false
         hint: One sentence taken from the quote above. If left blank, the full quote is shown.
+      - name: wide
+        label: Full-width card
+        widget: boolean
+        required: false
+        default: false
+        hint: Spans both columns of the homepage grid. Best for longer quotes.
 - name: gallery
   label: Photo Gallery
   icon: photo_library
