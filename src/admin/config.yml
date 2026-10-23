@@ -176,6 +176,7 @@ collections:
         fields:
         - {name: label, label: Small heading, widget: string}
         - {name: quote, label: Quote, widget: text}
+        - {name: second, label: Second line (optional), widget: text, required: false}
         - {name: cite, label: Source line, widget: string}
         - {name: note, label: Line under the source, widget: text, required: false}
         - {name: link, label: Link, widget: string, required: false}

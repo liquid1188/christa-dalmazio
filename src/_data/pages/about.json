@@ -29,6 +29,16 @@
       "cta_link": ""
     },
     {
+      "type": "quote_card",
+      "label": "Letter to Artists",
+      "quote": "None can sense more deeply than you artists, ingenious creators of beauty that you are, something of the pathos with which God at the dawn of creation looked upon the work of his hands.",
+      "cite": "Pope St. John Paul II, <i>Letter to Artists</i>, Easter 1999",
+      "note": "",
+      "link": "https://www.vatican.va/content/john-paul-ii/en/letters/1999/documents/hf_jp-ii_let_23041999_artists.html",
+      "link_label": "Read the letter",
+      "second": "In this sense it has been said with profound insight that “beauty will save the world.”"
+    },
+    {
       "type": "scholarship",
       "latin": "Panis angelicus fit panis hominum",
       "translation": "The Bread of Angels becomes the Bread of men",
@@ -51,15 +61,6 @@
           "name": "Catherine Malfitano"
         }
       ]
-    },
-    {
-      "type": "quote_card",
-      "label": "Letter to Artists",
-      "quote": "None can sense more deeply than you artists, ingenious creators of beauty that you are, something of the pathos with which God at the dawn of creation looked upon the work of his hands.",
-      "cite": "Pope St. John Paul II, <i>Letter to Artists</i>, Easter 1999",
-      "note": "On the artist as image of God the Creator, and on why the Church needs beauty.",
-      "link": "https://www.vatican.va/content/john-paul-ii/en/letters/1999/documents/hf_jp-ii_let_23041999_artists.html",
-      "link_label": "Read the letter"
     },
     {
       "type": "patrons",
