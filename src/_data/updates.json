@@ -23,6 +23,30 @@
       "location": "",
       "body": "Six Marian chants recorded live at Holy Cross Church in Rumson, New Jersey, with Christa on harp, alongside soprano Dr. Carly York. Available on all major platforms.",
       "link": "https://www.thecatholiccantor.com"
+    },
+    {
+      "type": "event",
+      "date": "2026-12-10",
+      "title": "An Advent Concert Experience with Higher Word",
+      "location": "St. Joseph's Church in Greenwich Village, 371 Sixth Avenue, New York, NY, 7:15 PM",
+      "body": "An intimate, chamber-sized concert of familiar and lesser-known music for Advent, from Higher Word, where Christa is music director. Tickets will be available soon.",
+      "link": "https://higherword.org/events/an-advent-concert-experience-with-higher-word"
+    },
+    {
+      "type": "event",
+      "date": "2026-10-02",
+      "title": "Heavenly Host: A Concert for the Feast of the Guardian Angels",
+      "location": "St. Jean Baptiste Church, 184 East 76th Street, New York, NY, 7:15 PM",
+      "body": "Higher Word's season-opening orchestra concert, with music recalling the words of the angels in Scripture, from Biebl's Ave Maria to the Gloria of Bach's Mass in B Minor.",
+      "link": "https://higherword.org/events/hw-orchestra-season-opener-feast-of-the-guardian-angels"
+    },
+    {
+      "type": "event",
+      "date": "2025-10-23",
+      "title": "All Hallows",
+      "location": "Church of St. Anthony of Padua, 154 Sullivan Street, New York, NY",
+      "body": "Christa and Jacob Beranek conducted more than forty musicians of the Higher Word Orchestra in music by Mozart, Beethoven, and other composers, a meditation on everlasting life for All Saints and All Souls.",
+      "link": "https://higherword.org/events/all-hallows"
     }
   ]
 }
