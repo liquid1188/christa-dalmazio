@@ -397,6 +397,11 @@ collections:
           - name: name
             label: Name
             widget: string
+      - name: endorsements
+        label: Endorsements (all quotes from the Endorsements list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string, default: From Those Who Know Her}
       - name: patrons
         label: Patron saints
         widget: object
@@ -929,6 +934,11 @@ collections:
           - name: name
             label: Name
             widget: string
+      - name: endorsements
+        label: Endorsements (all quotes from the Endorsements list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string, default: From Those Who Know Her}
       - name: patrons
         label: Patron saints
         widget: object
@@ -1458,6 +1468,11 @@ collections:
           - name: name
             label: Name
             widget: string
+      - name: endorsements
+        label: Endorsements (all quotes from the Endorsements list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string, default: From Those Who Know Her}
       - name: patrons
         label: Patron saints
         widget: object
@@ -2000,6 +2015,11 @@ collections:
           - name: name
             label: Name
             widget: string
+      - name: endorsements
+        label: Endorsements (all quotes from the Endorsements list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string, default: From Those Who Know Her}
       - name: patrons
         label: Patron saints
         widget: object
@@ -2557,6 +2577,11 @@ collections:
           - name: name
             label: Name
             widget: string
+      - name: endorsements
+        label: Endorsements (all quotes from the Endorsements list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string, default: From Those Who Know Her}
       - name: patrons
         label: Patron saints
         widget: object

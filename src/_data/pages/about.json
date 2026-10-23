@@ -63,6 +63,10 @@
       ]
     },
     {
+      "type": "endorsements",
+      "label": "From Those Who Know Her"
+    },
+    {
       "type": "patrons",
       "label": "Under the patronage of",
       "patrons": [

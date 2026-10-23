@@ -112,6 +112,16 @@
   <p class="sub">{{ b.subtitle | safe }}</p>
   <div class="meta">{% for m in b.meta %}<span>{{ m.role | safe }} &nbsp;<b>{{ m.name | safe }}</b></span>{% endfor %}</div>
 </div></div></section>
+{%- elif b.type == "endorsements" %}
+<section class="endorse" id="endorsements"><div class="wrap">
+  <div class="movement center reveal"><span class="lbl">{{ b.label | default("From Those Who Know Her") | safe }}</span></div>
+  <div class="en-grid">
+{%- for e in endorsements.items %}{% if e.quote %}
+    <div class="en-card{% if e.wide %} en-wide{% endif %} reveal"><div class="en-q">&ldquo;{{ e.quote | safe }}&rdquo;</div>
+    <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role | roleBreak | safe }}</div></div></div>
+{%- endif %}{%- endfor %}
+  </div>
+</div></section>
 {%- elif b.type == "patrons" %}
 <section class="patron-sec reveal"><div class="wrap">
   <img class="patron-orn" src="/assets/img/rose-mark.svg" alt="" aria-hidden="true"  loading="lazy" />
