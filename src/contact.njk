@@ -312,10 +312,30 @@ nav.links a.active{color:var(--parchment)}
       <div class="inq-fld"><label for="inCat">This is about</label><select id="inCat" name="category"><option value="general">A general question</option><option value="performing">A performance</option><option value="directing">Sacred-music direction</option><option value="teaching">Lessons or a masterclass</option><option value="weddings">Music for a wedding</option></select></div>
       <div class="inq-fld"><label for="inWhen">Date <span>(if known)</span></label><input id="inWhen" name="target_date" type="text" placeholder="e.g. June 2027"></div>
     </div>
+    <div class="inq-row cx" data-for="weddings" hidden>
+      <div class="inq-fld"><label for="cxVenue">Venue or parish</label><input id="cxVenue" name="venue" type="text"></div>
+      <div class="inq-fld"><label for="cxOcc">Occasion</label><select id="cxOcc" name="occasion"><option>Nuptial Mass</option><option>Wedding ceremony</option><option>Reception or cocktail hour</option><option>Ceremony and reception</option><option>Funeral or memorial</option><option>Private event</option><option>Something else</option></select></div>
+    </div>
+    <div class="inq-row cx" data-for="weddings" hidden>
+      <div class="inq-fld"><label for="cxMusic">Music you have in mind</label><select id="cxMusic" name="music_wanted"><option>Not sure yet</option><option>Voice</option><option>Harp</option><option>Organ</option><option>Voice and harp</option><option>Voice and organ</option><option>Harp and strings</option></select></div>
+    </div>
+    <div class="inq-row cx" data-for="teaching" hidden>
+      <div class="inq-fld"><label for="cxInst">Instrument</label><select id="cxInst" name="instrument"><option>Voice</option><option>Piano</option><option>Harp</option><option>Organ</option><option>Violin</option><option>Viola</option><option>Cello</option><option>Not sure yet</option></select></div>
+      <div class="inq-fld"><label for="cxLevel">Level</label><select id="cxLevel" name="level"><option>Beginner</option><option>Some experience</option><option>Advanced or preparing for auditions</option></select></div>
+    </div>
+    <div class="inq-row cx" data-for="teaching" hidden>
+      <div class="inq-fld"><label for="cxWho">Lessons are for</label><select id="cxWho" name="lessons_for"><option>Myself</option><option>My child</option><option>Someone else</option></select></div>
+      <div class="inq-fld"><label for="cxTown">Town or neighborhood</label><input id="cxTown" name="location" type="text" placeholder="e.g. Red Bank, NJ"></div>
+    </div>
+    <div class="inq-row cx" data-for="performing directing" hidden>
+      <div class="inq-fld"><label for="cxOrg">Organization or ensemble</label><input id="cxOrg" name="organization" type="text"></div>
+      <div class="inq-fld"><label for="cxType">Type of event</label><input id="cxType" name="event_type" type="text" placeholder="e.g. concert, Mass, recital, gala"></div>
+    </div>
     <div class="inq-fld"><label for="inMsg">Message</label><textarea id="inMsg" name="message" rows="5" required></textarea></div>
     <button class="btn btn-gilt inq-send" type="submit">Send inquiry</button>
+    <p class="inq-note">Christa usually replies within three days.</p>
   </form>
-  <div class="inq-done" id="inDone" hidden><h3>Message sent.</h3><p>Thank you for writing &mdash; Christa will be in touch soon.</p></div>
+  <div class="inq-done" id="inDone" hidden><h3>Message sent.</h3><p>Thank you for writing. Christa usually replies within three days.</p></div>
   <p class="inq-alt reveal">Or <a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">message on Instagram</a>. Presenters and media: <a href="/press-kit/">press kit</a>.</p>
 </div></section>
 <style>
@@ -326,16 +346,16 @@ nav.links a.active{color:var(--parchment)}
 .inq-inline .inq-fld input,.inq-inline .inq-fld textarea,.inq-inline .inq-fld select{background:rgba(255,255,255,.04);border:1px solid var(--rule-d);color:var(--parchment);padding:13px 15px;font-family:'Mulish',sans-serif;font-size:.95rem;border-radius:0;outline:none}
 .inq-inline .inq-fld input:focus,.inq-inline .inq-fld textarea:focus,.inq-inline .inq-fld select:focus{border-color:var(--gilt)}
 .inline-inq .inq-done{text-align:center;color:var(--parchment)}
-.inq-alt{text-align:center;font-family:'Mulish',sans-serif;font-size:.85rem;color:var(--muted);margin:22px auto 0;max-width:640px}.inq-alt a{color:var(--gilt)}
+.cx[hidden]{display:none!important}.inq-note{font-family:'Mulish',sans-serif;font-size:.8rem;color:var(--muted-2);text-align:center;margin:12px 0 0}.inq-alt{text-align:center;font-family:'Mulish',sans-serif;font-size:.85rem;color:var(--muted);margin:22px auto 0;max-width:640px}.inq-alt a{color:var(--gilt)}
 @media (max-width:600px){.inq-inline .inq-row{flex-direction:column;gap:0}}
 </style>
 <script>
-(function(){var f=document.getElementById('inqInline'),d=document.getElementById('inDone');if(!f)return;
+(function(){var f=document.getElementById('inqInline'),d=document.getElementById('inDone');if(!f)return;function sync(){var c=f.category.value;[].forEach.call(f.querySelectorAll('.cx'),function(r){r.hidden=r.getAttribute('data-for').split(' ').indexOf(c)<0})}f.category.addEventListener('change',sync);var q=new URLSearchParams(location.search).get('about');if(q&&f.category.querySelector('option[value="'+q+'"]'))f.category.value=q;sync();
 var SUBJ={general:'Website inquiry',performing:'Performance inquiry',directing:'Directing inquiry',teaching:'Lesson inquiry',weddings:'Wedding music inquiry'};
 f.addEventListener('submit',function(e){e.preventDefault();if(f.botcheck&&f.botcheck.checked)return;if(!f.checkValidity()){f.reportValidity();return}
 var b=f.querySelector('.inq-send');b.disabled=true;b.textContent='Sending\u2026';var c=f.category.value;
 var p={name:f.name.value,email:f.email.value,message:f.message.value,category:c,_replyto:f.email.value,_subject:(SUBJ[c]||SUBJ.general)+' \u2014 '+f.name.value,_template:'table',_captcha:'false'};
-if(f.target_date.value)p.target_date=f.target_date.value;
+if(f.target_date.value)p.target_date=f.target_date.value;[].forEach.call(f.querySelectorAll('.cx:not([hidden]) [name]'),function(el){if(el.value)p[el.name]=el.value});
 fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:w3fBody(p)}).then(function(r){return r.json()}).then(function(x){if(x.success==='true'||x.success===true){f.hidden=true;d.hidden=false}else throw 0}).catch(function(){b.disabled=false;b.textContent='Send inquiry';if(!f.querySelector('.inq-err')){var q=document.createElement('p');q.className='inq-err';q.textContent='Sorry, something went wrong. Please try again in a moment.';f.appendChild(q)}})});})();
 </script>
 <section class="mailing"><div class="wrap"><div class="ml-inner reveal">

@@ -15,19 +15,33 @@
         <div class="inq-fld"><label for="inqDate">Event date <span>(if known)</span></label><input id="inqDate" name="event_date" type="text" placeholder="e.g. June 2027"></div>
         <div class="inq-fld"><label for="inqVenue">Venue or parish</label><input id="inqVenue" name="venue" type="text"></div>
       </div>
+      <div class="inq-row inq-extra" id="inqExtraWed2" hidden>
+        <div class="inq-fld"><label for="inqOcc">Occasion</label><select id="inqOcc" name="occasion"><option>Nuptial Mass</option><option>Wedding ceremony</option><option>Reception or cocktail hour</option><option>Ceremony and reception</option><option>Funeral or memorial</option><option>Private event</option><option>Something else</option></select></div>
+        <div class="inq-fld"><label for="inqMusic">Music you have in mind</label><select id="inqMusic" name="music_wanted"><option>Not sure yet</option><option>Voice</option><option>Harp</option><option>Organ</option><option>Voice and harp</option><option>Voice and organ</option><option>Harp and strings</option></select></div>
+      </div>
       <div class="inq-row inq-extra" id="inqExtraOrg" hidden>
         <div class="inq-fld"><label for="inqOrg">Organization or ensemble</label><input id="inqOrg" name="organization" type="text"></div>
         <div class="inq-fld"><label for="inqWhen">Target date <span>(if known)</span></label><input id="inqWhen" name="target_date" type="text"></div>
       </div>
+      <div class="inq-row inq-extra" id="inqExtraOrg2" hidden>
+        <div class="inq-fld"><label for="inqType">Type of event</label><input id="inqType" name="event_type" type="text" placeholder="e.g. concert, Mass, recital, gala"></div>
+        <div class="inq-fld"><label for="inqPlace">Location</label><input id="inqPlace" name="event_location" type="text"></div>
+      </div>
       <div class="inq-row inq-extra" id="inqExtraTeach" hidden>
         <div class="inq-fld"><label for="inqWho">Lessons are for</label><select id="inqWho" name="lessons_for"><option>Myself</option><option>My child</option><option>Someone else</option></select></div>
+        <div class="inq-fld"><label for="inqInst">Instrument</label><select id="inqInst" name="instrument"><option>Voice</option><option>Piano</option><option>Harp</option><option>Organ</option><option>Violin</option><option>Viola</option><option>Cello</option><option>Not sure yet</option></select></div>
+      </div>
+      <div class="inq-row inq-extra" id="inqExtraTeach2" hidden>
+        <div class="inq-fld"><label for="inqLevel">Level</label><select id="inqLevel" name="level"><option>Beginner</option><option>Some experience</option><option>Advanced or preparing for auditions</option></select></div>
+        <div class="inq-fld"><label for="inqTown">Town or neighborhood</label><input id="inqTown" name="location" type="text" placeholder="e.g. Red Bank, NJ"></div>
       </div>
       <div class="inq-fld"><label for="inqMsg">Message</label><textarea id="inqMsg" name="message" rows="4" required></textarea></div>
       <button class="btn btn-gilt inq-send" type="submit">Send inquiry</button>
+      <p class="inq-note">Christa usually replies within three days.</p>
     </form>
     <div class="inq-done" id="inqDone" hidden>
       <h3>Message sent.</h3>
-      <p>Thank you for writing &mdash; Christa will be in touch soon.</p>
+      <p>Thank you for writing. Christa usually replies within three days.</p>
     </div>
   </div>
 </div>
@@ -48,6 +62,7 @@
 .inq-fld textarea{resize:vertical;min-height:96px}
 .inq-fld select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8a866' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:14px}
 .inq-send{width:100%;justify-content:center;margin-top:6px;border:0}
+.inq-note{font-family:'Mulish',sans-serif;font-size:.8rem;color:var(--muted-2);text-align:center;margin:12px 0 0}
 .inq-send[disabled]{opacity:.6;cursor:default}
 .inq-close{position:absolute;top:14px;right:16px;background:none;border:0;color:var(--muted-2);font-size:1.7rem;line-height:1;cursor:pointer;padding:6px;transition:color .25s}
 .inq-close:hover{color:var(--gilt)}
@@ -64,10 +79,10 @@ button.f-mailbtn svg{width:26px;height:26px;display:block}
 (function(){
 var CATS={
   general:{lbl:'Inquiry',title:'Write to <em>Christa.</em>',subj:'Website inquiry',extra:null},
-  performing:{lbl:'Performing',title:'Performance <em>inquiry.</em>',subj:'Performance inquiry',extra:'inqExtraOrg'},
-  directing:{lbl:'Directing',title:'Directing <em>inquiry.</em>',subj:'Directing inquiry',extra:'inqExtraOrg'},
-  teaching:{lbl:'Teaching',title:'Lesson <em>inquiry.</em>',subj:'Lesson inquiry',extra:'inqExtraTeach'},
-  weddings:{lbl:'Weddings',title:'Wedding music <em>inquiry.</em>',subj:'Wedding music inquiry',extra:'inqExtraWed'}
+  performing:{lbl:'Performing',title:'Performance <em>inquiry.</em>',subj:'Performance inquiry',extra:'inqExtraOrg,inqExtraOrg2'},
+  directing:{lbl:'Directing',title:'Directing <em>inquiry.</em>',subj:'Directing inquiry',extra:'inqExtraOrg,inqExtraOrg2'},
+  teaching:{lbl:'Teaching',title:'Lesson <em>inquiry.</em>',subj:'Lesson inquiry',extra:'inqExtraTeach,inqExtraTeach2'},
+  weddings:{lbl:'Weddings',title:'Wedding music <em>inquiry.</em>',subj:'Wedding music inquiry',extra:'inqExtraWed,inqExtraWed2'}
 };
 var ov=document.getElementById('inqOverlay'),form=document.getElementById('inqForm'),
     done=document.getElementById('inqDone'),closeBtn=document.getElementById('inqClose'),
@@ -78,7 +93,7 @@ function open(c){
   document.getElementById('inqLbl').textContent=C.lbl;
   document.getElementById('inqTitle').innerHTML=C.title;
   document.querySelectorAll('.inq-extra').forEach(function(x){x.hidden=true;});
-  if(C.extra)document.getElementById(C.extra).hidden=false;
+  if(C.extra)C.extra.split(',').forEach(function(id){document.getElementById(id).hidden=false;});
   form.hidden=false;done.hidden=true;form.reset();
   var err=form.querySelector('.inq-err');if(err)err.remove();
   var b=form.querySelector('.inq-send');b.disabled=false;b.textContent='Send inquiry';
@@ -99,7 +114,7 @@ form.addEventListener('submit',function(e){
   b.disabled=true;b.textContent='Sending\u2026';
   var payload={name:form.name.value,email:form.email.value,message:form.message.value,
     _replyto:form.email.value,_subject:C.subj+' \u2014 '+form.name.value,_template:'table',_captcha:'false',category:C.lbl};
-  ['event_date','venue','organization','target_date','lessons_for'].forEach(function(k){
+  ['event_date','venue','occasion','music_wanted','organization','target_date','event_type','event_location','lessons_for','instrument','level','location'].forEach(function(k){
     var f=form.elements[k];if(f&&!f.closest('.inq-extra').hidden&&f.value)payload[k]=f.value;
   });
   fetch('https://api.web3forms.com/submit',{method:'POST',

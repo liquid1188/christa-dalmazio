@@ -292,12 +292,12 @@ nav.links a.active{color:var(--parchment)}
 .recital-fig{margin:14px 0 6px}
 .recital-fig img{width:100%;max-width:340px;height:auto;display:block;border:1px solid var(--rule-l)}
 .bodytext i.plain-i{font-style:italic;color:inherit}
-.en-grid .en-wide{grid-column:1/-1}</style></head><body>
+.en-grid .en-wide{grid-column:1/-1}section.endorse.paper{background:var(--paper)!important;background-image:radial-gradient(900px 500px at 12% 0%,rgba(255,255,255,.5),transparent 60%),radial-gradient(800px 600px at 100% 100%,rgba(154,120,54,.06),transparent 55%)!important;border-color:rgba(154,120,54,.25)}section.endorse.paper::before,section.endorse.paper::after{display:none!important}.endorse.paper::before{opacity:0}.paper .qband-q{color:var(--paper-ink)}.paper .qband-name,.paper .en-name{color:var(--paper-ink)}.paper .qband-role,.paper .en-role{color:var(--paper-muted)}.paper .en-q{color:#5a3a42}.paper .en-card{border-color:rgba(154,120,54,.28)}.paper .qband-rule{background:var(--gilt-deep)}.paper .en-more a{color:var(--gilt-deep)}.paper .qband::before,.paper .qband-q::before{color:var(--gilt-deep)}</style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
 {% set pg = pages.about %}
 {% include "blocks.njk" %}
-<section class="endorse" id="endorsements"><div class="wrap">
+<section class="endorse paper" id="endorsements"><div class="wrap">
   <div class="movement center reveal"><span class="lbl">From Those Who Know Her</span></div>
   <div class="en-grid">
 {%- for e in endorsements.items %}{% if e.quote %}

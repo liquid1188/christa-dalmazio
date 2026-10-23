@@ -1,5 +1,7 @@
 {
   "setupMode": true,
   "url": "https://christadalmazio.com",
-  "web3formsKey": ""
+  "web3formsKey": "",
+  "gaId": "",
+  "cfBeacon": ""
 }
