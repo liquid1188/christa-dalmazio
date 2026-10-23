@@ -309,7 +309,7 @@ nav.links a.active{color:var(--parchment)}
       <div class="inq-fld"><label for="inEmail">Email</label><input id="inEmail" name="email" type="email" required autocomplete="email"></div>
     </div>
     <div class="inq-row">
-      <div class="inq-fld"><label for="inCat">This is about</label><select id="inCat" name="category"><option value="general">A general question</option><option value="performing">A performance</option><option value="directing">Sacred-music direction</option><option value="teaching">Lessons or a masterclass</option><option value="weddings">Music for a wedding</option></select></div>
+      <div class="inq-fld"><label for="inCat">This is about</label><select id="inCat" name="category"><option value="general">A general question</option><option value="performing">A performance</option><option value="directing">Sacred-music direction</option><option value="teaching">Lessons or a masterclass</option><option value="weddings">Music for a wedding, funeral, or event</option></select></div>
       <div class="inq-fld"><label for="inWhen">Date <span>(if known)</span></label><input id="inWhen" name="target_date" type="text" placeholder="e.g. June 2027"></div>
     </div>
     <div class="inq-row cx" data-for="weddings" hidden>
@@ -351,7 +351,7 @@ nav.links a.active{color:var(--parchment)}
 </style>
 <script>
 (function(){var f=document.getElementById('inqInline'),d=document.getElementById('inDone');if(!f)return;function sync(){var c=f.category.value;[].forEach.call(f.querySelectorAll('.cx'),function(r){r.hidden=r.getAttribute('data-for').split(' ').indexOf(c)<0})}f.category.addEventListener('change',sync);var q=new URLSearchParams(location.search).get('about');if(q&&f.category.querySelector('option[value="'+q+'"]'))f.category.value=q;sync();
-var SUBJ={general:'Website inquiry',performing:'Performance inquiry',directing:'Directing inquiry',teaching:'Lesson inquiry',weddings:'Wedding music inquiry'};
+var SUBJ={general:'Website inquiry',performing:'Performance inquiry',directing:'Directing inquiry',teaching:'Lesson inquiry',weddings:'Occasion music inquiry'};
 f.addEventListener('submit',function(e){e.preventDefault();if(f.botcheck&&f.botcheck.checked)return;if(!f.checkValidity()){f.reportValidity();return}
 var b=f.querySelector('.inq-send');b.disabled=true;b.textContent='Sending\u2026';var c=f.category.value;
 var p={name:f.name.value,email:f.email.value,message:f.message.value,category:c,_replyto:f.email.value,_subject:(SUBJ[c]||SUBJ.general)+' \u2014 '+f.name.value,_template:'table',_captcha:'false'};

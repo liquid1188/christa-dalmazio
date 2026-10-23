@@ -37,8 +37,8 @@
   },
   {
    "type": "ensembles",
-   "label": "Music for your ceremony",
-   "intro": "A few ways to shape the music for your day. Each can be adapted to your church and your plans.",
+   "label": "Music for the occasion",
+   "intro": "A few ways to shape the music for a wedding, a funeral, or a private event. Each can be adapted to your church and your plans.",
    "items": [
     {
      "name": "Solo harp",
@@ -69,7 +69,7 @@
   },
   {
    "type": "faq",
-   "label": "Questions couples ask",
+   "label": "Common questions",
    "intro": "",
    "items": [
     {
