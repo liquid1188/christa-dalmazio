@@ -37,7 +37,7 @@
     },
     {
       "type": "ensembles",
-      "label": "Music for the occasion",
+      "label": "Choosing the music",
       "intro": "A few ways to shape the music for a wedding, a funeral, or a private event. Each can be adapted to your church and your plans.",
       "items": [
         {
@@ -61,7 +61,7 @@
           "text": "Christa at the harp with a string trio, for the ceremony or the reception, depending on availability."
         }
       ],
-      "note": ""
+      "note": "Voice alone or with piano is also available."
     },
     {
       "type": "faq",
