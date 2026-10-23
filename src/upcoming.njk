@@ -6,7 +6,7 @@ active: upcoming
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <script>try{if(localStorage.getItem('cdDesktopView')==='1'){document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280')}}catch(e){}</script>
-<title>Upcoming | Christa Dalmazio</title><meta name="description" content="New dates and new work from soprano and conductor Christa Dalmazio, posted as the season unfolds." />
+<title>Events | Christa Dalmazio</title><meta name="description" content="New dates and new work from soprano and conductor Christa Dalmazio, posted as the season unfolds." />
 <meta property="og:title" content="Events | Christa Dalmazio" /><meta property="og:description" content="New dates and new work from soprano and conductor Christa Dalmazio, posted as the season unfolds." />
 <meta property="og:type" content="website" /><meta property="og:image" content="https://christadalmazio.com/assets/img/hero.jpg" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
@@ -287,6 +287,11 @@ nav.links a.active{color:var(--parchment)}
 @media (max-width:640px){.band.band-wide .q{white-space:normal;max-width:22ch}}
 </style><style>
 .updates{padding:56px 0 104px}
+.up-h{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold,#c8a866);margin:0 0 18px;display:flex;align-items:center;gap:16px}.up-h::after{content:"";flex:1;height:1px;background:rgba(200,168,102,.25)}
+.up-group+.up-group,.up-empty+.up-group{margin-top:40px}
+.up-h{max-width:760px;margin-left:auto;margin-right:auto}
+#up-none{max-width:760px;margin:0 auto;padding:24px 0}
+#up-none a{color:var(--gold,#c8a866)}
 .up-list{max-width:760px;margin:0 auto}
 .up-item{display:grid;grid-template-columns:168px 1fr;gap:30px;padding:32px 0;border-top:1px solid var(--rule-d)}
 .up-item:first-child{border-top:0}
@@ -333,10 +338,17 @@ nav.links a.active{color:var(--parchment)}
 </div>
 </div>
 <section class="updates"><div class="wrap">
-  <div class="up-list reveal">
+  <div class="up-group" id="up-next" hidden>
+    <div class="up-h">Coming up</div>
+    <div class="up-list" id="up-next-list"></div>
+  </div>
+  <p class="up-empty" id="up-none" hidden>No dates on the calendar just now. New performances are announced here and to the <a href="#mailing">mailing list</a> first.</p>
+  <div class="up-group" id="up-past">
+    <div class="up-h" id="up-past-h" hidden>Recently</div>
+    <div class="up-list reveal" id="up-past-list">
   {%- if updates.items | length %}
   {%- for u in updates.items | sort(true, false, "date") %}
-    <article class="up-item">
+    <article class="up-item" data-date="{{ u.date }}" data-type="{{ u.type }}">
       <div class="up-when"><span class="up-tag up-{{ u.type }}">{{ "Event" if u.type == "event" else "Announcement" }}</span><time>{{ u.date | prettyDate }}</time></div>
       <div class="up-body">
         <h3>{{ u.title }}</h3>
@@ -349,9 +361,22 @@ nav.links a.active{color:var(--parchment)}
   {%- else %}
     <p class="up-empty">New performances and announcements will appear here soon.</p>
   {%- endif %}
+    </div>
   </div>
 </div></section>
-<section class="mailing"><div class="wrap"><div class="ml-inner reveal">
+<script>
+(function(){
+  var t=new Date();t.setHours(0,0,0,0);
+  var past=document.getElementById('up-past-list'),next=document.getElementById('up-next-list');
+  var items=[].slice.call(past.querySelectorAll('.up-item')),up=[];
+  items.forEach(function(el){var d=new Date(el.dataset.date+'T23:59:59');if(el.dataset.type==='event'&&d>=t){up.push(el);}});
+  up.sort(function(a,b){return a.dataset.date<b.dataset.date?-1:1}).forEach(function(el){next.appendChild(el)});
+  if(up.length){document.getElementById('up-next').hidden=false;}else{document.getElementById('up-none').hidden=false;}
+  document.getElementById('up-past-h').hidden=!past.querySelector('.up-item');
+  if(!past.querySelector('.up-item'))document.getElementById('up-past').hidden=true;
+})();
+</script>
+<section class="mailing" id="mailing"><div class="wrap"><div class="ml-inner reveal">
   <div class="ml-text"><h3>Join the mailing list.</h3><p>Performance updates and news. You can also <a class="ml-ig" href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">follow along on Instagram</a>.</p></div>
   <form class="ml-form" id="mlForm"><input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
     <input type="email" id="mlEmail" required placeholder="Email address" aria-label="Email address" />
