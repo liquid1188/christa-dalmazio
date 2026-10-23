@@ -36,11 +36,6 @@
       "caption": "At the harp · photo by Mark Gurevich"
     },
     {
-      "image": "/assets/img/gal-pivot-cast.jpg",
-      "alt": "With the cast of Beauty and the Beast, Pivot Theatre Company",
-      "caption": "Music directing · Beauty and the Beast, Pivot Theatre Company"
-    },
-    {
       "image": "/assets/img/gal-harp-ruah-bw.jpg",
       "alt": "Christa Dalmazio behind the strings of her harp, black and white, at Ruah",
       "caption": "Ruah · multi-disciplinary arts performance · photo by MJ O'Toole"
@@ -61,16 +56,6 @@
       "caption": "After a recital"
     },
     {
-      "image": "/assets/img/gal-harp-hands-bw.jpg",
-      "alt": "Hands at the harp",
-      "caption": "At the harp"
-    },
-    {
-      "image": "/assets/img/gal-piano-hands-bw.jpg",
-      "alt": "Hands at the piano",
-      "caption": "At the piano"
-    },
-    {
       "image": "/assets/img/gal-recital-ensemble.jpg",
       "alt": "D.M.A. recital · with chamber ensemble",
       "caption": "D.M.A. recital · with chamber ensemble"
@@ -79,11 +64,6 @@
       "image": "/assets/img/gal-harp-sing.jpg",
       "alt": "Singing at the harp",
       "caption": "Singing at the harp"
-    },
-    {
-      "image": "/assets/img/gal-cello-duo.jpg",
-      "alt": "In recital · soprano and cello",
-      "caption": "In recital · soprano and cello"
     },
     {
       "image": "/assets/img/harp.jpg",
@@ -106,16 +86,6 @@
       "caption": "As Papagena · The Magic Flute"
     },
     {
-      "image": "/assets/img/g-ballo.jpg",
-      "alt": "Christa Dalmazio as Oscar in Verdi's Un Ballo in Maschera",
-      "caption": "As Oscar · Verdi's <em>Un Ballo in Maschera</em>"
-    },
-    {
-      "image": "/assets/img/gal-harp-strings.jpg",
-      "alt": "At the harp",
-      "caption": "At the harp"
-    },
-    {
       "image": "/assets/img/gal-mantilla.jpg",
       "alt": "Before Mass",
       "caption": "Before Mass"
@@ -128,16 +98,6 @@
     {
       "image": "/assets/img/gal-hfh-solo.jpg",
       "alt": "Christa Dalmazio singing at the benefit concert for Holy Family Hospital of Bethlehem, Marian icon behind her",
-      "caption": "Benefit concert for Holy Family Hospital of Bethlehem · courtesy of the Order of Malta, New Jersey Area"
-    },
-    {
-      "image": "/assets/img/gal-hfh-icon.jpg",
-      "alt": "Christa Dalmazio singing beside a Marian icon at the Holy Family Hospital of Bethlehem benefit concert",
-      "caption": "Benefit concert for Holy Family Hospital of Bethlehem · courtesy of the Order of Malta, New Jersey Area"
-    },
-    {
-      "image": "/assets/img/gal-hfh-choir.jpg",
-      "alt": "The choir at the benefit concert for Holy Family Hospital of Bethlehem",
       "caption": "Benefit concert for Holy Family Hospital of Bethlehem · courtesy of the Order of Malta, New Jersey Area"
     },
     {
@@ -166,16 +126,6 @@
       "caption": "At the harp · in church"
     },
     {
-      "image": "/assets/img/italian-anthem.jpg",
-      "alt": "Singing the Italian National Anthem, 2025",
-      "caption": "Singing the Italian National Anthem · 2025"
-    },
-    {
-      "image": "/assets/img/gal-anthem-2024.jpg",
-      "alt": "Singing the Italian National Anthem, 2024",
-      "caption": "Singing the Italian National Anthem · 2024"
-    },
-    {
       "image": "/assets/img/gal-mic-event.jpg",
       "alt": "Singing the Italian National Anthem, 2021",
       "caption": "Singing the Italian National Anthem · 2021"
@@ -194,21 +144,6 @@
       "image": "/assets/img/organ.jpg",
       "alt": "At the organ",
       "caption": "At the organ"
-    },
-    {
-      "image": "/assets/img/gal-concert-purple.jpg",
-      "alt": "In concert with orchestra",
-      "caption": "In concert · photo by Nick Tan"
-    },
-    {
-      "image": "/assets/img/gal-costume-ensemble.jpg",
-      "alt": "Christa Dalmazio at the harp with The Jane Austen Playlist ensemble in period costume, Zoellner Arts Center",
-      "caption": "The Jane Austen Playlist · Zoellner Arts Center, Bethlehem"
-    },
-    {
-      "image": "/assets/img/gal-outdoor.jpg",
-      "alt": "Christa Dalmazio",
-      "caption": ""
     }
   ]
 }
