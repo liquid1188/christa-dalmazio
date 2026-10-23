@@ -171,6 +171,37 @@
     {%- endfor %}
   </div>
 </div></section>
+{%- elif b.type == "ensembles" %}
+{%- set shown = [] %}{% for e in b.items %}{% if e.text %}{% set shown = (shown.push(e), shown) %}{% endif %}{% endfor %}
+{%- if shown.length %}
+<section class="sec ens-sec"><div class="wrap">
+  <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
+  {%- if b.intro %}<p class="ens-intro reveal">{{ b.intro | safe }}</p>{% endif %}
+  <div class="ens-grid">{% for e in shown %}<div class="ens reveal"><h3>{{ e.name | safe }}</h3><p>{{ e.text | safe }}</p></div>{% endfor %}</div>
+  {%- if b.note %}<p class="ens-note reveal">{{ b.note | safe }}</p>{% endif %}
+</div></section>
+{%- endif %}
+{%- elif b.type == "faq" %}
+{%- set shown = [] %}{% for e in b.items %}{% if e.a %}{% set shown = (shown.push(e), shown) %}{% endif %}{% endfor %}
+{%- if shown.length %}
+<section class="sec faq-sec"><div class="wrap">
+  <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
+  {%- if b.intro %}<p class="ens-intro reveal">{{ b.intro | safe }}</p>{% endif %}
+  <div class="faq reveal">{% for e in shown %}<details{% if loop.first %} open{% endif %}><summary>{{ e.q | safe }}</summary><p>{{ e.a | safe }}</p></details>{% endfor %}</div>
+</div></section>
+{%- endif %}
+{%- elif b.type == "selected" %}
+{%- set featured = [] %}{%- for sb in pg.sections %}{% if sb.type == "videos" %}{% for v in sb.videos %}{% if v.featured %}{% set featured = (featured.push(v), featured) %}{% endif %}{% endfor %}{% endif %}{% endfor %}
+<section id="selected" class="sec sel-sec"><div class="wrap">
+  <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
+  {%- if b.intro %}<p class="sel-intro reveal">{{ b.intro | safe }}</p>{% endif %}
+  <div class="vgrid sel-grid">
+    {%- for v in featured %}
+    {%- include "vcard.njk" %}
+    {%- endfor %}
+  </div>
+  <p class="sel-more reveal"><a href="#watch">All recordings, interviews, and features &darr;</a></p>
+</div></section>
 {%- elif b.type == "videos" %}
 <section id="watch" class="sec"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
@@ -182,10 +213,11 @@
       <a class="btn btn-ghost" href="{{ b.feature_button_url }}" target="_blank" rel="noopener noreferrer">{{ b.feature_button_label | safe }}</a></div>
   </div>
   {%- endif %}
+  {%- if b.more_label %}<div class="movement reveal" style="margin-top:8px"><span class="lbl">{{ b.more_label | safe }}</span><span class="rule"></span></div>{% endif %}
   <div class="vgrid">
-    {%- for v in b.videos %}
+    {%- for v in b.videos %}{% if not v.featured %}
     {%- include "vcard.njk" %}
-    {%- endfor %}
+    {%- endif %}{% endfor %}
   </div>
   {%- if b.videos2 and b.videos2.length %}
 <div class="movement reveal" style="margin-top:64px"><span class="lbl">{{ b.label2 | safe }}</span><span class="rule"></span></div>
@@ -195,7 +227,7 @@
     {%- endfor %}
   </div>
   {%- endif %}
-  <script>(function(){document.querySelectorAll(".vplay").forEach(function(b){b.addEventListener("click",function(){var id=b.getAttribute("data-yt"),f=b.closest(".vframe");if(!f)return;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0&autoplay=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});});})();</script>
+  <script>(function(){if(window.__vplay)return;window.__vplay=1;document.querySelectorAll(".vplay").forEach(function(b){b.addEventListener("click",function(){var id=b.getAttribute("data-yt"),f=b.closest(".vframe");if(!f)return;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0&autoplay=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});});})();</script>
 </div></section>
 {%- elif b.type == "affiliations" %}
 <section class="sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">
