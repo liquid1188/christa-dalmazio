@@ -170,6 +170,16 @@ collections:
       label_singular: Section
       widget: list
       types:
+      - name: quote_card
+        label: Quote card
+        widget: object
+        fields:
+        - {name: label, label: Small heading, widget: string}
+        - {name: quote, label: Quote, widget: text}
+        - {name: cite, label: Source line, widget: string}
+        - {name: note, label: Line under the source, widget: text, required: false}
+        - {name: link, label: Link, widget: string, required: false}
+        - {name: link_label, label: Link text, widget: string, required: false}
       - name: band
         label: Full-width photo
         widget: object
