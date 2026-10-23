@@ -227,7 +227,7 @@
     {%- endfor %}
   </div>
   {%- endif %}
-  <script>(function(){if(window.__vplay)return;window.__vplay=1;document.querySelectorAll(".vplay").forEach(function(b){b.addEventListener("click",function(){var id=b.getAttribute("data-yt"),f=b.closest(".vframe");if(!f)return;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0&autoplay=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});});})();</script>
+  <script>(function(){if(window.__vplay)return;window.__vplay=1;document.querySelectorAll(".vplay").forEach(function(b){b.addEventListener("click",function(){var id=b.getAttribute("data-yt"),f=b.closest(".vframe");if(!f)return;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0&autoplay=1&enablejsapi=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});});})();</script>
 </div></section>
 {%- elif b.type == "affiliations" %}
 <section class="sec" style="background:var(--ink-2);border-top:1px solid var(--rule-d)"><div class="wrap">

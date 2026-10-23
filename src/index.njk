@@ -311,7 +311,7 @@ nav.links a.active{color:var(--parchment)}
   <div class="hear-frame reveal"><button class="hear-play" type="button" data-yt="{{ hv.youtube_id }}" aria-label="Play {{ hv.title | striptags }}"><img src="https://i.ytimg.com/vi/{{ hv.youtube_id }}/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/{{ hv.youtube_id }}/hqdefault.jpg'" alt="" loading="lazy" /><span class="hear-ico" aria-hidden="true"></span></button></div>
   <div class="hear-txt reveal"><span class="lbl">Hear her sing</span><h2>{{ hv.title | safe }}</h2><p class="hear-credit">{{ hv.credit | safe }}</p><a class="hear-more" href="/performing/#selected">Selected performances &rarr;</a></div>
 </div></div></section>
-<script>(function(){var b=document.querySelector(".hear-play");if(!b)return;b.addEventListener("click",function(){var f=b.parentNode;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+b.dataset.yt+'?rel=0&autoplay=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});})();</script>
+<script>(function(){var b=document.querySelector(".hear-play");if(!b)return;b.addEventListener("click",function(){var f=b.parentNode;f.innerHTML='<iframe src="https://www.youtube.com/embed/'+b.dataset.yt+'?rel=0&autoplay=1&enablejsapi=1" title="Christa Dalmazio" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';});})();</script>
 {%- endif %}
 {% raw %}<section class="highlights"><div class="wrap">
   <div class="movement reveal"><span class="lbl">What Christa Does</span><span class="rule"></span></div>
