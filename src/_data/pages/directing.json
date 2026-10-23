@@ -58,6 +58,15 @@
       "photo_caption": "Forty young voices at Radio City.<br />Academy of Our Lady Sacred Music Choir · Christmas Spectacular prelude · December 2025"
     },
     {
+      "type": "band",
+      "tall": true,
+      "image": "/assets/img/gal-orchestra-choir-altar.jpg",
+      "alt": "Christa Dalmazio conducting orchestra and choir before a high altar",
+      "position": "center 62%",
+      "quote": "",
+      "source": ""
+    },
+    {
       "type": "affiliations",
       "label": "Collaborations & Affiliations",
       "left": [
