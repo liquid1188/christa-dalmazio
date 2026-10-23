@@ -437,6 +437,8 @@ collections:
         label: Opera & concert credits
         widget: object
         fields:
+        - {name: columns_first, label: Show the concert and recital lists above the stage roles, widget: boolean, required: false}
+        - {name: label_top, label: Heading above the concert and recital lists, widget: string, required: false}
         - name: label
           label: Section heading
           widget: string
@@ -974,6 +976,8 @@ collections:
         label: Opera & concert credits
         widget: object
         fields:
+        - {name: columns_first, label: Show the concert and recital lists above the stage roles, widget: boolean, required: false}
+        - {name: label_top, label: Heading above the concert and recital lists, widget: string, required: false}
         - name: label
           label: Section heading
           widget: string
@@ -1508,6 +1512,8 @@ collections:
         label: Opera & concert credits
         widget: object
         fields:
+        - {name: columns_first, label: Show the concert and recital lists above the stage roles, widget: boolean, required: false}
+        - {name: label_top, label: Heading above the concert and recital lists, widget: string, required: false}
         - name: label
           label: Section heading
           widget: string
@@ -2055,6 +2061,8 @@ collections:
         label: Opera & concert credits
         widget: object
         fields:
+        - {name: columns_first, label: Show the concert and recital lists above the stage roles, widget: boolean, required: false}
+        - {name: label_top, label: Heading above the concert and recital lists, widget: string, required: false}
         - name: label
           label: Section heading
           widget: string
@@ -2617,6 +2625,8 @@ collections:
         label: Opera & concert credits
         widget: object
         fields:
+        - {name: columns_first, label: Show the concert and recital lists above the stage roles, widget: boolean, required: false}
+        - {name: label_top, label: Heading above the concert and recital lists, widget: string, required: false}
         - name: label
           label: Section heading
           widget: string

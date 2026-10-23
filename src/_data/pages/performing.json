@@ -135,7 +135,9 @@
             }
           ]
         }
-      ]
+      ],
+      "columns_first": true,
+      "label_top": "Concerts & Recitals"
     },
     {
       "type": "recordings",
