@@ -103,7 +103,7 @@
   <div class="euch reveal">
     <img class="euch-monstrance" src="/assets/img/monstrance.svg" alt="" aria-hidden="true"  loading="lazy" />
     <blockquote class="euch-q">{{ b.latin | safe }}<span>{{ b.translation | safe }}</span></blockquote>
-    <p class="euch-sub">{{ b.text | safe }}</p>
+    {% if b.text %}<p class="euch-sub">{{ b.text | safe }}</p>{% endif %}
   </div>
   <div class="diss-card reveal">
   <div class="movement center"><span class="lbl">{{ b.label | safe }}</span></div>
