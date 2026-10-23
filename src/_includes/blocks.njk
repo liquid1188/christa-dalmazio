@@ -196,7 +196,7 @@
 {%- elif b.type == "faq" %}
 {%- set shown = b.items %}
 {%- if shown.length %}
-<section class="sec faq-sec"><div class="wrap">
+<section class="sec faq-sec paper"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
   {%- if b.intro %}<p class="ens-intro reveal">{{ b.intro | safe }}</p>{% endif %}
   <div class="faq reveal">{% for e in shown %}<details{% if loop.first %} open{% endif %}{% if not e.a %} class="faq-soon"{% endif %}><summary>{{ e.q | safe }}</summary><p>{% if e.a %}{{ e.a | safe }}{% else %}<em>An answer is coming soon. In the meantime, Christa is glad to answer this directly. <a href="/contact/">Ask her</a>.</em>{% endif %}</p></details>{% endfor %}</div>
@@ -215,7 +215,7 @@
   <p class="sel-more reveal"><a href="#watch">All recordings, interviews, and features &darr;</a></p>
 </div></section>
 {%- elif b.type == "videos" %}
-<section id="watch" class="sec"><div class="wrap">
+<section id="watch" class="sec paper"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
   {%- if b.feature_embed %}
   <div class="feature-film">

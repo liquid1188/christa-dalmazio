@@ -62,10 +62,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("roleBreak", (role) => {
     if (!role) return role;
     const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    return role
+    return String(role).split("\n").map((line) => line
       .split(" \u00b7 ")
       .map((seg) => `<span class="en-seg">${esc(seg)}</span>`)
-      .join('<span class="en-dot">&#160;\u00b7 </span>');
+      .join('<span class="en-dot">&#160;\u00b7 </span>')).join("<br>");
   });
 
   return { dir: { input: "src", includes: "_includes", data: "_data", output: "_site" } };
