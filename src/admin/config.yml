@@ -2839,3 +2839,17 @@ collections:
             label: Style class (advanced — leave as is)
             widget: string
             required: false
+- name: settings
+  label: Site settings
+  icon: settings
+  files:
+  - name: site
+    label: Site settings
+    file: src/_data/site.json
+    fields:
+    - {name: setupMode, label: Hide the site from search engines, widget: boolean, required: false}
+    - {name: url, label: Site address, widget: string}
+    - {name: web3formsKey, label: Form key, widget: string, required: false}
+    - {name: gaId, label: Google Analytics ID, widget: string, required: false}
+    - {name: cfBeacon, label: Cloudflare analytics token, widget: string, required: false}
+    - {name: instagramFeedId, label: Instagram feed ID (Behold), widget: string, required: false, hint: "Paste a Behold feed ID to show a strip of recent Instagram posts under the gallery. Leave blank to hide it."}
