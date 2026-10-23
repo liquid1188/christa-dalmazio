@@ -233,6 +233,7 @@ nav.links a.active{color:var(--parchment)}
 @media (max-width:560px){.gal{column-count:1}}
 /* LIGHTBOX */
 .gal figure{cursor:zoom-in}
+.gal.jl{column-count:auto;display:flex;flex-wrap:wrap;gap:14px}.gal.jl figure{margin:0;flex:none}.gal.jl img{width:100%;height:100%;object-fit:cover}
 .lb{position:fixed;inset:0;z-index:200;background:rgba(6,12,11,.94);display:none;align-items:center;justify-content:center;padding:44px 16px 56px}
 .lb.open{display:flex}
 .lb img{max-width:min(94vw,1100px);max-height:82vh;width:auto;height:auto;border:1px solid var(--rule-d);box-shadow:0 24px 60px rgba(0,0,0,.6)}
@@ -293,7 +294,7 @@ nav.links a.active{color:var(--parchment)}
 {% endraw %}
 {%- for g in gallery.items %}
   {%- set d = g.image | imgDims %}
-  <figure><img src="{{ g.image }}" alt="{{ g.alt }}"{% if d %} width="{{ d.w }}" height="{{ d.h }}"{% endif %} loading="lazy" />{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
+  <figure{% if d %} data-r="{{ (d.w / d.h) | round(3) }}"{% endif %}><img src="{{ g.image }}" alt="{{ g.alt }}"{% if d %} width="{{ d.w }}" height="{{ d.h }}"{% endif %} loading="lazy" />{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
 {%- endfor %}
 {% raw %}
 </div></div></section>
@@ -325,6 +326,28 @@ t.addEventListener('click',()=>l.classList.toggle('open'));
 l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')));
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* Justified rows: best photos first, every row fills the width so the bottom edge is straight */
+(function(){
+  var g=document.querySelector('.gal');if(!g)return;
+  var figs=[].slice.call(g.querySelectorAll('figure[data-r]'));if(figs.length!==g.querySelectorAll('figure').length)return;
+  var r=figs.map(function(f){return parseFloat(f.dataset.r)||1.5});
+  function layout(){
+    var W=g.clientWidth,gap=14;
+    if(W<600){g.classList.remove('jl');figs.forEach(function(f){f.style.width=f.style.height=''});return;}
+    var target=W>1000?300:240,total=r.reduce(function(a,b){return a+b},0);
+    var k=Math.max(1,Math.round(total*target/W));
+    // linear partition: split ratios into k consecutive rows minimising the largest row sum
+    var n=r.length,pre=[0];for(var i=0;i<n;i++)pre.push(pre[i]+r[i]);
+    var cost=[],cut=[];for(i=0;i<=n;i++){cost.push(Array(k+1).fill(Infinity));cut.push(Array(k+1).fill(0));}
+    cost[0][0]=0;
+    for(var j=1;j<=k;j++)for(i=1;i<=n;i++)for(var m=j-1;m<i;m++){var row=pre[i]-pre[m],c=Math.max(cost[m][j-1],row);var dev=(row-total/k);var sc=c+dev*dev*0.0001;if(sc<cost[i][j]){cost[i][j]=sc;cut[i][j]=m;}}
+    var bounds=[],e=n;for(j=k;j>0;j--){var b=cut[e][j];bounds.unshift([b,e]);e=b;}
+    g.classList.add('jl');
+    bounds.forEach(function(be){var sum=pre[be[1]]-pre[be[0]],cnt=be[1]-be[0],h=(W-1-gap*(cnt-1))/sum;
+      for(var q=be[0];q<be[1];q++){figs[q].style.height=h+'px';figs[q].style.width=(r[q]*h)+'px';}});
+  }
+  var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(layout,120)});layout();
+})();
 /* Lightbox */
 (function(){
   var figs=[].slice.call(document.querySelectorAll('.gal figure'));
