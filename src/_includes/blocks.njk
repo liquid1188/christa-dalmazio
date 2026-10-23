@@ -172,22 +172,22 @@
   </div>
 </div></section>
 {%- elif b.type == "ensembles" %}
-{%- set shown = [] %}{% for e in b.items %}{% if e.text %}{% set shown = (shown.push(e), shown) %}{% endif %}{% endfor %}
+{%- set shown = b.items %}
 {%- if shown.length %}
 <section class="sec ens-sec"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
   {%- if b.intro %}<p class="ens-intro reveal">{{ b.intro | safe }}</p>{% endif %}
-  <div class="ens-grid">{% for e in shown %}<div class="ens reveal"><h3>{{ e.name | safe }}</h3><p>{{ e.text | safe }}</p></div>{% endfor %}</div>
+  <div class="ens-grid">{% for e in shown %}<div class="ens reveal{% if not e.text %} ens-soon{% endif %}"><h3>{{ e.name | safe }}</h3><p>{% if e.text %}{{ e.text | safe }}{% else %}Details coming soon.{% endif %}</p></div>{% endfor %}</div>
   {%- if b.note %}<p class="ens-note reveal">{{ b.note | safe }}</p>{% endif %}
 </div></section>
 {%- endif %}
 {%- elif b.type == "faq" %}
-{%- set shown = [] %}{% for e in b.items %}{% if e.a %}{% set shown = (shown.push(e), shown) %}{% endif %}{% endfor %}
+{%- set shown = b.items %}
 {%- if shown.length %}
 <section class="sec faq-sec"><div class="wrap">
   <div class="movement reveal"><span class="lbl">{{ b.label | safe }}</span><span class="rule"></span></div>
   {%- if b.intro %}<p class="ens-intro reveal">{{ b.intro | safe }}</p>{% endif %}
-  <div class="faq reveal">{% for e in shown %}<details{% if loop.first %} open{% endif %}><summary>{{ e.q | safe }}</summary><p>{{ e.a | safe }}</p></details>{% endfor %}</div>
+  <div class="faq reveal">{% for e in shown %}<details{% if loop.first %} open{% endif %}{% if not e.a %} class="faq-soon"{% endif %}><summary>{{ e.q | safe }}</summary><p>{% if e.a %}{{ e.a | safe }}{% else %}<em>An answer is coming soon. In the meantime, Christa is glad to answer this directly. <a href="/contact/">Ask her</a>.</em>{% endif %}</p></details>{% endfor %}</div>
 </div></section>
 {%- endif %}
 {%- elif b.type == "selected" %}

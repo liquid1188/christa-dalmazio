@@ -2318,7 +2318,7 @@ collections:
           label_singular: Question
           widget: list
           summary: '{{fields.q}}'
-          hint: A question appears on the site only once it has an answer. Leave the answer blank to keep it hidden until Christa confirms it.
+          hint: A question without an answer shows on the site as 'An answer is coming soon' with a link to ask Christa directly.
           fields:
           - {name: q, label: Question, widget: string}
           - {name: a, label: Answer (leave blank until confirmed), widget: text, required: false}
@@ -2333,7 +2333,7 @@ collections:
           label_singular: Ensemble
           widget: list
           summary: '{{fields.name}}'
-          hint: An ensemble appears on the site only once it has a description.
+          hint: An ensemble without a description shows as 'Details coming soon.'
           fields:
           - {name: name, label: Name, widget: string}
           - {name: text, label: Description (leave blank until confirmed), widget: text, required: false}
