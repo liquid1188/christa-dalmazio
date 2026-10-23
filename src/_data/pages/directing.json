@@ -5,7 +5,9 @@
     "intro": "Christa leads sacred music across New York and New Jersey, as music director of the Higher Word Orchestra and director of music for several parishes and schools.",
     "photo": "/assets/img/gal-conducting-baton.jpg",
     "photo_alt": "Christa Dalmazio conducting with a baton",
-    "photo_caption": "Conducting · in concert"
+    "photo_caption": "Conducting · in concert",
+    "banner": "/assets/img/gal-orchestra-choir-altar.jpg",
+    "banner_alt": "Christa Dalmazio conducting orchestra and choir before a high altar"
   },
   "sections": [
     {
@@ -89,15 +91,6 @@
           "alt": "Dell'Arte Opera Ensemble"
         }
       ]
-    },
-    {
-      "type": "band",
-      "tall": true,
-      "image": "/assets/img/gal-orchestra-choir-altar.jpg",
-      "alt": "Christa Dalmazio conducting orchestra and choir before a high altar",
-      "position": "center 62%",
-      "quote": "",
-      "source": ""
     }
   ]
 }

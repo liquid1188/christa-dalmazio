@@ -1,4 +1,12 @@
-{%- if pg.head.photo %}
+{%- if pg.head.banner %}
+<section class="pagehead pagehead-banner"><img class="phb-img" src="{{ pg.head.banner }}" alt="{{ pg.head.banner_alt }}"{% if pg.head.banner_position %} style="object-position:{{ pg.head.banner_position }}"{% endif %} />
+  <div class="wrap reveal"><div class="phb-text">
+    <div class="kick">{{ pg.head.kick | safe }}</div><h1>{{ pg.head.title | safe }}</h1>
+    <p>{{ pg.head.intro | safe }}</p>
+  </div></div>
+</section>
+<style>.pagehead-banner{position:relative;min-height:min(92vh,860px);padding:0;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}.phb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%}.pagehead-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,13,16,.55) 0%,rgba(25,13,16,0) 22%,rgba(25,13,16,0) 50%,rgba(25,13,16,.92) 100%),linear-gradient(90deg,rgba(25,13,16,.82) 0%,rgba(25,13,16,.45) 30%,rgba(25,13,16,0) 46%)}.pagehead-banner .wrap{position:relative;z-index:2;width:100%;padding-bottom:64px}.phb-text{max-width:430px}.pagehead-banner h1{font-size:clamp(2.6rem,5vw,3.9rem)}.pagehead-banner p{font-size:1rem}@media(min-width:821px){.pagehead-banner .wrap{max-width:none;padding-left:clamp(24px,6vw,110px)}}.pagehead-banner p{color:rgba(243,237,225,.82)}@media(max-width:820px){.pagehead-banner{min-height:640px}.phb-img{object-position:center 40%}}</style>
+{%- elif pg.head.photo %}
 {%- set hd = pg.head.photo | imgDims %}
 <section class="pagehead pagehead-split"><div class="wrap reveal">
   <div class="ph-grid">
