@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
     return role
       .split(" \u00b7 ")
       .map((seg) => `<span class="en-seg">${esc(seg)}</span>`)
-      .join("&#160;\u00b7 ");
+      .join('<span class="en-dot">&#160;\u00b7 </span>');
   });
 
   return { dir: { input: "src", includes: "_includes", data: "_data", output: "_site" } };

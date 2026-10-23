@@ -108,7 +108,7 @@
   <div class="diss-card reveal">
   <div class="movement center"><span class="lbl">{{ b.label | safe }}</span></div>
   <div class="deg">{{ b.degree | safe }}</div>
-  <h2>{{ b.title | safe }}</h2>
+  <h2>{{ b.title | safe }}</h2>{% if b.title_sub %}<p class="diss-tsub">{{ b.title_sub | safe }}</p>{% endif %}
   <p class="sub">{{ b.subtitle | safe }}</p>
   <div class="meta">{% for m in b.meta %}<span>{{ m.role | safe }} &nbsp;<b>{{ m.name | safe }}</b></span>{% endfor %}</div>
 </div></div></section>
