@@ -1,110 +1,106 @@
 {
- "head": {
-  "kick": "Weddings & Private Events",
-  "title": "Music for the occasion.",
-  "intro": "Christa provides live music for weddings, funerals, and private celebrations, as a soprano, harpist, or organist, alone or with a small ensemble.",
-  "photo": "/assets/img/g-string-trio.jpg",
-  "photo_alt": "Christa performing with her string trio at a private event",
-  "photo_caption": "String trio · private event"
- },
- "sections": [
-  {
-   "type": "text_photo",
-   "paragraphs": [
-    {
-     "text": "Music shapes a wedding as much as anything in the room, and it rewards the same care given to the flowers and the dress. Christa sings the nuptial Mass, plays the harp through the cocktail hour, and works with couples and planners to choose the repertoire, sacred or classical, traditional or contemporary, and to fit each piece to the rhythm of the liturgy and the reception."
-    }
-   ],
-   "image": "/assets/img/harp.jpg",
-   "alt": "Christa Dalmazio playing the harp at an event",
-   "image_side": "left",
-   "offers": [
-    {
-     "heading": "Ceremonies",
-     "text": "Prelude, processional, the sacred moments of a Catholic or Christian wedding, and the recessional, for voice, harp, or organ."
-    },
-    {
-     "heading": "Receptions & events",
-     "text": "Cocktail hours, dinners, anniversaries, and private gatherings, solo or with ensemble."
-    },
-    {
-     "heading": "Funerals & memorials",
-     "text": "Cantor and instrumental music for funeral Masses and memorial services, with care and discretion."
-    }
-   ],
-   "cta_label": "Inquire about your date",
-   "cta_link": "/contact/?about=weddings#write"
+  "head": {
+    "kick": "Weddings & Private Events",
+    "title": "Music for the occasion.",
+    "intro": "Christa provides live music for weddings, funerals, and private celebrations, as a soprano, harpist, or organist, alone or with a small ensemble.",
+    "photo": "/assets/img/g-string-trio.jpg",
+    "photo_alt": "Christa performing with her string trio at a private event",
+    "photo_caption": "String trio · private event"
   },
-  {
-   "type": "ensembles",
-   "label": "Music for the occasion",
-   "intro": "A few ways to shape the music for a wedding, a funeral, or a private event. Each can be adapted to your church and your plans.",
-   "items": [
+  "sections": [
     {
-     "name": "Solo harp",
-     "text": "For the prelude, the ceremony, or the cocktail hour."
+      "type": "text_photo",
+      "paragraphs": [
+        {
+          "text": "Music shapes a wedding as much as anything in the room, and it rewards the same care given to the flowers and the dress. Christa sings the nuptial Mass, plays the harp through the cocktail hour, and works with couples and planners to choose the repertoire, sacred or classical, traditional or contemporary, and to fit each piece to the rhythm of the liturgy and the reception."
+        }
+      ],
+      "image": "/assets/img/harp.jpg",
+      "alt": "Christa Dalmazio playing the harp at an event",
+      "image_side": "left",
+      "offers": [
+        {
+          "heading": "Ceremonies",
+          "text": "Prelude, processional, the sacred moments of a Catholic or Christian wedding, and the recessional, for voice, harp, or organ."
+        },
+        {
+          "heading": "Receptions & events",
+          "text": "Cocktail hours, dinners, anniversaries, and private gatherings, solo or with ensemble."
+        },
+        {
+          "heading": "Funerals & memorials",
+          "text": "Cantor and instrumental music for funeral Masses and memorial services, with care and discretion."
+        }
+      ],
+      "cta_label": "Inquire about your date",
+      "cta_link": "/contact/?about=weddings#write"
     },
     {
-     "name": "Voice and harp",
-     "text": "Christa sings and accompanies herself at the harp, from chant and Marian hymns to classical repertoire."
+      "type": "ensembles",
+      "label": "Music for the occasion",
+      "intro": "A few ways to shape the music for a wedding, a funeral, or a private event. Each can be adapted to your church and your plans.",
+      "items": [
+        {
+          "name": "Solo harp",
+          "text": "For the prelude, the ceremony, or the cocktail hour."
+        },
+        {
+          "name": "Voice and harp",
+          "text": "Christa sings and accompanies herself at the harp, from chant and Marian hymns to classical repertoire."
+        },
+        {
+          "name": "Solo organ",
+          "text": "Prelude, processional, and recessional on the church organ."
+        },
+        {
+          "name": "Voice and organ",
+          "text": "Christa sings and accompanies herself at the organ, from chant and Marian hymns to classical repertoire."
+        },
+        {
+          "name": "Harp and string trio",
+          "text": "Christa at the harp with a string trio, for the ceremony or the reception, depending on availability."
+        }
+      ],
+      "note": ""
     },
     {
-     "name": "Solo organ",
-     "text": "Prelude, processional, and recessional on the church organ."
-    },
-    {
-     "name": "String trio",
-     "text": "Harp with a string trio, for the ceremony or the reception, depending on availability."
-    },
-    {
-     "name": "Soprano with organ",
-     "text": ""
-    },
-    {
-     "name": "Voice with string ensemble",
-     "text": ""
+      "type": "faq",
+      "label": "Common questions",
+      "intro": "",
+      "items": [
+        {
+          "q": "What can Christa play or sing for a wedding?",
+          "a": "She sings and plays harp and organ, alone or with a small ensemble, for the ceremony and the reception."
+        },
+        {
+          "q": "Does she sing the nuptial Mass?",
+          "a": "Yes. She sings the nuptial Mass and fits each piece to the rhythm of the liturgy."
+        },
+        {
+          "q": "Can we choose our own music?",
+          "a": "Yes. Christa works with couples and planners to choose the repertoire, sacred or classical, traditional or contemporary."
+        },
+        {
+          "q": "Does she provide music for funerals and memorials?",
+          "a": "Yes. Cantor and instrumental music for funeral Masses and memorial services, with care and discretion."
+        },
+        {
+          "q": "Where does she perform?",
+          "a": "Central and northern New Jersey and New York City."
+        },
+        {
+          "q": "How far ahead should we book?",
+          "a": ""
+        },
+        {
+          "q": "What does it cost?",
+          "a": ""
+        },
+        {
+          "q": "Can we meet or hear a sample before booking?",
+          "a": ""
+        }
+      ]
     }
-   ],
-   "note": "Other combinations on request."
-  },
-  {
-   "type": "faq",
-   "label": "Common questions",
-   "intro": "",
-   "items": [
-    {
-     "q": "What can Christa play or sing for a wedding?",
-     "a": "She sings and plays harp and organ, alone or with a small ensemble, for the ceremony and the reception."
-    },
-    {
-     "q": "Does she sing the nuptial Mass?",
-     "a": "Yes. She sings the nuptial Mass and fits each piece to the rhythm of the liturgy."
-    },
-    {
-     "q": "Can we choose our own music?",
-     "a": "Yes. Christa works with couples and planners to choose the repertoire, sacred or classical, traditional or contemporary."
-    },
-    {
-     "q": "Does she provide music for funerals and memorials?",
-     "a": "Yes. Cantor and instrumental music for funeral Masses and memorial services, with care and discretion."
-    },
-    {
-     "q": "Where does she perform?",
-     "a": "Central and northern New Jersey and New York City."
-    },
-    {
-     "q": "How far ahead should we book?",
-     "a": ""
-    },
-    {
-     "q": "What does it cost?",
-     "a": ""
-    },
-    {
-     "q": "Can we meet or hear a sample before booking?",
-     "a": ""
-    }
-   ]
-  }
- ]
+  ]
 }
