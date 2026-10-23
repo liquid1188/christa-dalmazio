@@ -283,7 +283,7 @@ nav.links a.active{color:var(--parchment)}
 }
 @media (max-width:520px){.wrap{padding:0 22px}header.nav{padding:16px 22px}.program .co{display:none}.ml-inner{flex-direction:column;align-items:stretch;text-align:center;gap:20px}.ml-form{flex-direction:column;min-width:0;max-width:none;width:100%}.ml-form .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.hero-rose{opacity:1;transform:translateX(-50%)}html{scroll-behavior:auto}}
-</style></head><body>
+.en-more{text-align:center;margin:2.4rem 0 0}.en-more a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold,#c5a35a);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}</style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
 {% raw %}
@@ -331,12 +331,13 @@ nav.links a.active{color:var(--parchment)}
 {% raw %}
   <div class="en-grid">
 {% endraw %}
-{%- for e in endorsements.items %}
-    <div class="en-card{% if e.wide %} en-wide{% endif %} reveal">{% if e.kicker %}<div class="en-kicker">{{ e.kicker }}</div>{% endif %}{% if e.quote %}<div class="en-q">&ldquo;{{ e.quote | safe }}&rdquo;</div>{% else %}<span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>{% endif %}
+{%- for e in endorsements.items | selectattr("home") %}
+    <div class="en-card reveal">{% if e.kicker %}<div class="en-kicker">{{ e.kicker }}</div>{% endif %}{% if e.quote %}<div class="en-q">&ldquo;{{ (e.home_quote or e.quote) | safe }}&rdquo;</div>{% else %}<span class="en-tag">Endorsement forthcoming</span><div class="en-q en-ph">&ldquo; A sentence or two of endorsement will appear here. &rdquo;</div>{% endif %}
     <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role | roleBreak | safe }}</div></div></div>
 {%- endfor %}
 {% raw %}
   </div>
+  <p class="en-more reveal"><a href="/about/#endorsements">More from those who know her &rarr;</a></p>
 </div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>

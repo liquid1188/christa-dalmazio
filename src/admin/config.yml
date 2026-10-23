@@ -58,8 +58,7 @@ collections:
   - name: list
     label: Endorsements
     file: src/_data/endorsements.json
-    description: Each person already has a card on the homepage. Paste their quote into the Quote box
-      as it arrives — until then the card politely shows "Endorsement forthcoming."
+    description: Every endorsement with a quote appears on the About page. The homepage shows the one marked for the quote band plus the two marked Show on the homepage.
     fields:
     - name: items
       label: Endorsements
@@ -88,6 +87,17 @@ collections:
         widget: text
         required: false
         hint: One sentence taken from the quote above. If left blank, the full quote is shown.
+      - name: home
+        label: Show on the homepage
+        widget: boolean
+        required: false
+        default: false
+        hint: Turn on for two endorsements. They appear as the two cards under the quote band. Every endorsement with a quote appears on the About page.
+      - name: home_quote
+        label: Shorter excerpt for the homepage card
+        widget: text
+        required: false
+        hint: Optional. Exact words taken from the quote above. If blank, the full quote is shown.
       - name: wide
         label: Full-width card
         widget: boolean

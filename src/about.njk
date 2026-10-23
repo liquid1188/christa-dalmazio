@@ -292,11 +292,20 @@ nav.links a.active{color:var(--parchment)}
 .recital-fig{margin:14px 0 6px}
 .recital-fig img{width:100%;max-width:340px;height:auto;display:block;border:1px solid var(--rule-l)}
 .bodytext i.plain-i{font-style:italic;color:inherit}
-</style></head><body>
+.en-grid .en-wide{grid-column:1/-1}</style></head><body>
 {% endraw %}
 {% include "nav.njk" %}
 {% set pg = pages.about %}
 {% include "blocks.njk" %}
+<section class="endorse" id="endorsements"><div class="wrap">
+  <div class="movement center reveal"><span class="lbl">From Those Who Know Her</span></div>
+  <div class="en-grid">
+{%- for e in endorsements.items %}{% if e.quote %}
+    <div class="en-card{% if e.wide %} en-wide{% endif %} reveal"><div class="en-q">&ldquo;{{ e.quote | safe }}&rdquo;</div>
+    <div class="en-meta"><div class="en-name">{{ e.name }}</div><div class="en-role">{{ e.role | roleBreak | safe }}</div></div></div>
+{%- endif %}{%- endfor %}
+  </div>
+</div></section>
 {% raw %}
 <section id="contact" class="contact"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>

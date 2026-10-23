@@ -10,7 +10,9 @@
     {
       "name": "Spencer McIntosh",
       "role": "Founder, Higher Word Orchestra",
-      "quote": "Christa is not from this world. I’ve never seen someone with the drive, intensity, talent, and hunger that Christa has, and to see it channeled into our faith is remarkable. She took a duet of musicians and helped scale our organization into a major orchestra and choir of 60 Catholics and Christians, filling churches in NYC and essentially inventing a new market category for orchestras."
+      "quote": "Christa is not from this world. I’ve never seen someone with the drive, intensity, talent, and hunger that Christa has, and to see it channeled into our faith is remarkable. She took a duet of musicians and helped scale our organization into a major orchestra and choir of 60 Catholics and Christians, filling churches in NYC and essentially inventing a new market category for orchestras.",
+      "home": true,
+      "home_quote": "She took a duet of musicians and helped scale our organization into a major orchestra and choir of 60 Catholics and Christians, filling churches in NYC."
     },
     {
       "name": "Rev. H. Todd Carter",
@@ -22,7 +24,8 @@
     {
       "name": "Dr. Frank La Rocca",
       "role": "Composer-in-Residence, Benedict XVI Institute for Sacred Music and Divine Worship · Composer of the Mass of the Americas",
-      "quote": "Christa's dedicated work in sacred music—including her work with Higher Word—is vitally important to the restoration of the Beautiful and the healing of our culture."
+      "quote": "Christa's dedicated work in sacred music—including her work with Higher Word—is vitally important to the restoration of the Beautiful and the healing of our culture.",
+      "home": true
     },
     {
       "name": "Fr. Jonah Teller, O.P.",
