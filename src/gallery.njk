@@ -298,15 +298,18 @@ nav.links a.active{color:var(--parchment)}
 {%- endfor %}
 {% raw %}
 </div></div></section>
-{% endraw %}{%- if site.instagramFeedId %}
+{% endraw %}
 <section class="ig-sec"><div class="wrap">
   <div class="movement reveal"><span class="lbl">Lately, on Instagram</span><span class="rule"></span></div>
+  {%- if site.instagramFeedId %}
   <behold-widget feed-id="{{ site.instagramFeedId }}"></behold-widget>
+  {%- else %}
+  <p class="ig-soon reveal">A live feed of her latest posts is coming soon.</p>
+  {%- endif %}
   <p class="ig-follow reveal"><a href="https://www.instagram.com/christadalmazio_musicista/" target="_blank" rel="noopener noreferrer">Follow @christadalmazio_musicista &rarr;</a></p>
 </div></section>
-<script type="module" src="https://w.behold.so/widget.js"></script>
-<style>.ig-sec{padding:20px 0 90px}.ig-follow{margin:26px 0 0;text-align:center}.ig-follow a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}</style>
-{%- endif %}
+{%- if site.instagramFeedId %}<script type="module" src="https://w.behold.so/widget.js"></script>{% endif %}
+<style>.ig-sec{padding:20px 0 90px}.ig-soon{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.3rem;color:var(--muted);margin:28px 0 0}.ig-follow{margin:18px 0 0;text-align:center}.ig-follow a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}</style>
 {% raw %}<section id="contact" class="contact paper"><div class="wrap"><div class="inner">
   <div class="movement center reveal"><span class="lbl">Inquiries &amp; Booking</span></div>
   <h2 class="reveal">Get in touch.</h2>

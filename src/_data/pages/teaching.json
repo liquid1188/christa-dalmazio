@@ -53,6 +53,22 @@
       "photo": "/assets/img/gal-trio.jpg",
       "photo_alt": "Christa with her students, harp and strings",
       "photo_caption": "With students · harp &amp; strings"
+    },
+    {
+      "type": "ensembles",
+      "label": "Masterclasses and lectures",
+      "intro": "Beyond private lessons, Christa visits schools, choirs, parishes, and music programs.",
+      "items": [
+        {
+          "name": "Masterclasses",
+          "text": "For singers, harpists, and church musicians, in classical voice, sacred repertoire, and singing for the liturgy, built around the participants’ own music."
+        },
+        {
+          "name": "Lectures",
+          "text": "Talks on sacred music and beauty in the liturgy, on St. Hildegard of Bingen, and on choosing sacred solos for the Mass, the subject of her doctoral research."
+        }
+      ],
+      "note": ""
     }
   ]
 }

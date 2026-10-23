@@ -1792,6 +1792,22 @@ collections:
       label_singular: Section
       widget: list
       types:
+      - name: ensembles
+        label: Masterclasses and lectures (or other short list)
+        widget: object
+        fields:
+        - {name: label, label: Section heading, widget: string}
+        - {name: intro, label: Line under the heading, widget: text, required: false}
+        - name: items
+          label: Ensembles
+          label_singular: Ensemble
+          widget: list
+          summary: '{{fields.name}}'
+          hint: An ensemble without a description shows as 'Details coming soon.'
+          fields:
+          - {name: name, label: Name, widget: string}
+          - {name: text, label: Description (leave blank until confirmed), widget: text, required: false}
+        - {name: note, label: Line under the list, widget: string, required: false}
       - name: band
         label: Full-width photo
         widget: object
