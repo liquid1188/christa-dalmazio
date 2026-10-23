@@ -9,15 +9,6 @@
   },
   "sections": [
     {
-      "type": "band",
-      "tall": true,
-      "image": "/assets/img/gal-orchestra-choir-altar.jpg",
-      "alt": "Christa Dalmazio conducting the Higher Word Orchestra and choir at St. Jean Baptiste Church, October 2026",
-      "position": "center 55%",
-      "quote": "",
-      "source": ""
-    },
-    {
       "type": "text_appointments",
       "paragraphs": [
         {
@@ -98,6 +89,15 @@
           "alt": "Dell'Arte Opera Ensemble"
         }
       ]
+    },
+    {
+      "type": "band",
+      "tall": true,
+      "image": "/assets/img/gal-orchestra-choir-altar.jpg",
+      "alt": "Christa Dalmazio conducting the Higher Word Orchestra and choir at St. Jean Baptiste Church, October 2026",
+      "position": "center 55%",
+      "quote": "",
+      "source": ""
     }
   ]
 }
